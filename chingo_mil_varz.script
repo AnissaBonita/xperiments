@@ -1,0 +1,3737 @@
+//========================================================
+// ARCHIVO MAESTRO - TODAS LAS VARIABLES LIMPIAS
+//========================================================
+joinLists = {import:join-lists-plugin}
+filterList = {import:filter-list-plugin}
+
+//========================================================
+// 1. TEXTURAS LOCAS
+//========================================================
+output1
+  TexturasLocas is [joinLists(TexturasLocasList, TexturasLocasValues)]
+
+TexturasLocasList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TexturasLocasValues.selectOne.prompt]
+
+TexturasLocasValues
+  Biolum
+    prompt = Bioluminescent, thin ultra bold text, pulsing energy strands woven, emitting a soft cyan/neon pink hue. The letters appear alive, with slow, organic movement like flowing liquid light.  
+  Nano-F
+    prompt = Nano-Fractal Dust texture in a big and clear bolded typography  Text dissolves into microscopic geometric patterns hexagons, tetrahedrons that reassemble when touched. Matte metallic finish with holographic refraction.   Gravity-Defying Ink texture in a big and clear bolded typography  Letters float mid-air, warping spacetime around them. Some fragments invert into anti-matter shadows, creating a 3D illusion of depth.  
+  Neural
+    prompt = Neural FireScript texture in a big and clear bolded typography  Text burns with digital flames, but instead of heat, it emits data streams binary/cuneiform symbols. Smoke forms fleeting faces when observed closely.  
+  Chroma
+    prompt = Chromatic Slime Core texture in a big and clear bolded typography  Gelatinous, iridescent bolded letters that morph shapes like molten glass. Each syllable leaves sticky light trails when moved.  
+  Singul
+    prompt = Singularity Grain texture in a big and clear bolded typography  Text appears pixelated until viewed straight-on, then reveals infinite fractal depth. Background warps into a black hole effect near the edges.  
+  Echo-H
+    prompt = Echo-Hologram Phantoms texture in a big and clear bolded typography  Semi-transparent text layers that "remember" previous words, leaving faint afterimages in contrasting colors e.g., gold fading to violet.  
+  Bullet
+    prompt = Bullet-Dented Steel texture in a big and clear bolded typography  Bullet-Dented Steel Pockmarked surface with scratched paint remnants.  
+  Soot-B
+    prompt = Soot-Blackened Brass texture in a big and clear bolded typography  Soot-Blackened Brass Tarnished yellow metal with ash residue in crevices.  
+  Corrod
+    prompt = Corroded Aluminum texture in a big and clear bolded typography  Corroded Aluminum Pitted, chalky-gray surface with uneven weathering.  
+  Charre
+    prompt = Charred Metal Plating texture in a big and clear bolded typography  Charred Metal Plating Burn marks with peeling layers revealing rust beneath.  
+  Salvag
+    prompt = Salvaged Tank Armor texture in a big and clear bolded typography  Salvaged Tank Armor Heavy, pitted steel with weld seams and graffiti scratches.  
+  Smooth
+    prompt = Smooth polished texture in a big and clear bolded typography  smooth polished
+  Rough 
+    prompt = Rough highly textured texture in a big and clear bolded typography  rough highly textured
+  Glossy
+    prompt = Glossy glazed texture in a big and clear bolded typography  glossy glazed
+  Matte 
+    prompt = Matte texture in a big and clear bolded typography  matte
+  Metall
+    prompt = Metallic chrome texture in a big and clear bolded typography  metallic chrome
+  Irides
+    prompt = Iridescent holographic texture in a big and clear bolded typography  iridescent holographic
+  Pearle
+    prompt = Pearlescent texture in a big and clear bolded typography  pearlescent
+  Cracke
+    prompt = Cracked weathered texture in a big and clear bolded typography  cracked weathered
+  Rusty 
+    prompt = Rusty oxidized texture in a big and clear bolded typography  rusty oxidized
+  Wood g
+    prompt = Wood grain texture in a big and clear bolded typography  wood grain
+  Marble
+    prompt = Marble stone texture in a big and clear bolded typography  marble stone
+  Canvas
+    prompt = Canvas texture texture in a big and clear bolded typography  canvas texture
+  Waterc
+    prompt = Watercolor paper texture in a big and clear bolded typography  watercolor paper
+  Parchm
+    prompt = Parchment aged paper texture in a big and clear bolded typography  parchment aged paper
+  Black 
+    prompt = Black paper texture in a big and clear bolded typography  black paper
+  Transp
+    prompt = Transparent glass texture in a big and clear bolded typography  transparent glass
+  Ice cr
+    prompt = Ice crystal texture in a big and clear bolded typography  ice crystal
+  Sand g
+    prompt = Sand grit texture in a big and clear bolded typography  sand grit
+  Velvet
+    prompt = Velvet suede texture in a big and clear bolded typography  velvet suede
+  Silk s
+    prompt = Silk satin texture in a big and clear bolded typography  silk satin
+  Leathe
+    prompt = Leather texture in a big and clear bolded typography  leather
+  Carbon
+    prompt = Carbon fiber texture in a big and clear bolded typography  carbon fiber
+  Brushe
+    prompt = Brushed metal texture in a big and clear bolded typography  brushed metal
+  Linen 
+    prompt = Linen fabric texture in a big and clear bolded typography  linen fabric
+  Denim 
+    prompt = Denim texture texture in a big and clear bolded typography  denim texture
+  Fur te
+    prompt = Fur texture texture in a big and clear bolded typography  fur texture
+  Feathe
+    prompt = Feathery texture texture in a big and clear bolded typography  feathery texture
+  Scale 
+    prompt = Scale texture texture in a big and clear bolded typography  scale texture
+  Bark t
+    prompt = Bark texture texture in a big and clear bolded typography  bark texture
+  Concre
+    prompt = Concrete texture in a big and clear bolded typography  concrete
+  Brick 
+    prompt = Brick texture in a big and clear bolded typography  brick
+  Asphal
+    prompt = Asphalt texture in a big and clear bolded typography  asphalt
+  Cobble
+    prompt = Cobblestone texture in a big and clear bolded typography  cobblestone
+  Gravel
+    prompt = Gravel texture in a big and clear bolded typography  gravel
+  Grass 
+    prompt = Grass texture in a big and clear bolded typography  grass
+  Moss t
+    prompt = Moss texture in a big and clear bolded typography  moss
+  Sand d
+    prompt = Sand dune texture in a big and clear bolded typography  sand dune
+  Water 
+    prompt = Water surface texture in a big and clear bolded typography  water surface
+  Clouds
+    prompt = Clouds texture in a big and clear bolded typography  clouds
+  Fire t
+    prompt = Fire texture texture in a big and clear bolded typography  fire texture
+  Glowin
+    prompt = Glowing embers texture in a big and clear bolded typography  glowing embers
+  Plasti
+    prompt = Plastic glossy texture in a big and clear bolded typography  plastic glossy
+  Rubber
+    prompt = Rubber texture in a big and clear bolded typography  rubber
+  Wax te
+    prompt = Wax texture in a big and clear bolded typography  wax
+  Crysta
+    prompt = Crystal texture in a big and clear bolded typography  crystal
+  Liquid
+    prompt = Liquid metal texture in a big and clear bolded typography  liquid metal
+  Molten
+    prompt = Molten lava texture in a big and clear bolded typography  molten lava
+  Glitte
+    prompt = Glitter texture in a big and clear bolded typography  glitter
+  Confet
+    prompt = Confetti texture in a big and clear bolded typography  confetti
+  Tinsel
+    prompt = Tinsel texture in a big and clear bolded typography  tinsel
+  Corrug
+    prompt = Corrugated cardboard texture in a big and clear bolded typography  corrugated cardboard
+  Woven 
+    prompt = Woven rattan texture in a big and clear bolded typography  woven rattan
+  Bamboo
+    prompt = Bamboo texture in a big and clear bolded typography  bamboo
+  Terraz
+    prompt = Terrazzo texture in a big and clear bolded typography  terrazzo
+  Granit
+    prompt = Granite texture in a big and clear bolded typography  granite
+  Slate 
+    prompt = Slate texture in a big and clear bolded typography  slate
+  Geode 
+    prompt = Geode texture in a big and clear bolded typography  geode
+  Resin 
+    prompt = Resin texture in a big and clear bolded typography  resin
+  Epoxy 
+    prompt = Epoxy texture in a big and clear bolded typography  epoxy
+  Gelati
+    prompt = Gelatinous texture in a big and clear bolded typography  gelatinous
+  Slime 
+    prompt = Slime texture in a big and clear bolded typography  slime
+  Goo te
+    prompt = Goo texture in a big and clear bolded typography  goo
+  Powder
+    prompt = Powder texture in a big and clear bolded typography  powder
+  Sequin
+    prompt = Sequins texture in a big and clear bolded typography  sequins
+  Honeyc
+    prompt = Honeycomb texture in a big and clear bolded typography  honeycomb
+  Bubble
+    prompt = Bubble wrap texture in a big and clear bolded typography  bubble wrap
+  Foam t
+    prompt = Foam texture in a big and clear bolded typography  foam
+  Ripple
+    prompt = Rippled water texture in a big and clear bolded typography  rippled water
+  Foam o
+    prompt = Foam on water texture in a big and clear bolded typography  foam on water
+  Crumpl
+    prompt = Crumpled paper texture in a big and clear bolded typography  crumpled paper
+  Folded
+    prompt = Folded origami texture in a big and clear bolded typography  folded origami
+  Cut pa
+    prompt = Cut paper texture in a big and clear bolded typography  cut paper
+  Torn c
+    prompt = Torn cardboard texture in a big and clear bolded typography  torn cardboard
+  Scratc
+    prompt = Scratched plastic texture in a big and clear bolded typography  scratched plastic
+  Finger
+    prompt = Fingerprint smudge texture in a big and clear bolded typography  fingerprint smudge
+  Dust l
+    prompt = Dust layer texture in a big and clear bolded typography  dust layer
+  Dirt g
+    prompt = Dirt ground texture in a big and clear bolded typography  dirt ground
+  Mud pu
+    prompt = Mud puddle texture in a big and clear bolded typography  mud puddle
+  Wet as
+    prompt = Wet asphalt texture in a big and clear bolded typography  wet asphalt
+  Dry cr
+    prompt = Dry cracked earth texture in a big and clear bolded typography  dry cracked earth
+  Snow p
+    prompt = Snow powder texture in a big and clear bolded typography  snow powder
+  Ice sl
+    prompt = Ice slick texture in a big and clear bolded typography  ice slick
+  Frost 
+    prompt = Frost pattern texture in a big and clear bolded typography  frost pattern
+  Window
+    prompt = Window rain texture in a big and clear bolded typography  window rain
+  Sweat 
+    prompt = Sweat drops texture in a big and clear bolded typography  sweat drops
+  Tears 
+    prompt = Tears texture in a big and clear bolded typography  tears
+  Blood 
+    prompt = Blood splatter texture in a big and clear bolded typography  blood splatter
+  Ink bl
+    prompt = Ink blot texture in a big and clear bolded typography  ink blot
+  Coffee
+    prompt = Coffee stain texture in a big and clear bolded typography  coffee stain
+  Tea ri
+    prompt = Tea ring texture in a big and clear bolded typography  tea ring
+  Wine s
+    prompt = Wine spill texture in a big and clear bolded typography  wine spill
+  Grease
+    prompt = Grease spot texture in a big and clear bolded typography  grease spot
+  Chalk 
+    prompt = Chalk dust texture in a big and clear bolded typography  chalk dust
+  Pastel
+    prompt = Pastel smudge texture in a big and clear bolded typography  pastel smudge
+
+//========================================================
+// 2. LENTES / GAFAS (glassesa)
+//========================================================
+output2
+  glassesa is [joinLists(glassesaList, glassesaValues)]
+
+glassesaList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [glassesaValues.selectOne.prompt]
+
+glassesaValues
+  Blindfold
+    prompt = She is blindfolded
+  Glasses 
+    prompt = She is wearing glasses.
+  Glasses Aviator 
+    prompt = She is wearing aviator style glasses
+  Glasses Big 
+    prompt = She is wearing big white framed glasses
+  Glasses Cat-eye
+    prompt = She is wearing cat eye shaped glasses. It is very important that her glasses are oval shaped. She is wearing cat glasses. Her glasses frames are cat eye shape. Her glasses shape is thin oval. Her glasses have an upsweep at the outer edges where the arms join the frame front. 
+  Glasses Clubmaster 
+    prompt = She is wearing clubmaster style glasses
+  Glasses Granny
+    prompt = She is wearing oversized, oval-framed granny glasses with a nostalgic, gentle charm and intellectual vibe.
+  Glasses Half-rim
+    prompt = She is wearing sleek half-rim glasses with minimalist metal frames, blending intellect and modern sophistication.
+  Glasses Heart-Shaped
+    prompt = She is wearing whimsical heart-shaped glasses in playful colors, evoking carefree fun and youthfulness.
+  Glasses Horn-rimmed
+    prompt = She is wearing bold horn-rimmed glasses with thick, dark frames, channeling vintage academia and artistic spirit.
+  Glasses Invisible frame
+    prompt = She is wearing rimless glasses with barely-there bridges and arms for an ultra-light, minimalist effect.
+  Glasses Nerd
+    prompt = She is wearing big rectangular glasses with thick black frames.
+  Glasses Oversize 
+    prompt = She is wearing oversize round framed glasses
+  Glasses Round 
+    prompt = She is wearing small round wire framed glasses. 
+  Glasses Square 
+    prompt = She is wearing square framed glasses
+  Glasses Thick 
+    prompt = She is wearing thick framed glasses
+  Glasses Thin 
+    prompt = She is wearing thin framed glasses
+  Glasses Wayfarers
+    prompt = She is weating iconic wayfarer glasses with trapezoidal frames, bridging timeless design and modern attitude.
+  Glasses Wire 
+    prompt = She is wearing wire framed glasses
+  Goggles Diving
+    prompt = She is wearing diving goggles
+  Sunglasses 
+    prompt = She is wearing sunglasses.
+  Sunglasses Aviator 
+    prompt = She is wearing aviator style sunglasses
+  Sunglasses Big 
+    prompt = She is wearing big white framed sunglasses
+  Sunglasses black acetate bug-eyes sunglasses 
+    prompt = She is wearing black acetate bug-eyes sunglasses
+  Sunglasses black acetate eye-cat sunglasses    
+    prompt = She is wearing black acetate eye-cat sunglasses
+  Sunglasses Cat-eye
+    prompt = She is wearing cat eye shaped sunglasses. It is very important that her sunglasses are oval shaped. She is wearing cat sunglasses. Her sunglasses frames are cat eye shape. Her sunglasses shape is thin oval. Her sunglasses have an upsweep at the outer edges where the arms join the frame front. 
+  Sunglasses Clubmaster 
+    prompt = She is wearing clubmaster style sunglasses
+  Sunglasses Oversize 
+    prompt = She is wearing dramatic oversized sunglasses with dark lenses and thick frames, perfect for an air of mystery.
+  Sunglasses Round 
+    prompt = She is wearing small round wire framed sunglasses. Her sunglasses have purple lenses
+  Sunglasses Square 
+    prompt = She is wearing square framed sunglasses
+  Sunglasses Thick 
+    prompt = She is wearing thick framed sunglasses
+  Sunglasses Thin 
+    prompt = She is wearing thin framed sunglasses
+  Sunglasses Wayfarers
+    prompt = She is weating iconic wayfarer sunglasses with trapezoidal frames, bridging timeless design and modern attitude.
+  Sunglasses Wire 
+    prompt = She is wearing wire framed sunglasses
+  Sunglasses Yellow 
+    prompt = She is wearing yellow tinted sunglasses    
+
+//========================================================
+// 3. LOCACIONES (loca)
+//========================================================
+output3
+  loca is [joinLists(locaList, locaValues)]
+
+locaList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [locaValues.selectOne.prompt]
+
+locaValues
+  Abandoned City
+    prompt = Abandoned City in an abandoned city,
+  Abandoned Hospital
+    prompt = Abandoned Hospital in an abandoned, creepy, spooky, lost and forgotten hospital,
+  Abandoned playground
+    prompt = Abandoned playground on an abandoned, forgotten playground, here are still lots of very old and very rusty play equipment and climbing facilities here, everything is in a bad shape,
+  Abandoned Town
+    prompt = Abandoned Town in an abandoned and forgotten town,
+  Adult store
+    prompt = Adult store in an adult store, dildos on shelves in background,
+  Airport
+    prompt = Airport in an airport, with check-in counters, security, and waiting areas,
+  Amusement park
+    prompt = Amusement park in an amusement park, with rides and attractions,
+  Animal shelter
+    prompt = Animal shelter in an animal shelter, with kennels and animals looking for homes,
+  Aquarium
+    prompt = Aquarium in an aquarium, with tanks of fish and underwater creatures,
+  Apartment
+    prompt = Apartment in an apartment,  
+  Aeroplane
+    prompt = Aeroplane in an aeroplane,
+  Attic
+    prompt = Attic in an attic,
+  Asian Bridge
+    prompt = Asian Bridge A traditional East Asian gatehouse bridge spanning a wide shallow river channel cut between rocky stone banks, the structure built on heavy timber piers of deep vermilion red rising from the water. The upper story is a long covered hall with a curved terracotta tile roof upswept at the eaves, its walls cream plaster between dark red timber framing, a row of small arched windows running the full length of the facade. Orange paper lanterns hang at the entrance gate and at intervals along the structure. The surrounding landscape is open rolling grassland of vivid saturated green under a bright blue sky with scattered white clouds, tall pine and deciduous trees rising on both sides of the river. Rocky grey cliff faces line the river banks where the water runs clear and blue-green over a gravel bed. A dirt and gravel road approaches the bridge entrance across the grass.
+  Backyard
+    prompt = Backyard in a backyard, with a lawn, garden, and patio furniture,
+  Ballroom
+    prompt = Ballroom in a ballroom, with a dance floor and elegant chandeliers,
+  Bank
+    prompt = Bank in a bank, with tellers and vaults,
+  Bar
+    prompt = Bar in a bar,
+  Barn
+    prompt = Barn in a barn,
+  Basement
+    prompt = Basement in a basement,
+  Bathroom
+    prompt = Bathroom in a bathroom,
+  Beach
+    prompt = Beach on a beach,
+  Beach house
+    prompt = Beach house in a beach house, with ocean views and sandy floors,
+  Bedroom
+    prompt = Bedroom in a bedroom,
+  Bell tower
+    prompt = Bell tower in a bell tower, with large bells and a view of the surrounding area,
+  Beauty salon
+    prompt = Beauty salon in a beauty salon, with hairdressing stations and beauty products,
+  Bowling alley
+    prompt = Bowling alley in a bowling alley, with lanes, pins, and bowling balls,
+  Bridge City
+    prompt = Bridge City in a They are on a pedestrian bridge at night. From behind them, city lights reflect,
+  BSG Cockpit
+    prompt = BSG Cockpit in a BSG Viper Mark II cockpit red alert lights flashing, targeting HUD glowing, G-force straps tight,
+  BSG Hangar
+    prompt = BSG Hangar in a battle star galactica hangar deck viper fighters parked, pilots running, yellow hazard stripes,
+  Bushes
+    prompt = Bushes in the bushes,
+  Bus
+    prompt = Bus in a bus,
+  Bus stop
+    prompt = Bus stop at a bus stop, with a bench and a shelter,
+  Bus terminal
+    prompt = Bus terminal in a bus terminal, with ticket counters and waiting areas,
+  Cabin
+    prompt = Cabin in a cabin, with wooden walls and a fireplace,
+  Cafe
+    prompt = Cafe in a cafe,
+  Campsite
+    prompt = Campsite at a campsite, with tents and a campfire,
+  Car
+    prompt = Car in a car,
+  Car dealership
+    prompt = Car dealership in a car dealership, with rows of new cars and a showroom,
+  Caribbean beach
+    prompt = Caribbean beach caribbean ocean, turquoise water, beach palms,
+  Casino
+    prompt = Casino in a casino,
+  Cellar
+    prompt = Cellar in a cellar room with stone walls,
+  Cemetery
+    prompt = Cemetery in a cemetery, with gravestones and quiet paths,
+  Changing room
+    prompt = Changing room in a changing room,
+  Church
+    prompt = Church in a church,
+  Classroom
+    prompt = Classroom in a classroom, chalkboard and desk in background,
+  Clothes store
+    prompt = Clothes store in a clothes store changing room,
+  Coffee shop
+    prompt = Coffee shop in a coffee shop, with tables, chairs, and the aroma of coffee,
+  Conference center
+    prompt = Conference center in a conference center, with meeting rooms and exhibition halls,
+  Conference room
+    prompt = Conference room in a conference room, with a long table and presentation screen,
+  Construction site
+    prompt = Construction site at a construction site, with machinery and building materials,
+  Courtyard
+    prompt = Courtyard in a courtyard,
+  Coworking space
+    prompt = Coworking space in a coworking space, with desks, laptops, and collaborative areas,
+  Creek
+    prompt = Creek by a creek, with flowing water and lush vegetation,
+  Cruise ship
+    prompt = Cruise ship on a cruise ship, with decks overlooking the ocean and luxurious amenities,
+  Dark Room
+    prompt = Dark Room in the dark night of moon from window and dark room ruined wooden floor, antique interior fireplace whit spirit  flame, one antique grandfather clock, antique horror portraits on wall, antique Chandelier, semen stain on the floor:1.1, dramatic lighting, spooky, ghostly, macabre, hyperrealistic, impressionistic lighting, foggy, smoky atmosphere, low key, high contrast, interior scene,
+  Dentist office
+    prompt = Dentist office in a dentist office, with dental chairs and instruments,
+  Desert
+    prompt = Desert in the desert, with sand dunes and a hot sun,
+  Dockyard
+    prompt = Dockyard in a dockyard, with ships being built or repaired,
+  Doctor Who
+    prompt = Doctor Who TARDIS Doctor Who TARDIS control room, hexagonal coral struts, roundels walls, central time rotor glowing green, Victorian console, steampunk sci-fi, 
+  Dog park
+    prompt = Dog park in a dog park, with dogs playing and owners watching,
+  Drive-in
+    prompt = Drive-in movie theater Modern drive-in cinema with sleek black metal fence, LED-lit parking lot for electric vehicles, massive 8K curved LED screen showing vibrant trailers with laser shows. Smart streetlight with 5G/drone stations, glass concession stand, golden autumn hills beyond. Crisp midday lighting.
+  Drive-in
+    prompt = Drive-in movie ruined An abandoned outdoor drive-in movie theater enclosed by tall weathered timber fence panels, the lot inside a patchwork of scrubby grass and compacted dirt tracks worn by years of vehicle traffic. Dozens of dark derelict cars are scattered across the lot in no particular order — sedans, muscle cars, pickup trucks, and a large semi truck among them, most sitting at odd angles, some partially overturned, all stripped and rusted. A large rectangular drive-in screen stands at the far end of the lot, its white surface partially torn and peeling away from the frame, the support structure visible behind the damaged panels. A single tall streetlight pole leans at the lot's center. A low lean-to structure with a corrugated roof occupies one corner. The surrounding landscape beyond the fence is rolling autumn countryside — trees in vivid gold and green, soft hills, and a blue sky with thin cloud cover. The light is bright midday with clean shadows, the warm autumn color of the surrounding trees contrasting with the dark tones of the wrecked vehicles filling the lot.
+  Dungeon
+    prompt = Dungeon cold and moist dungeon room,
+  Electronics store
+    prompt = Electronics store in an electronics store, with gadgets and tech devices on display,
+  Embassy
+    prompt = Embassy in an embassy, with flags and security,
+  Factory
+    prompt = Factory in a factory, with machinery and assembly lines,
+  Farm
+    prompt = Farm on a farm, with barns, animals, and crops,
+  Ferry
+    prompt = Ferry on a ferry, with the open sea and sky around,
+  Field
+    prompt = Field in a field, with tall grass and open sky,
+  Fire station
+    prompt = Fire station in a fire station, with fire trucks and gear ready for action,
+  Flight Cockpit
+    prompt = Flight Cockpit in a flight cockpit instrument panels glowing clouds sunset outside,
+  Flower shop
+    prompt = Flower shop in a flower shop, with bouquets and floral arrangements,
+  Forest
+    prompt = Forest in a forest,
+  Gamer Bed
+    prompt = Gamer Bed-room in a gamer bedroom purple love heart RGB lights gaming posters LED strips,
+  Gas station
+    prompt = Gas station at a gas station, with fuel pumps and a convenience store,
+  Gothic Church
+    prompt = Gothic Church in a church altar gothic cathedral stained glass colored light, burning candles pews,
+  Gothic Castel
+    prompt = Gothic Castel in a vampiric castle, shot from a slightly elevated frontal angle, the air smells of expensive perfume and old parchment, crimson silk sheets pool, contrasting with the black iron bedframe adorned with gothic carvings of tormented souls, the mattress's ancient leather straps,
+  Golf course
+    prompt = Golf course on a golf course, with greens, fairways, and golf carts,
+  Ghost Ship
+    prompt = Ghost Ship on board an abandoned ghost ship of horror, creaking wooden deck, torn sails, thick sea fog, eerie moonlight, flickering lanterns, dark wet corridors, rotting wood, chains hanging from the ceiling, strange symbols on the walls, cold blue-green color tones,
+  Greenhouse
+    prompt = Greenhouse in a greenhouse, filled with plants and humid air,
+  Gym
+    prompt = Gym in a gym,
+  Haunted Hills
+    prompt = Haunted Hills A small stone church and graveyard on an elevated rocky ledge at night, built against the base of a sheer cliff face of pale grey rock that rises steeply into the darkness behind it. The church is a simple medieval construction of dark stacked stone blocks — a square bell tower rising above the nave, a single arched doorway, a small circular window near the tower peak — the entire structure bathed in deep blue moonlight. The graveyard surrounds the church on all sides, headstones of varying heights scattered across the uneven grass in no particular order, some tilted with age, the grass between them long and unkempt. Tall pine trees flank the scene on both sides, their silhouettes dark against the sky, bare twisted branches visible at the upper right. A full moon sits high and bright in a deep cobalt blue sky scattered with faint stars and thin wispy clouds, its cold white light the sole illumination, casting the entire scene in a saturated blue-indigo with the church and cliff face picking up the brightest moonlight and the graveyard grass falling into deep shadow between the stones. 
+  Haunted house
+    prompt = Haunted house in a haunted house, with creaky floors and eerie decorations,
+  Helicopter
+    prompt = Helicopter in a helicopter, with a view from above and rotor noise,
+  Hello Kitty
+    prompt = Hello Kitty room in a hello kitty room pink pastel walls stuffed animals heart shaped mirror,
+  Home gym
+    prompt = Home gym in a home gym,
+  Hiking trail
+    prompt = Hiking trail on a hiking trail, with a path through nature and scenic views,
+  Hospital
+    prompt = Hospital in a hospital,
+  Hot air
+    prompt = Hot air balloon in a hot air balloon, floating above the landscape,
+  Hot tub
+    prompt = Hot tub in a hot tub,
+  Hotel bedroom
+    prompt = Hotel bedroom in a hotel bedroom,
+  Hotel lobby
+    prompt = Hotel lobby in a hotel lobby,
+  Igloo
+    prompt = Igloo in an igloo, with ice walls and a cold interior,
+  Ice rink
+    prompt = Ice rink on an ice rink, with smooth ice and skaters gliding,
+  Iceberg
+    prompt = Iceberg on an iceberg, surrounded by icy waters and towering ice formations,
+  Jail cell
+    prompt = Jail cell in a jail cell, with bars and a small cot,
+  Jewelry store
+    prompt = Jewelry store in a jewelry store, with sparkling displays and valuable items,
+  Jungle
+    prompt = Jungle in the jungle,
+  Karaoke bar
+    prompt = Karaoke bar in a karaoke bar, with a stage and a microphone,
+  Kitchen
+    prompt = Kitchen in a kitchen,
+  Laboratory
+    prompt = Laboratory in a laboratory, with scientific equipment and experiments in progress,
+  Library
+    prompt = Library in a library, with shelves of books and quiet atmosphere,
+  Lighthouse
+    prompt = Lighthouse in a lighthouse, with a spiraling staircase and beacon light,
+  Living Room
+    prompt = Living Room in a film studio sitcom loving room film set, the living room film set has a large boxed floorspace to fit the entire scene in, the large family sofa dominates the camera centre view of the living film set wide enough to seat 8 people, the décor of the living room film set is right out of the 80's sitcom shows complete with a standing lamp, the camera view of the living room sitcom film set is straightened to be looking at the living room sofa, on the west side of the living room film set is the family 80's CRT TV set with a VCR set all plugged in, on the back wall is a circular ticking clock, the back wall has a bookshelf containing the book collection for the father of the house
+  Locker room
+    prompt = Locker room in a locker room,
+  Lounge
+    prompt = Lounge in a lounge,
+  Lumber yard
+    prompt = Lumber yard in a lumber yard, with stacks of wood and sawdust,
+  Mall
+    prompt = Mall in a mall,
+  Marina
+    prompt = Marina at a marina, with boats docked and the smell of the sea,
+  Matrix
+    prompt = Matrix  Matrix simulated reality, green digital code rain cascading everywhere, desaturated black‑and‑green monochrome palette, high‑contrast neo‑noir lighting, slick black leather trench coats, mirrored sunglasses, slow‑motion bullet‑time effects, glitchy digital artifacts, simulated world distortions, urban dystopian architecture, anamorphic lens flares, ultra‑detailed katakana code streams, perfect symmetrical composition, cybernetic enhancements visible through skin, hovering data fragments, ominous green glow,
+  Metro station
+    prompt = Metro station in a metro station, with trains arriving and departing,
+  Monastery
+    prompt = Monastery in a monastery,
+  Moon
+    prompt = Moon on the moon,
+  Motorcycle
+    prompt = Motorcycle on the motorcycle, driving the on the motorcycle,
+  Mountains
+    prompt = Mountains mountain scenery,
+  Mountain cabin
+    prompt = Mountain cabin in a mountain cabin, with rustic decor and a view of the peaks,
+  Movie theater
+    prompt = Movie theater in a movie theater, with a large screen and rows of seats,
+  Museum
+    prompt = Museum in a museum, with exhibits and artifacts displayed,
+  Music festival
+    prompt = Music festival at a music festival, with stages, tents, and crowds of people enjoying live music,
+  Music studio
+    prompt = Music studio in a music studio, with instruments and recording equipment,
+  New york
+    prompt = New york in new york city in madison square garden, busy night, crowded area,
+  Nitrodome Scarrs
+    prompt = Nitrodome Scarrs Balcony The interior of a brutalist industrial arena at night viewed from an elevated VIP balcony level — a vast open performance floor below bathed in saturating magenta and deep violet light from arrays of hot pink LED panels mounted in clusters across the floor surface, their vivid glow reflecting in the polished dark floor as a continuous wash of neon pink. The balcony level is a wide timber-and-metal platform with a railing overlooking the floor, furnished with a sofa and low table at the far end beneath a large graphic mural on the back wall. The entire structure is raw industrial construction — heavy timber beams, bolted metal brackets, studded metal panels — all rendered in the deep purple of the ambient neon light. A massive demonic beast skull sculpture dominates the upper facade above the balcony — an enormous stylized monster head in dark riveted metal with glowing red eyes, curved horns, open jaws bearing fangs, and a crest of teal and pink spikes at the crown, the whole thing looming over the space as both architectural feature and territorial statement. Warm amber utility strip lights run along the ceiling beams providing a secondary layer of orange-gold light that fights with the dominant pink below. The night sky is visible through the open upper structure, deep blue with faint stars.
+  Night club
+    prompt = Night club in the nightclub, different colored lights in the background, dancefloor,
+  Nursery
+    prompt = Nursery in a nursery, with cribs and baby toys,
+  Ocean
+    prompt = Ocean next to the ocean,
+  Office
+    prompt = Office in an office,
+  Office building
+    prompt = Office building in an office building, with elevators and office spaces,
+  On bed
+    prompt = On bed on the bed,
+  Opera house
+    prompt = Opera house in an opera house, with a grand stage and audience seating,
+  Park
+    prompt = Park in a park,
+  Parking garage
+    prompt = Parking garage in a parking garage, with multiple levels of parked cars,
+  Parking lot
+    prompt = Parking lot on a parking lot,
+  Pawn shop
+    prompt = Pawn shop in a pawn shop, with display cases of jewelry and electronics,
+  Pharmacy
+    prompt = Pharmacy in a pharmacy, with shelves of medicines and a counter,
+  Picnic area
+    prompt = Picnic area in a picnic area, with tables and grassy spots for sitting,
+  Planetarium
+    prompt = Planetarium in a planetarium, with a domed ceiling and star projections,
+  Playground
+    prompt = Playground in a playground, with swings and slides for children,
+  Police station
+    prompt = Police station in a police station, with desks, booking area, and holding cells,
+  Port
+    prompt = Port at a port, with docks and ships moored,
+  Prison
+    prompt = Prison in a prison cell,
+  Public restroom
+    prompt = Public restroom in a public restroom,
+  Oval office
+    prompt = Oval office in the oval office, with the presidential desk and flags,
+  Red carpet
+    prompt = Red carpet on the red carpet at a film premiere,
+  Restaurant
+    prompt = Restaurant in a restaurant, with tables and chairs set for dining,
+  Recycling center
+    prompt = Recycling center at a recycling center, with bins for sorting recyclables,
+  Robotic factory
+    prompt = Robotic factory in robotic cybernetic clone factory construction background,
+  Rooftop
+    prompt = Rooftop on a rooftop, with a view over the city,
+  Rooftop garden
+    prompt = Rooftop garden in a rooftop garden, with plants and a view over the city,
+  RV park
+    prompt = RV park at an RV park, with parked recreational vehicles and hookups,
+  Sauna
+    prompt = Sauna in a sauna,
+  School
+    prompt = School at the school,
+  School restroom
+    prompt = School restroom in a school restroom,
+  Science lab
+    prompt = Science lab in a science laboratory, with lab equipment and experiments in progress,
+  Sexshop
+    prompt = Sexshop a BDSM sexshop that has the floor space of 50ft by 50ft and alters to fit the correct environment with a slight BDSM dark leather daddy edge feel to it, the BDSM sexshop has shelf displays of various dildo products BDSM sex gear products and BDSM sex toy products for sale, the BDSM sexshop is both decorated and advertised with a neon shop sign, the BDSM sexshop has a L shaped 5ft long and 2ft wide glass display store counter showcasing more BDSM sex products and has the store shop till placed on top of the counterspace, the BDSM sexshop has a backdoor leading to the BDSM sexshop staff room,
+  Shared apartment
+    prompt = Shared apartment in a shared apartment,
+  Shipwreck Shallows
+    prompt = Shipwreck Shallows A shallow coastal inlet at sunset surrounded by sweeping desert sand dunes dusted with snow at their crests, the water an impossibly vivid electric turquoise-cyan catching the last warm light of the day. Multiple wrecked and semi-intact tall ships occupy the scene at various states of ruin — a large galleon listing heavily to one side in the left foreground, its hull timbers dark and salt-eaten, its masts still standing at an angle; a second large intact galleon in the middle distance still carrying its sails, lanterns lit at the stern, sitting in the shallows as though freshly run aground; a third collapsed wreck visible at the right foreground reduced to its mast, crow's nest, and a section of ornately carved hull rail, its rigging still hanging in loops. Snow-dusted rocks and small ice floes break the water surface between the hulls. The sky is a spectacular sunset composition of deep cobalt blue at the zenith dissolving into layers of violet, rose pink, and warm amber gold at the horizon, enormous billowing clouds lit from below in deep coral and soft peach catching the last direct sunlight. The entire scene is rendered with the saturated, painterly warmth of golden hour light, the cyan water glowing against the amber sand and the dark ship silhouettes cutting dramatic shapes against the luminous sky.
+  Shower
+    prompt = Shower in a shower, in a bathroom,
+  Ski lodge
+    prompt = Ski lodge in a ski lodge, with snow‑covered surroundings and a cozy interior,
+  Ski resort
+    prompt = Ski resort at a ski resort, with snow‑covered slopes and ski lifts,
+  Skyscraper
+    prompt = Skyscraper in a skyscraper, high above the city streets,
+  Spa
+    prompt = Spa in a spa, with massage tables and relaxing music,
+  Spaceship
+    prompt = Spaceship on a spaceship,
+  Space station
+    prompt = Space station on a space station, floating in space with control panels and futuristic equipment,
+  Sports field
+    prompt = Sports field on a sports field, with goals and markings for games,
+  Stadium
+    prompt = Stadium in a stadium, with rows of seats and a sports field,
+  Stargate Gate
+    prompt = Stargate Gate in a stargate gate room chevron lights spinning wormhole active,
+  Starship Bridge
+    prompt = Starship Bridge in a starship bridge captain's chair viewscreen stars,
+  Street
+    prompt = Street in a street,
+  Strip club
+    prompt = Strip club in a strip club,
+  Suburban street
+    prompt = Suburban street on a suburban street, with houses and sidewalks,
+  Swimming pool
+    prompt = Swimming pool in a swimming pool,
+  Tattoo studio
+    prompt = Tattoo studio in a tattoo studio, with tattooing equipment and artwork on the walls,
+  Tailor shop
+    prompt = Tailor shop in a tailor shop, with fabrics and sewing machines,
+  Taxi
+    prompt = Taxi in a taxi, with the driver and backseat passengers,
+  Titanic
+    prompt = Titanic in a abandoned RMS Titanic drifting in Atlantic Ocean, 1912 luxury liner derelict,  first class grand staircase flooded ankle-deep water, crystal chandeliers hanging crooked, abandoned dining saloon with overturned chairs, faded white star line china plates scattered, rusted brass fittings, peeling gilded paneling, seaweed growing through broken portholes, grand piano covered in dust and marine growth, emergency lifeboat davits empty,  eerie greenish underwater light filtering through, thick rust icicles everywhere, abandoned Edwardian opulence decayed,
+  Temple
+    prompt = Temple in a temple, with religious artifacts and a peaceful atmosphere,
+  Tent
+    prompt = Tent in a tent, with sleeping bags and camping gear inside,
+  Theatre
+    prompt = Theatre in a theatre, with a stage and red velvet seats,
+  Train
+    prompt = Train on the train,
+  Train station
+    prompt = Train station at the train station,
+  Toilet
+    prompt = Toilet in a the high school toilet, toilet cubicles, partitions, toilet bowl lacks lid and seat, tiled wall, grafittis on the walls and partitions,
+  Torture Chamber
+    prompt = Torture Chamber in a dungeon room with sexual torture gear and instruments, a stretch bench, a large wooden inverted-cross and a swing,
+  University
+    prompt = University in a university lecture hall,
+  University library
+    prompt = University library in a university library, with study tables and bookshelves,
+  USS Enterprise
+    prompt = USS Enterprise NCC-1701 in a USS Enterprise NCC-1701 original 1966 bridge interior, gene roddenberry vision, iconic red alert klaxon lights, captain kirk command chair center stage, uhura communications station, spock science station, sulu helm controls, chekov navigation, mr scott engineering console, large forward viewscreen with starfield, colorful LCARS panels red yellow blue green, white bulkheads with black accents, practical 1960s set design, dramatic overhead lighting grids, transporter effect glows, turbolift doors, phaser banks status, optimistic space exploration atmosphere.
+  USS Enterprise
+    prompt = USS Enterprise NX-01 in a USS Enterprise NX-01 bridge interior, authentic 22nd century starfleet design, tactical station consoles with glowing blue touchscreens, captain's chair center stage, helm/navigation dual stations forward, large forward viewscreen displaying starfield, utilitarian grey-blue bulkheads with orange accents, LCARS-style interface elements, exposed engineering conduits, bridge crew workstations, dramatic overhead lighting panels, polished deck plating, phase pistol racks, holographic status displays, deep space mission atmosphere, cinematic star trek realism.
+  Vineyard
+    prompt = Vineyard in a vineyard, with rows of grapevines,
+  Volcano
+    prompt = Volcano near a volcano, with lava flows and volcanic ash,
+  Winery
+    prompt = Winery in a winery, with barrels of aging wine and vineyard views,
+  WhirlpoolWIP
+    prompt = WhirlpoolWIP in the whirlpool bath made out of wood, bubbles in water, water gushes, steam rises from the water,
+  Yacht
+    prompt = Yacht on a yacht, with luxury amenities and ocean views,
+  Yoga studio
+    prompt = Yoga studio in a yoga studio, with mats and a peaceful ambiance,
+  Zen garden
+    prompt = Zen garden in a zen garden, with meticulously raked gravel and serene surroundings,
+  Zoo
+    prompt = Zoo in a zoo, with animal enclosures and visitor pathways,
+
+//========================================================
+// 4. EXPRESIONES FACIALES (Fac)
+//========================================================
+output4
+  Fac is [joinLists(FacList, FacValues)]
+
+FacList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [FacValues.selectOne.prompt]
+
+FacValues
+  warm tender
+    prompt = warm tender eyes with a soft gentle smile and an open loving expression 
+  furrowed brows
+    prompt = furrowed brows pulled tight over narrowed eyes with a hard-set jaw and pressed firm lips
+  pinched brows
+    prompt = pinched brows over flat unimpressed eyes with lips pressed thin and a faint impatient frown
+  heavy-lidded
+    prompt = heavy-lidded half-closed eyes with flushed cheeks and softly parted lips
+  deeply flushed
+    prompt = deeply flushed cheeks with averted downcast eyes and tightly pressed lips
+  soft relaxed
+    prompt = soft relaxed eyes with smooth untroubled brows and a faint serene expression
+  narrowed focused
+    prompt = narrowed focused eyes with a steady locked gaze and a firm set mouth
+  lowered eyelids
+    prompt = lowered eyelids over a downcast gaze with downturned lips and a faint sad furrow at the brow
+  a wrinkled
+    prompt = a wrinkled nose and curled upper lip with narrowed repulsed eyes and a sneer
+  flushed red
+    prompt = flushed red cheeks with an awkward forced smile and uncomfortable shifting eyes
+  wide shining
+    prompt = wide shining eyes with parted lips and an overwhelmed look of pure sensation
+  wide eager
+    prompt = wide eager bright eyes with a big open anticipatory smile and raised brows
+  heavy drooping
+    prompt = heavy drooping eyelids with a slack jaw and deeply weary features showing pure fatigue
+  wide round
+    prompt = wide round frightened eyes with raised brows and a tense open mouth
+  a teasing
+    prompt = a teasing playful smile with a subtle knowing look and one softly arched brow
+  a clenched
+    prompt = a clenched jaw with firmly pressed lips and glaring tense eyes
+  deeply furrowed
+    prompt = deeply furrowed brows over snarling bared teeth with a face flushed red in rage
+  crinkled happy
+    prompt = crinkled happy eyes with a barely contained smile and lightly flushed cheeks
+  bright open
+    prompt = bright open cheerful eyes with a broad natural smile and lifted warm cheeks
+  unfocused foggy
+    prompt = unfocused foggy eyes with a distant slack expression and a loose goofy smile
+  parted lips
+    prompt = parted lips with a craving eager gaze and an anticipatory look of desire
+  flushed cheeks
+    prompt = flushed cheeks with parted lips and eyes half-lidded in deep building sensation
+  shimmering adoring
+    prompt = shimmering adoring eyes with softly parted lips and a warm devoted expression
+  a sly
+    prompt = a sly wicked grin with sparkling knowing eyes and one playfully arched brow
+  eyes rolled
+    prompt = eyes rolled back with an open slack mouth and deeply flushed cheeks in visible overwhelming release
+  completely relaxed
+    prompt = completely relaxed soft features with half-closed drowsy eyes and parted lips in blissful afterglow
+  a cheeky
+    prompt = a cheeky grin with bright energetic eyes and a lighthearted silly expression
+  a lifted
+    prompt = a lifted confident chin with a steady firm gaze and a satisfied strong smile
+  soft half
+    prompt = soft half-closed eyelids with loosened features and a faint content expression
+  watery glistening
+    prompt = watery glistening eyes with trembling downturned lips and lowered sorrowful brows
+  wide bulging
+    prompt = wide bulging eyes with raised brows in alarm and an open mouth in silent terror
+  pressed firm
+    prompt = pressed firm lips with straight neutral brows and a direct intense gaze
+  averted downcast
+    prompt = averted downcast eyes with facial tension and a look of quiet unavoidable shame
+  wide open
+    prompt = wide open eyes with high raised brows and a gaping open mouth
+  blushing warm
+    prompt = blushing warm cheeks with a soft timid smile and a bashful gentle expression
+  lowered bashful
+    prompt = lowered bashful eyes with softly parted lips and faintly flushed cheeks carrying a timid allure
+  wide crazy
+    prompt = wide crazy exaggerated eyes with a goofy foolish grin and a zany playful expression
+  a wide
+    prompt = a wide beaming toothy grin with crinkled cheerful eyes and lifted happy cheeks
+  a crooked
+    prompt = a crooked sly smile with one raised knowing brow and eyes full of quiet amusement
+  narrowed skeptical
+    prompt = narrowed skeptical eyes with a sideways distrustful look and tightly pressed lips
+  furrowed stressed
+    prompt = furrowed stressed brows with flushed cheeks and tightly pressed narrow lips
+  a soft
+    prompt = a soft distant hazy gaze with slightly pursed lips and an inward contemplative look
+  creased tense
+    prompt = creased tense brows with an uncertain pressed mouth and anxious nervous eyes
+  squinted sleepy
+    prompt = squinted sleepy eyes with a wide gaping open mouth and a deep drowsy expression
+  a blank
+    prompt = a blank empty unfocused stare with dull lifeless eyes and completely vacant features
+
+//========================================================
+// 5. COLORES (Colores - renombrado desde coloresValues)
+//========================================================
+output5
+  Colores is [joinLists(ColoresList, ColoresValues)]
+
+ColoresList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ColoresValues.selectOne.prompt]
+
+ColoresValues
+  Default 
+    prompt = Vibrant Neon, iridescentwhite:1.5, metallic, tournasol, hologram,  Colors #05e82e, #0593e8, #8705e8, #e8e505, #e80536
+  neons 
+    prompt = neon cyan hot pink
+  holoWhite 
+    prompt = matte silver hologram
+  voidBlack 
+    prompt = black white void
+  orangGrey 
+    prompt = binary orange blue smoke
+  rand34Col 
+    prompt = colors are:#9732ea, #9c32ea, #a032ea, #c830ec, #ed30ed
+  rand12Col 
+    prompt = Colors are: #ffe037, #1dcd9f, #088c6f, #23033c
+  violetDre 
+    prompt = violet:1.5
+  iridPaste 
+    prompt = iridescentwhite:1.5 in #5c24d9,#ff0957,#d9b624,#a7c800,#47d924
+  PinkyCool 
+    prompt = Pinky tones in #e71abc, #ffa5ff, #f633ca, #cc00a3, #c900a1 colors
+  cyanBlues 
+    prompt = cyan and blue with silver details
+  turquBlac 
+    prompt = light turquoise with black glossy     
+  starsIndi 
+    prompt = iridescent colored neon stars over an indigo deep space
+  redinFire 
+    prompt = dark red crystals in fire
+  yellowOra 
+    prompt = intense yellow with neon orange
+  orangeYel 
+    prompt =  neon orange with yellow and red
+  snowClear 
+    prompt = white and clear blue
+  magenBlue 
+    prompt = magenta, blue and purple
+  blackGlod 
+    prompt = black and golden
+  fuschia 
+    prompt = fuschia:1.5
+  teal 
+    prompt = teal:1.5
+  silver 
+    prompt = silver:1.5
+  platinum 
+    prompt = platinum:1.5
+  aquamarine 
+    prompt = aquamarine:1.5
+  brass 
+    prompt = brass:1.5
+  mint 
+    prompt = mint:1.5
+  navy blue 
+    prompt = navy blue:1.5 
+  gold 
+    prompt = gold:1.5
+  beige 
+    prompt = beige:1.5
+  maroon 
+    prompt = maroon:1.5
+  sea foam green 
+    prompt = sea foam green:1.5
+  indigo 
+    prompt = indigo:1.5
+  ivory 
+    prompt = ivory:1.5
+  azure 
+    prompt = azure:1.5
+  blue 
+    prompt = blue:1.5
+  rose quartz 
+    prompt = rose quartz:1.5
+  sky blue 
+    prompt = sky blue:1.5
+  mediterranian green 
+    prompt = mediterranian green:1.5
+  sea glass 
+    prompt = sea glass:1.5
+  glass 
+    prompt = glass:1.5
+  metallic green 
+    prompt = metallic green:1.5
+  metallic purple 
+    prompt = metallic purple:1.5
+  metallic blue 
+    prompt = metallic blue:1.5
+  metallic yellow 
+    prompt = metallic yellow:1.5
+  metallic red 
+    prompt = metallic red:1.5
+  metallic orange 
+    prompt = metallic orange:1.5
+  metallic pink 
+    prompt = metallic pink:1.5
+  metallic rainbow 
+    prompt = metallic rainbow:1.5
+  purple nebula 
+    prompt = purple nebula:1.5
+  green nebula 
+    prompt = green nebula:1.5
+  blue nebula 
+    prompt = blue nebula:1.5
+  burgundy 
+    prompt = burgundy:1.5
+  crimson 
+    prompt = crimson:1.5
+  coral 
+    prompt = coral:1.5
+  salmon 
+    prompt = salmon:1.5
+  peach 
+    prompt = peach:1.5
+  amber 
+    prompt = amber:1.5
+  khaki 
+    prompt = khaki:1.5
+  olive 
+    prompt = olive:1.5
+  lime 
+    prompt = lime:1.5
+  sage 
+    prompt = sage:1.5
+  forest green 
+    prompt = forest green:1.5
+  emerald 
+    prompt = emerald:1.5
+  turquoise blue 
+    prompt = turquoise blue:1.5
+  teal blue 
+    prompt = teal blue:1.5
+  cobalt 
+    prompt = cobalt:1.5
+  royal blue 
+    prompt = royal blue:1.5
+  navy 
+    prompt = navy:1.5
+  lavender 
+    prompt = lavender:1.5
+  lilac 
+    prompt = lilac:1.5
+  mauve 
+    prompt = mauve:1.5
+  purple 
+    prompt = purple:1.5
+  plum 
+    prompt = plum:1.5
+  chocolate 
+    prompt = chocolate:1.5
+  coffee 
+    prompt = coffee:1.5
+  tan 
+    prompt = tan:1.5
+  cream 
+    prompt = cream:1.5
+  pearl 
+    prompt = pearl:1.5
+  charcoal 
+    prompt = charcoal:1.5
+  slate 
+    prompt = slate:1.5
+  gunmetal 
+    prompt = gunmetal:1.5
+  bronze 
+    prompt = bronze:1.5
+  copper 
+    prompt = copper:1.5
+  rose gold 
+    prompt = rose gold:1.5
+  holographic 
+    prompt = holographic:1.5
+  opal 
+    prompt = opal:1.5
+  rainbow 
+    prompt = rainbow:1.5
+  neon green 
+    prompt = neon green:1.5
+  neon pink 
+    prompt = neon pink:1.5
+  neon blue 
+    prompt = neon blue:1.5
+  neon yellow 
+    prompt = neon yellow:1.5
+  neon orange 
+    prompt = neon orange:1.5
+  pastel pink 
+    prompt = pastel pink:1.5
+  pastel blue 
+    prompt = pastel blue:1.5
+  pastel green 
+    prompt = pastel green:1.5
+  pastel yellow 
+    prompt = pastel yellow:1.5
+  pastel purple 
+    prompt = pastel purple:1.5 
+
+//========================================================
+// 6. ARTISTICCOMP - DETALLE ARTÍSTICO
+//========================================================
+output6
+  ARTISTICCOMP is [joinLists(ARTISTICCOMPList, ARTISTICCOMPValues)]
+
+ARTISTICCOMPList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ARTISTICCOMPValues.selectOne.prompt]
+
+ARTISTICCOMPValues
+  Photoreal
+    prompt = ultra detailed, 8K, photorealistic, sharp focus
+  Ultra detailed 8K
+    prompt = ultra detailed, 8K, maximum resolution, crystalline clarity
+  Photorealistic
+    prompt = photorealistic, sharp focus, natural skin texture, professional DSLR photography
+  Highly detailed
+    prompt = highly detailed, intricate elements, rich texture definition
+  Moderate detail
+    prompt = moderate detail, balanced clarity, clean rendering
+  Minimalist details
+    prompt = minimalist, few details, simplified forms, essential shapes
+  Intricate detail
+    prompt = intricate, microscopic detail, filigree precision, exhaustive rendering
+  Textured and granular
+    prompt = textured and granular, visible surface grain, tactile feel
+  Smooth and polished
+    prompt = smooth and polished, flawless surfaces, refined finish
+  Fine art detail
+    prompt = fine art detail, museum quality rendering, classical precision
+  Macro detail
+    prompt = macro detail, extreme close-up texture, hyper-focused surface study
+  Architectural precision
+    prompt = architectural precision, geometric exactitude, structural clarity
+  Medical textbook detail
+    prompt = medical textbook detail, anatomical accuracy, scientific clarity
+  Scientific illustration detail
+    prompt = scientific illustration detail, diagrammatic precision, labeled clarity
+  Botanical plate detail
+    prompt = botanical plate detail, organic precision, natural history illustration style
+  Technical drawing precision
+    prompt = technical drawing precision, blueprint accuracy, mechanical exactness
+  Blueprint schematic
+    prompt = blueprint schematic, technical diagram, structural blueprint style
+  Wireframe detail
+    prompt = wireframe detail, geometric mesh structure, 3D wireframe visualization
+  Value study
+    prompt = value study, monochromatic tonal study, light and shadow exercise
+  Color study
+    prompt = color study, chromatic exploration, palette testing composition
+  Composition study
+    prompt = composition study, structural arrangement exploration, framing exercise
+  Final render
+    prompt = final render, production ready, fully realized scene
+  Production ready
+    prompt = production ready, industry standard quality, finished asset
+  Portfolio piece
+    prompt = portfolio piece, showcase quality, exhibition-grade work
+  Museum quality
+    prompt = museum quality, archival standard, exhibition-grade mastery
+  Gallery ready
+    prompt = gallery ready, display-perfect finish, curatorial excellence
+  Masterpiece
+    prompt = masterpiece, exceptional execution, transcendent artistry
+  Magnum opus
+    prompt = magnum opus, career-defining work, monumental achievement
+  Signature work
+    prompt = signature work, distinctive style, instantly recognizable authorship
+  Classic masterpiece
+    prompt = classic masterpiece, timeless composition, old master quality
+  Contemporary masterpiece
+    prompt = contemporary masterpiece, modern aesthetic, current art world relevance
+  Avant-garde experimental
+    prompt = avant-garde experimental, boundary-pushing, unconventional technique
+
+//========================================================
+// 7. ESTILOARTISTICO - ESTILOS VISUALES
+//========================================================
+output7
+  ESTILOARTISTICO is [joinLists(ESTILOARTISTICOList, ESTILOARTISTICOValues)]
+
+ESTILOARTISTICOList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ESTILOARTISTICOValues.selectOne.prompt]
+
+ESTILOARTISTICOValues
+  Grok Imagine Realistic
+    prompt = ultra-realistic portrait, high fidelity detail, natural skin texture, professional DSLR photography, Canon EOS R5, 50mm lens, f/1.8, balanced highlights, lifelike grounded mood, macro lens precision, ultra-sharp focus
+  Grok Casual Photo
+    prompt = candid documentary style, real-life capture, authentic imperfections, minimal retouch, 35mm lens snapshot, unposed composition, soft ambient lighting, relatable everyday slice-of-life mood
+  Grok Professional Photo
+    prompt = high-end editorial portrait, refined intricate detail, 85mm lens, f/1.4, Rembrandt lighting, controlled shadows, polished confident mood, shallow depth of field, elite subject isolation
+  Grok Cinematic Realism
+    prompt = cinematic film still, anamorphic lens look, 35mm film grain, dramatic lighting, storytelling tone, narrative-driven tense emotional mood, atmospheric separations
+  Grok Imagine Animated
+    prompt = universal anime artstyle, 2D illustration, clean linework, detailed hair flow, expressive features, dynamic silhouette, balanced composition, emotion-driven scene
+  LEGO Movie
+    prompt = LEGO mini figure style character, modern cinematic LEGO movie aesthetic, stylized animated toy figure, smooth rounded ABS plastic material, glossy plastic surface with realistic reflections, expressive LEGO-inspired cartoon eyes, simplified facial design, high detail 3D animated movie render style, subtle micro-scratches on plastic, human skin tone color
+  Genshin Impact
+    prompt = Genshin Impact style, masterpiece 3D anime render, cell-shaded aesthetic, flat shading, thick clean outlines, colorful anime palette, smooth skin texture, detailed anime eyes, vibrant magical atmosphere, soft global illumination, high-fidelity 3D CGI, fantasy character design, official art style
+  Ghibli Studio
+    prompt = Studio Ghibli inspired, painterly backgrounds, warm natural palette, gentle hand-painted look, whimsical atmosphere, soft organic depth, calm cinematic mood
+  Grand Theft Auto
+    prompt = Grand Theft Auto stylized realism, high-contrast game render, vibrant grounded colors, urban aesthetic, sharp character edges, modern open-world vibe, bold outlines
+  Pixar 3D
+    prompt = Disney 3D render style, expressive features, soft stylized skin, warm rim highlights, subsurface scattering, colorful and inviting palette, clean 3D silhouette
+  Unreal Engine 5
+    prompt = Unreal Engine 5 AAA game character model render, ultra realistic plastic life like skin stylized game aesthetic, high-fidelity 3D CGI, photorealistic game graphics, next-gen visuals, ray-traced lighting, Lumen global illumination, advanced subsurface scattering, dynamic volumetric shadows, screen-space reflections, ultra-detailed PBR textures, intricate surface details, cinematic game engine look, sharp focus, maximum visual fidelity
+  Cyberpunk Aesthetic
+    prompt = futuristic intricate details, neon lighting accents, glowing highlights, layered composition, dynamic perspective, high contrast, reflective surfaces
+  Western Comics
+    prompt = classic comic book illustration, bold inked outlines, Ben-Day dots, cinematic dynamic poses, high-contrast shadows, graphic storytelling, vibrant primary colors
+  Cartoon Network
+    prompt = modern 2D flat animation style, thick clean outlines, exaggerated expressions, solid vibrant colors, playful composition, minimalist background
+  Classic Looney Tunes
+    prompt = vintage 1950s animation style, rubber hose limbs, expressive caricature, warm technicolor palette, hand-drawn cel animation texture
+  Concept Art
+    prompt = professional digital illustration, detailed environment design, dynamic composition, atmospheric perspective, rich color story, mood-driven rendering
+  Sketch & Pencil
+    prompt = hand-drawn pencil sketch, fine linework, cross-hatching texture, soft monochrome tones, expressive character outlines, natural graphite feel
+  Ink & Line Art
+    prompt = clean inked line art, bold contours, smooth strokes, high contrast black and white, crisp silhouettes, clear visual hierarchy
+  Watercolor
+    prompt = soft watercolor brush strokes, gentle gradient washes, muted palette, painterly texture, organic blending, dreamy soft focus
+  Clean line art
+    prompt = clean line art, precise vector strokes, crisp edges
+  Simple and stylized
+    prompt = simple and stylized, iconic shapes, graphic simplification
+  Complex filigree
+    prompt = complex filigree, ornate scrollwork, intricate decorative patterns
+  Ornate and decorative
+    prompt = ornate and decorative, elaborate ornamentation, rich embellishment
+  Unfinished sketchy
+    prompt = unfinished, sketchy, raw drafts, exploratory lines
+  Abstract simplicity
+    prompt = abstract simplicity, geometric reduction, pure essence
+  Engraving-level precision
+    prompt = engraving-level precision, copperplate intaglio quality, fine etched lines
+  Low polygon count
+    prompt = low polygon count, geometric faceted, low-poly 3D style
+  Medium polygon count
+    prompt = medium polygon count, balanced polygonal model, game-ready asset
+  High polygon count
+    prompt = high polygon count, ultra-detailed mesh, sculpted 3D model
+  Subdivision surface smooth
+    prompt = subdivision surface smooth, organically curved 3D topology
+  NURBS surface smooth
+    prompt = NURBS surface smooth, mathematically perfect curves, industrial design finish
+  Voxel blocky
+    prompt = voxel blocky, volumetric pixel art, cube-based 3D style
+  Pixel art blocky
+    prompt = pixel art blocky, retro pixel grid, 8-bit aesthetic
+  Retro game sprite
+    prompt = retro game sprite, classic 2D game character, pixelated nostalgia
+  Modern game asset
+    prompt = modern game asset, current-gen game quality, optimized PBR workflow
+  Film quality CGI
+    prompt = film quality CGI, blockbuster VFX rendering, cinematic 3D integration
+  Matte painting detail
+    prompt = matte painting detail, photobashed environment, cinematic backdrop quality
+  Concept art rough
+    prompt = concept art rough, iterative design sketches, development stage artwork
+  Storyboard sketch
+    prompt = storyboard sketch, sequential composition planning, frame-by-frame narrative
+  Thumbnail sketch
+    prompt = thumbnail sketch, micro-composition, rapid idea visualization
+  Rough sketch loose
+    prompt = rough sketch loose, expressive hand-drawn, freeform gesture
+  High fashion editorial
+    prompt = high fashion editorial, Vogue-grade styling, runway elegance
+  Street fashion snapshot
+    prompt = street fashion snapshot, urban style capture, candid trend documentation
+  Candid photo detail
+    prompt = candid photo detail, authentic unposed moment, natural expression capture
+
+//========================================================
+// 8. ENCUADRE - PLANOS
+//========================================================
+output8
+  ENCUADRE is [joinLists(ENCUADREList, ENCUADREValues)]
+
+ENCUADREList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ENCUADREValues.selectOne.prompt]
+
+ENCUADREValues
+  Extreme close-up
+    prompt = extreme close-up of face, hyper-detailed facial features, intimate framing
+  Close-up macro
+    prompt = close-up macro, extreme magnification, microscopic surface detail
+  Bust shot
+    prompt = bust shot, from the chest up, head and shoulders framing
+  Waist up
+    prompt = waist up shot, upper body visible, belt to head composition
+  Half body shot
+    prompt = half body shot, from hips upward, torso and head visible
+  Full body shot
+    prompt = full body shot, head-to-toe visible, entire figure in frame
+  Distant shot
+    prompt = distant shot, subject small in frame, environmental scale emphasis
+
+//========================================================
+// 9. ANGULO - ÁNGULOS DE CÁMARA
+//========================================================
+output9
+  ANGULO is [joinLists(ANGULOList, ANGULOValues)]
+
+ANGULOList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ANGULOValues.selectOne.prompt]
+
+ANGULOValues
+  backBooty
+    prompt = Spectacular back shot, slightly from below, focusing on her shiny, glistening, elegant, exquisite, amazing ass, cellulite-covered backside that completely fills the tiny fabric
+  Eye-level normal
+    prompt = eye-level normal, standard perspective, neutral viewing height
+  High angle looking down
+    prompt = high angle looking down, downward perspective, implied vulnerability
+  Low angle looking up
+    prompt = low angle looking up, upward perspective, heroic or imposing feel
+  Bird's-eye view
+    prompt = bird's-eye view, shot directly from above, top-down aerial perspective
+  Worm's-eye view
+    prompt = worm's-eye view, extreme low angle, ground-level upward perspective
+  Dutch angle
+    prompt = Dutch angle tilted, canted frame, disorienting dynamic composition
+  Over-the-shoulder
+    prompt = over-the-shoulder view, behind subject looking forward, voyeuristic framing
+  POV first person
+    prompt = POV first person perspective, subjective viewpoint, through subject's eyes
+  Drone aerial shot
+    prompt = drone aerial shot, airborne perspective, smooth aerial cinematography
+  Crane shot
+    prompt = crane shot, elevated moving shot, sweeping vertical perspective
+  Tracking shot
+    prompt = tracking shot, lateral moving camera, dynamic follow composition
+  Steadicam smooth
+    prompt = Steadicam smooth, gimbal-stabilized movement, fluid cinematic tracking
+  Underneath view
+    prompt = underneath view, from below looking upward, submissive perspective
+  CCTV security cam
+    prompt = CCTV security cam, surveillance angle, cold detached monitoring
+
+//========================================================
+// 10. ORIENTACION - ORIENTACIÓN DEL SUJETO
+//========================================================
+output10
+  ORIENTACION is [joinLists(ORIENTACIONList, ORIENTACIONValues)]
+
+ORIENTACIONList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ORIENTACIONValues.selectOne.prompt]
+
+ORIENTACIONValues
+  Front view
+    prompt = front view, subject facing camera directly, symmetrical or confrontational
+  Side profile
+    prompt = side profile, pure profile view, facial silhouette emphasis
+  Three-quarter view
+    prompt = three-quarter view, angled between front and side, most dynamic portrait orientation
+  Back view
+    prompt = back view, subject facing away, anonymous or mysterious composition
+  Reflection in mirror
+    prompt = reflection in mirror, mirrored self-image, dual perspective composition
+  Reflection in water
+    prompt = reflection in water, mirrored surface reflection, symmetrical natural echo
+  Reflection in glass
+    prompt = reflection in glass, layered transparency, interior/exterior merging
+
+//========================================================
+// 11. COMPOSICION - COMPOSICIÓN VISUAL
+//========================================================
+output11
+  COMPOSICION is [joinLists(COMPOSICIONList, COMPOSICIONValues)]
+
+COMPOSICIONList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [COMPOSICIONValues.selectOne.prompt]
+
+COMPOSICIONValues
+  Rule of thirds
+    prompt = rule of thirds, grid-aligned focal points, balanced asymmetrical composition
+  Symmetrical balance
+    prompt = symmetrical balance, mirror symmetry, formal equilibrium
+  Asymmetrical balance
+    prompt = asymmetrical balance, unequal visual weight, dynamic equilibrium
+  Leading lines
+    prompt = leading lines, directional visual guides, depth and movement
+  Frame within a frame
+    prompt = frame within a frame, nested composition, foreground framing device
+  Diagonal composition
+    prompt = diagonal composition, dynamic angular flow, restless energy
+  Centered composition
+    prompt = centered composition, direct focal emphasis, monumental stillness
+  Negative space heavy
+    prompt = negative space heavy, ample breathing room, minimalist isolation
+  Minimalist composition
+    prompt = minimalist composition, reduced elements, essential clarity
+  Golden ratio overlay
+    prompt = golden ratio overlay, harmonic proportion, naturally pleasing composition
+  Fibonacci spiral
+    prompt = Fibonacci spiral, organic golden ratio, nature-inspired flow
+  Circular composition
+    prompt = circular composition, rotational symmetry, enclosed harmonious frame
+  S-curve composition
+    prompt = S-curve composition, serpentine flow, graceful sweeping movement
+  C-curve composition
+    prompt = C-curve composition, arc-shaped flow, elegant curvature
+  L-shaped composition
+    prompt = L-shaped composition, strong angular stability, structural framework
+  U-shaped composition
+    prompt = U-shaped composition, embracing enclosure, stability and containment
+  Triangle composition
+    prompt = triangle composition, pyramidal stability, classic monumental structure
+  Inverted triangle
+    prompt = inverted triangle composition, dynamic downward tension, instability
+  Diamond composition
+    prompt = diamond composition, rhombic structure, balanced angular energy
+  X-shaped composition
+    prompt = X-shaped composition, cross-diagonal convergence, focal intersection
+  Radial symmetry
+    prompt = radial symmetry, circular radiating patterns, central burst focus
+  Pattern and repetition
+    prompt = pattern and repetition, rhythmic visual sequences, structured uniformity
+  Filling the frame
+    prompt = filling the frame, maximal coverage, intense subject proximity
+  Maximalist overload
+    prompt = maximalist overload, dense composition, extravagant abundance
+  Dynamic symmetry
+    prompt = dynamic symmetry, diagonally-based proportion, energetic balance
+  Gestalt principles
+    prompt = Gestalt principles, perceptual grouping, emergent figure-ground relationships
+  Silhouette composition
+    prompt = silhouette composition, dark subject against bright background, iconic outline
+  Shadow play
+    prompt = shadow play, dramatic cast shadows, chiaroscuro effect
+  Notan composition
+    prompt = Notan composition, dark-light harmony, Japanese contrast balance
+  Tenebrism composition
+    prompt = Tenebrism composition, extreme spotlight darkness, Caravaggio style
+  Sfumato composition
+    prompt = Sfumato composition, smoky atmospheric transition, Leonardo da Vinci softness
+  Impasto texture focus
+    prompt = impasto texture focus, thick paint relief, tactile canvas surface
+  Pointillism dot composition
+    prompt = Pointillism dot composition, stippled optical blending, Seurat technique
+  Pixelated composition
+    prompt = pixelated composition, digital mosaic, blocky retro aesthetic
+  Low poly composition
+    prompt = low poly composition, faceted geometric forms, abstracted 3D shapes
+  High poly composition
+    prompt = high poly composition, densely sculpted surface, hyper-detailed 3D form
+
+//========================================================
+// 12. ILUMINACION - ILUMINACIÓN
+//========================================================
+output12
+  ILUMINACION is [joinLists(ILUMINACIONList, ILUMINACIONValues)]
+
+ILUMINACIONList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ILUMINACIONValues.selectOne.prompt]
+
+ILUMINACIONValues
+  Backlit subject
+    prompt = backlit subject, light from behind, glowing rim illumination
+  Rim lit subject
+    prompt = rim lit subject, edge lighting, dramatic contour definition
+  Split lighting face
+    prompt = split lighting face, half-lit half-shadow, dramatic portrait contrast
+  Rembrandt lighting portrait
+    prompt = Rembrandt lighting portrait, triangle cheek light, classic painterly shadow
+  Butterfly lighting portrait
+    prompt = butterfly lighting portrait, butterfly nose shadow, glamorous Hollywood style
+  Loop lighting portrait
+    prompt = loop lighting portrait, small nose shadow loop, versatile standard portrait light
+  Broad lighting
+    prompt = broad lighting, wide illuminated side, face fullness emphasis
+  Short lighting
+    prompt = short lighting, shadowed near side, face narrowing effect
+  Paramount lighting
+    prompt = Paramount lighting, high front light, classic glamour glow
+  Cameo lighting
+    prompt = Cameo lighting, dark background, illuminated subject, spotlight isolation
+  Chiaroscuro composition
+    prompt = Chiaroscuro composition, strong light-dark contrast, dramatic baroque mood
+
+//========================================================
+// 13. ESTILOS_ESPECIALES - EFECTOS ESPECIALES
+//========================================================
+output13
+  ESTILOS_ESPECIALES is [joinLists(ESTILOS_ESPECIALESList, ESTILOS_ESPECIALESValues)]
+
+ESTILOS_ESPECIALESList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ESTILOS_ESPECIALESValues.selectOne.prompt]
+
+ESTILOS_ESPECIALESValues
+  Double exposure
+    prompt = double exposure, superimposed imagery, ghostly layered blending
+  Light painting
+    prompt = light painting, long exposure light trails, photographic drawing
+  Tilt-shift miniature
+    prompt = tilt-shift miniature, selective focus, toy model illusion
+  Panoramic stitch
+    prompt = panoramic stitch, ultra-wide landscape, seamless horizontal composition
+  Infrared false colour
+    prompt = infrared false colour, invisible spectrum rendering, surreal thermal palette
+  Macro water droplet
+    prompt = macro water droplet, extreme magnification, refraction through water sphere
+  Action freeze frame
+    prompt = action freeze frame, motion frozen, peak action stop-motion
+  Time-lapse composite
+    prompt = time-lapse composite, layered time exposure, temporal accumulation
+  Cinemagraph still
+    prompt = cinemagraph still, living photo, subtle perpetual motion
+  Miniature faking
+    prompt = miniature faking, forced scale illusion, model-like perspective
+  Astronomical long exposure
+    prompt = astronomical long exposure, star trail capture, celestial motion tracking
+  Bullet time
+    prompt = bullet time, frozen 360 rotation, Matrix-style moment capture
+  Forced perspective
+    prompt = forced perspective, optical size illusion, manipulated scale perception
+
+//========================================================
+// 14. LENTES - TIPOS DE LENTES
+//========================================================
+output14
+  LENTES is [joinLists(LENTESList, LENTESValues)]
+
+LENTESList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [LENTESValues.selectOne.prompt]
+
+LENTESValues
+  Wide-angle lens
+    prompt = wide-angle lens, expansive field of view, exaggerated depth perspective
+  Fisheye lens
+    prompt = fisheye lens, extreme wide angle, spherical distortion, 180-degree view
+  Telephoto lens
+    prompt = telephoto lens, compressed perspective, subject isolation, shallow depth
+  Zoom burst
+    prompt = zoom burst, radial motion blur, dynamic zoom effect
+  Dolly zoom Vertigo
+    prompt = dolly zoom, Hitchcock vertigo shot, simultaneous tracking and zoom
+  Tilt-shift lens
+    prompt = tilt-shift lens, selective focus plane, architectural correction
+  Panoramic 360
+    prompt = panoramic 360, immersive spherical image, full environment capture
+  Action cam
+    prompt = action cam, wide dynamic POV, adventure sports perspective
+  Dashcam
+    prompt = dashcam, vehicle dashboard perspective, road-level view
+  Bodycam
+    prompt = bodycam, chest-mounted POV, immersive first-person movement
+  Snorricam
+    prompt = Snorricam, body-mounted camera, subject-locked movement
+
+//========================================================
+// 15. AMBIENTALES - AMBIENTES
+//========================================================
+output15
+  AMBIENTALES is [joinLists(AMBIENTALESList, AMBIENTALESValues)]
+
+AMBIENTALESList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [AMBIENTALESValues.selectOne.prompt]
+
+AMBIENTALESValues
+  Environmental portrait
+    prompt = environmental portrait, subject in natural context, location-story integration
+  Candid view
+    prompt = candid view, non-posed natural moment, authentic unscripted capture
+  Intimate portrait
+    prompt = intimate portrait, close emotional connection, vulnerable expression
+  Cinematic wide shot
+    prompt = cinematic wide shot, anamorphic widescreen, movie-quality framing
+  Through a window
+    prompt = through a window, glass-framed view, voyeuristic barrier
+  Through a doorway
+    prompt = through a doorway, threshold perspective, entryway framing
+  Through a keyhole
+    prompt = through a keyhole, peephole view, hidden observer angle
+  Through a crack
+    prompt = through a crack, narrow gap perspective, restricted view
+  Peeking through foliage
+    prompt = peeking through foliage, natural foreground obstruction, secret observation
+  Voyeur
+    prompt = voyeur shot, hidden observer perspective, clandestine viewpoint
+  Front and Back diptych
+    prompt = front and back diptych, two-panel comparison, opposing views side-by-side
+  Two-view diptych
+    prompt = two-view diptych, identical scene parallel, dual perspective panel
+  Split screen
+    prompt = split screen, divided frame, simultaneous narrative panels
+  Collage layout
+    prompt = collage layout, assembled fragments, artistic montage arrangement
+  Mosaic grid
+    prompt = mosaic grid, tiled image array, mosaic pattern composition
+
+//========================================================
+// 16. TEXTURAS_METALICAS
+//========================================================
+output16
+  TEXTURAS_METALICAS is [joinLists(TEXTURAS_METALICASList, TEXTURAS_METALICASValues)]
+
+TEXTURAS_METALICASList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_METALICASValues.selectOne.prompt]
+
+TEXTURAS_METALICASValues
+  Smooth polished
+    prompt = smooth polished, mirror-like reflective surface, flawless metallic finish
+  Brushed metal
+    prompt = brushed metal, directional satin finish, fine linear scratch pattern
+  Metallic chrome
+    prompt = metallic chrome, high-reflection polished surface, mirror-grade gloss
+  Carbon fiber
+    prompt = carbon fiber, woven twill pattern, matte technical sheen
+  Liquid metal
+    prompt = liquid metal, fluid reflective surface, mercury-like flow
+  Rusted Iron
+    prompt = Rusted Iron, deep orange-brown oxidation, flaking edges, rough corroded surface
+  Weathered Copper Patina
+    prompt = Weathered Copper Patina, turquoise-green oxidation, dull metallic highlights, aged Statue of Liberty effect
+  Bullet-Dented Steel
+    prompt = Bullet-Dented Steel, pockmarked surface, scratched paint remnants, battle-worn texture
+  Soot-Blackened Brass
+    prompt = Soot-Blackened Brass, tarnished yellow metal, ash residue in crevices, dark smoky patina
+  Corroded Aluminum
+    prompt = Corroded Aluminum, pitted chalky-gray surface, uneven weathering, lightweight degradation
+  Charred Metal Plating
+    prompt = Charred Metal Plating, burn marks with peeling layers, rust beneath, fire-damaged surface
+  Salvaged Tank Armor
+    prompt = Salvaged Tank Armor, heavy pitted steel, visible weld seams, graffiti scratches, military grade
+  Oil-Stained Cast Iron
+    prompt = Oil-Stained Cast Iron, dark streaks, rough granular texture, industrial machinery feel
+  Faded Gunmetal Engraving
+    prompt = Faded Gunmetal Engraving, deep-etched letters, muted pewter tones, worn dark grey
+  Reinforced Concrete Infill
+    prompt = Reinforced Concrete Infill, crumbling cement inside rusted frames, structural hybrid
+  3D Salvaged Trench Metal
+    prompt = 3D letters from salvaged trench metal, welded seams visible, deep rust grooves, battlefield recovery
+  Broken Factory Typeface
+    prompt = Broken typeface from bombed factory, uneven edges, soot ingrained in cracks, industrial destruction
+  Forgotten War Memorial Bronze
+    prompt = Forgotten war memorial letters, bronze eaten by acid rain, moss in crevices, abandoned monument decay
+
+//========================================================
+// 17. TEXTURAS_MADERA
+//========================================================
+output17
+  TEXTURAS_MADERA is [joinLists(TEXTURAS_MADERAList, TEXTURAS_MADERAValues)]
+
+TEXTURAS_MADERAList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_MADERAValues.selectOne.prompt]
+
+TEXTURAS_MADERAValues
+  Wood grain
+    prompt = wood grain, natural tree rings, organic fibrous lines, warm brown tones
+  Bamboo
+    prompt = bamboo, smooth segmented canes, vertical grain, pale yellow-green
+  Bark texture
+    prompt = bark texture, rough tree surface, deep fissures, rugged organic exterior
+  Woven rattan
+    prompt = woven rattan, interlaced fiber pattern, natural tan, basket-weave texture
+  Parchment aged paper
+    prompt = parchment aged paper, vintage yellowed surface, worn edges, historical document feel
+  Watercolor paper
+    prompt = watercolor paper, cold-pressed texture, subtle tooth, fibrous absorbent surface
+  Canvas texture
+    prompt = canvas texture, linen weave, artist stretcher, primed painting surface
+  Linen fabric
+    prompt = linen fabric, natural woven texture, soft matte finish, elegant drape
+  Velvet suede
+    prompt = velvet suede, soft napped surface, luxurious matte depth, rich saturated color
+  Silk satin
+    prompt = silk satin, smooth glossy weave, fluid light reflection, luxurious sheen
+  Leather
+    prompt = leather, natural hide grain, subtle pebbled texture, rich warm tones
+  Fur texture
+    prompt = fur texture, dense hair strands, soft voluminous pile, natural animal warmth
+  Feathery texture
+    prompt = feathery texture, soft delicate plumage, airy layered lightness, natural flow
+  Scale texture
+    prompt = scale texture, overlapping reptilian plates, iridescent shimmer, protective armor
+  Honeycomb
+    prompt = honeycomb, hexagonal geometric cells, natural wax structure, golden organic pattern
+
+//========================================================
+// 18. TEXTURAS_PIEDRA
+//========================================================
+output18
+  TEXTURAS_PIEDRA is [joinLists(TEXTURAS_PIEDRAList, TEXTURAS_PIEDRAValues)]
+
+TEXTURAS_PIEDRAList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_PIEDRAValues.selectOne.prompt]
+
+TEXTURAS_PIEDRAValues
+  Marble stone
+    prompt = marble stone, veined crystalline surface, polished luxury finish, classic sculpture quality
+  Granite
+    prompt = granite, speckled crystalline texture, rough-hewn stone, durable construction surface
+  Slate
+    prompt = slate, fine-grained layered stone, dark matte surface, natural cleft texture
+  Geode
+    prompt = geode, crystalline interior, rough exterior shell, sparking mineral formation
+  Terrazzo
+    prompt = terrazzo, chip-aggregate composite, polished concrete with stone fragments
+  Concrete
+    prompt = concrete, rough grey surface, industrial matte finish, porous texture
+  Brick
+    prompt = brick, rough clay surface, terracotta tones, mortar lines, construction texture
+  Cobblestone
+    prompt = cobblestone, rounded stone pavement, worn ancient surface, historic street texture
+  Gravel
+    prompt = gravel, small rough stones, loose aggregate, earthy granular texture
+  Asphalt
+    prompt = asphalt, dark bitumen surface, small pebble texture, smooth paved road
+  Wet asphalt
+    prompt = wet asphalt, dark reflective surface, rain-slicked sheen, mirrored street reflection
+  Dry cracked earth
+    prompt = dry cracked earth, parched soil fissures, desert floor texture, arid climate pattern
+  Dirt ground
+    prompt = dirt ground, loose soil texture, earthy dark brown, natural terrain surface
+  Mud puddle
+    prompt = mud puddle, wet dark earth, reflective water patches, sticky ground texture
+
+//========================================================
+// 19. TEXTURAS_AGUA_HIELO
+//========================================================
+output19
+  TEXTURAS_AGUA_HIELO is [joinLists(TEXTURAS_AGUA_HIELOList, TEXTURAS_AGUA_HIELOValues)]
+
+TEXTURAS_AGUA_HIELOList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_AGUA_HIELOValues.selectOne.prompt]
+
+TEXTURAS_AGUA_HIELOValues
+  Water surface
+    prompt = water surface, smooth liquid reflection, fluid organic surface, transparent depth
+  Rippled water
+    prompt = rippled water, gentle wave pattern, concentric circles, liquid movement
+  Foam on water
+    prompt = foam on water, white bubbly surface, aerated liquid, soapy texture
+  Ice crystal
+    prompt = ice crystal, faceted frozen water, sharp transparent edges, cold refractive clarity
+  Ice slick
+    prompt = ice slick, smooth frozen surface, mirror-like sheen, dangerous slippery shine
+  Frost pattern
+    prompt = frost pattern, delicate ice crystals, fern-like frozen shapes, winter window texture
+  Snow powder
+    prompt = snow powder, fine crystalline white, soft cold accumulation, pure frozen ground
+  Clouds
+    prompt = clouds, fluffy atmospheric vapor, soft white formations, sky texture
+  Window rain
+    prompt = window rain, water droplets on glass, distorted view, rainy window texture
+  Sweat drops
+    prompt = sweat drops, small liquid beads, glistening skin moisture, exertion texture
+  Tears
+    prompt = tears, transparent liquid trails, emotional wetness, delicate eye moisture
+
+//========================================================
+// 20. TEXTURAS_SUPERFICIE
+//========================================================
+output20
+  TEXTURAS_SUPERFICIE is [joinLists(TEXTURAS_SUPERFICIEList, TEXTURAS_SUPERFICIEValues)]
+
+TEXTURAS_SUPERFICIEList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_SUPERFICIEValues.selectOne.prompt]
+
+TEXTURAS_SUPERFICIEValues
+  Glossy glazed
+    prompt = glossy glazed, high-shine smooth surface, ceramic-like reflection, polished finish
+  Matte
+    prompt = matte, non-reflective flat surface, soft diffused light, minimalist finish
+  Iridescent holographic
+    prompt = iridescent holographic, rainbow color-shifting surface, prismatic light refraction
+  Pearlescent
+    prompt = pearlescent, soft luminous sheen, mother-of-pearl glow, subtle color shift
+  Cracked weathered
+    prompt = cracked weathered, aged fissured surface, time-worn deterioration, natural aging
+  Plastic glossy
+    prompt = plastic glossy, smooth shiny polymer, synthetic reflection, molded sheen
+  Rubber
+    prompt = rubber, matte elastic texture, soft grippy surface, industrial polymer
+  Wax
+    prompt = wax, smooth meltable surface, warm candle texture, polished softness
+  Resin
+    prompt = resin, clear or tinted polymer, smooth cast surface, glossy encapsulation
+  Epoxy
+    prompt = epoxy, thick glossy coating, smooth poured surface, glass-like clarity
+  Gelatinous
+    prompt = gelatinous, semi-solid wobbling texture, translucent organic gel, jiggly surface
+  Slime
+    prompt = slime, viscous sticky texture, wet organic sheen, glossy slippery surface
+  Goo
+    prompt = goo, thick sticky fluid, semi-liquid residue, viscous glossy texture
+  Powder
+    prompt = powder, fine dry particles, soft dust texture, matte loose surface
+  Sequins
+    prompt = sequins, small flat shiny discs, sparking fabric surface, costume glitter
+  Glitter
+    prompt = glitter, tiny sparking particles, reflective light-catchers, festive shine
+  Confetti
+    prompt = confetti, small colorful paper pieces, scattered festive texture, celebration surface
+  Tinsel
+    prompt = tinsel, shimmering metallic strands, reflective Christmas decoration, sparkly foil
+
+//========================================================
+// 21. TEXTURAS_PAPEL
+//========================================================
+output21
+  TEXTURAS_PAPEL is [joinLists(TEXTURAS_PAPELList, TEXTURAS_PAPELValues)]
+
+TEXTURAS_PAPELList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_PAPELValues.selectOne.prompt]
+
+TEXTURAS_PAPELValues
+  Black paper
+    prompt = black paper, dark matte surface, deep non-reflective darkness, premium cardstock
+  Crumpled paper
+    prompt = crumpled paper, wrinkled compressed surface, creased texture, softened folds
+  Folded origami
+    prompt = folded origami, sharp geometric creases, precise angular folds, paper sculpture
+  Cut paper
+    prompt = cut paper, clean cut edges, layered paper texture, precise silhouette
+  Torn cardboard
+    prompt = torn cardboard, rough ripped edge, corrugated exposed layer, natural tear texture
+  Corrugated cardboard
+    prompt = corrugated cardboard, fluted inner layer, wavy structural texture, shipping material
+  Bubble wrap
+    prompt = bubble wrap, raised circular bubbles, clear plastic texture, popping relief
+  Foam
+    prompt = foam, soft spongy surface, air-filled texture, cushiony lightweight material
+
+//========================================================
+// 22. TEXTURAS_DANIO
+//========================================================
+output22
+  TEXTURAS_DANIO is [joinLists(TEXTURAS_DANIOList, TEXTURAS_DANIOValues)]
+
+TEXTURAS_DANIOList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_DANIOValues.selectOne.prompt]
+
+TEXTURAS_DANIOValues
+  Rusty oxidized
+    prompt = rusty oxidized, red-brown corrosion, flaking metal surface, advanced oxidation
+  Scratched plastic
+    prompt = scratched plastic, fine abrasion lines, worn polymer surface, scuffed finish
+  Fingerprint smudge
+    prompt = fingerprint smudge, oily invisible residue, greasy human mark, smeared surface
+  Dust layer
+    prompt = dust layer, fine grey particle accumulation, settled powder, undisturbed time
+  Ink blot
+    prompt = ink blot, spilled dark liquid, irregular spread shape, absorbed paper stain
+  Coffee stain
+    prompt = coffee stain, dark brown ring, liquid residue edge, cup mark on paper
+  Tea ring
+    prompt = tea ring, tan-colored circular residue, dried liquid edge, cup stain
+  Wine spill
+    prompt = wine spill, deep red-purple spread, absorbed fabric stain, liquid residue
+  Grease spot
+    prompt = grease spot, dark oil-based mark, translucent smear, mechanical residue
+  Chalk dust
+    prompt = chalk dust, fine powdery white, dry pigment residue, matte chalkboard dust
+  Pastel smudge
+    prompt = pastel smudge, soft color smear, dry pigment blend, artistic finger smudge
+  Blood splatter
+    prompt = blood splatter, dark red droplets, irregular spray pattern, liquid dispersion
+  Tears damage
+    prompt = tears damage, ripped material edge, jagged separation, torn fabric texture
+
+//========================================================
+// 23. TEXTURAS_VEGETALES
+//========================================================
+output23
+  TEXTURAS_VEGETALES is [joinLists(TEXTURAS_VEGETALESList, TEXTURAS_VEGETALESValues)]
+
+TEXTURAS_VEGETALESList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_VEGETALESValues.selectOne.prompt]
+
+TEXTURAS_VEGETALESValues
+  Grass
+    prompt = grass, fine green blades, natural carpet texture, soft ground cover
+  Moss
+    prompt = moss, soft green cushion, velvety organic layer, damp forest texture
+  Sand dune
+    prompt = sand dune, fine grain wave pattern, soft flowing edge, desert ripple
+  Sand grit
+    prompt = sand grit, coarse granular texture, abrasive small particles, beach sand
+
+//========================================================
+// 24. TEXTURAS_LUMINICAS
+//========================================================
+output24
+  TEXTURAS_LUMINICAS is [joinLists(TEXTURAS_LUMINICASList, TEXTURAS_LUMINICASValues)]
+
+TEXTURAS_LUMINICASList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TEXTURAS_LUMINICASValues.selectOne.prompt]
+
+TEXTURAS_LUMINICASValues
+  Fire texture
+    prompt = fire texture, flickering flame surface, warm orange glow, dynamic burning effect
+  Glowing embers
+    prompt = glowing embers, hot orange specks, smoldering ash texture, warm residual light
+  Quantum Glow Veins
+    prompt = Bioluminescent quantum glow veins, thin ultra-bold text, pulsing cyan/neon pink energy strands, letters appear alive with slow organic movement like flowing liquid light
+  Nano-Fractal Dust
+    prompt = Nano-fractal dust text, dissolves into microscopic geometric patterns (hexagons, tetrahedrons) that reassemble when touched, matte metallic finish with holographic refraction
+  Gravity-Defying Ink
+    prompt = Gravity-defying ink letters float mid-air, warping spacetime around them, some fragments invert into anti-matter shadows creating 3D illusion of depth
+  Neural FireScript
+    prompt = Neural FireScript, text burns with digital flames emitting data streams (binary/cuneiform symbols), smoke forms fleeting faces when observed closely
+  Chromatic Slime Core
+    prompt = Chromatic slime core letters, gelatinous iridescent bold shapes that morph like molten glass, each syllable leaves sticky light trails when moved
+  Singularity Grain
+    prompt = Singularity grain text appears pixelated until viewed straight-on, then reveals infinite fractal depth, background warps into black hole effect near edges
+  Echo-Hologram Phantoms
+    prompt = Echo-hologram phantoms, semi-transparent text layers that "remember" previous words, leaving faint afterimages in contrasting colors (gold fading to violet)
+
+//========================================================
+// 25. specialEffectx - EFECTOS ESPECIALES
+//========================================================
+output25
+  specialEffectx is [joinLists(specialEffectxList, specialEffectxValues)]
+
+specialEffectxList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [specialEffectxValues.selectOne.prompt]
+
+specialEffectxValues
+  Defaul
+    prompt = Default  
+  Bokeh 
+    prompt = Bokeh backgroun 
+  Lens f
+    prompt = Lens flar 
+  Film g
+    prompt = Film grai 
+  Vignet
+    prompt = Vignette  
+  Light 
+    prompt = Light leak 
+  Chroma
+    prompt = Chromatic aberratio 
+  Glitch
+    prompt = Glitch  
+  Double
+    prompt = Double exposur 
+  Hologr
+    prompt = Holographic shimme 
+  Partic
+    prompt = Particle effect 
+  Firefl
+    prompt = Fireflies  
+  Rain =
+    prompt = Rain  
+  Snow =
+    prompt = Snow  
+  Fog / 
+    prompt = Fog  
+  Dust m
+    prompt = Dust mote 
+  Motion
+    prompt = Motion blu 
+  Long e
+    prompt = Long exposur 
+  Tilt-s
+    prompt = Tilt-shif 
+  Kaleid
+    prompt = Kaleidoscope patter 
+  Silhou
+    prompt = Silhouette  
+  Anime 
+    prompt = Anime spee 
+  Golden
+    prompt = Golden rati 
+  Stardu
+    prompt = Stardust sparkle 
+  Neon g
+    prompt = Neon glo 
+  Scanli
+    prompt = Scanlines 
+  Laser 
+    prompt = Laser ligh 
+  Fire e
+    prompt = Fire ember 
+  Smoke 
+    prompt = Smoke cloud 
+  Water 
+    prompt = Water ripple 
+  Glowin
+    prompt = Glowing rune 
+  Heat h
+    prompt = Heat haz 
+  Ice cr
+    prompt = Ice crystal 
+  Fallin
+    prompt = Falling leave 
+  Cherry
+    prompt = Cherry blosso 
+  Magica
+    prompt = Magical swirl 
+  Electr
+    prompt = Electric arc 
+  Force 
+    prompt = Force field 
+  Hologr
+    prompt = Hologram gri 
+  Star f
+    prompt = Star fiel 
+  Rainbo
+    prompt = Rainbow pris 
+  Oil sl
+    prompt = Oil slic 
+  Shatte
+    prompt = Shattered glas 
+  Torn p
+    prompt = Torn pape 
+  Ink sp
+    prompt = Ink splatter 
+  Paint 
+    prompt = Paint drip 
+  Waterc
+    prompt = Watercolor bloom 
+  Rust a
+    prompt = Rust an 
+  Moss o
+    prompt = Moss overgrowt 
+  Xray 
+    prompt = Xrays 
+  Therma
+    prompt = Thermal visio 
+  Night 
+    prompt = Night visio 
+  Underw
+    prompt = Underwater caustic 
+  Drone 
+    prompt = Drone ligh 
+  Pixel 
+    prompt = Pixel sortin 
+  Emboss
+    prompt = Embossed textur 
+  Engrav
+    prompt = Engrave 
+  Metall
+    prompt = Metallic scratches 
+  Mold a
+    prompt = Mold and decay 
+  Bubble
+    prompt = Bubble wrap textur
+  Grid o
+    prompt = Grid overlay grid overlay
+  Dot ma
+    prompt = Dot matrix dot matrix
+  Halfto
+    prompt = Halftone pattern halftone pattern
+  Bluepr
+    prompt = Blueprint lineblueprint lines
+  Topogr
+    prompt = Topographic contourstopographic contours
+  Sound 
+    prompt = Sound wave visualizationsound wave visualization
+  DNAhe
+    prompt = DNA helix overlay dna helix overlay
+  HUDhe 
+    prompt = HUD  sci-fi interface hud sci-fi interface
+  Augmen
+    prompt = Augmented reality overlays = augmented reality overlays
+  Snow g
+    prompt = Snow globe effect = snow globe effect
+  Froste
+    prompt = Frosted glass = frosted glass
+  Ice co
+    prompt = Ice coating = ice coating
+  Droste
+    prompt = Droste effect = droste effect
+  Escher
+    prompt = Escher tessellation = escher tessellation
+  Lichte
+    prompt = Lichtenstein dots = lichtenstein dots
+  Warhol
+    prompt = Warhol repetition = warhol repetition
+  Mondri
+    prompt = Mondrian grid = mondrian grid
+  Polloc
+    prompt = Pollock splatter = pollock splatter
+  Van Go
+    prompt = Van Gogh swirls = van gogh swirls
+  Monet 
+    prompt = Monet impressionist blur = monet impressionist blur
+  Seurat
+    prompt = Seurat pointillism = seurat pointillism
+  Dali m
+    prompt = Dali melting = dali melting
+  Magrit
+    prompt = Magritte surreal = magritte surreal
+  Escher
+    prompt = Escher stairs = escher stairs
+  Giger 
+    prompt = Giger biomechanical = giger biomechanical
+  Beksiń
+    prompt = Beksiński nightmare = beksiński nightmare
+  Stålen
+    prompt = Stålenhag sci-fi = stålenhag sci-fi
+  Rozals
+    prompt = Rozalski world war = rozalski world war
+  Syd Me
+    prompt = Syd Mead future = syd mead future
+  McQuar
+    prompt = McQuarrie Star Wars = mcquarrie star wars
+  Foss s
+    prompt = Foss spaceship = foss spaceship
+  Berkey
+    prompt = Berkey spacescape = berkey spacescape
+  Brom d
+    prompt = Brom dark fantasy = brom dark fantasy
+  Frazet
+    prompt = Frazetta barbarian = frazetta barbarian
+  Vallej
+    prompt = Vallejo hero = vallejo hero
+  Royo w
+    prompt = Royo warrior = royo warrior
+  Giger 
+    prompt = Giger alien = giger alien
+  St Elm
+    prompt = St Elmo = st. elmo's fire glow
+  Ball l
+    prompt = Ball lightning = ball lightning
+  Earthq
+    prompt = Earthquake fissure = earthquake fissure
+  Volcan
+    prompt = Volcanic eruption = volcanic eruption
+  Lava f
+    prompt = Lava flow = lava flow
+  Pyrocl
+    prompt = Pyroclastic cloud = pyroclastic cloud
+  Ash pl
+    prompt = Ash plume = ash plume
+  Geyser
+    prompt = Geyser steam = geyser steam
+  Hot sp
+    prompt = Hot spring mist = hot spring mist
+  Aurora
+    prompt = Aurora shimmer = aurora shimmer
+  Meteor
+    prompt = Meteor shower = meteor shower
+  Comet 
+    prompt = Comet tail = comet tail
+  Solar 
+    prompt = Solar eclipse corona = solar eclipse corona
+  Lunar 
+    prompt = Lunar eclipse red = lunar eclipse red
+  Star l
+    prompt = Star lens flare = star lens flare
+  Galaxy
+    prompt = Galaxy swirl = galaxy swirl
+  Nebula
+    prompt = Nebula colors = nebula colors
+  Black 
+    prompt = Black hole distortion = black hole distortion
+  Wormho
+    prompt = Wormhole funnel = wormhole funnel
+  Time v
+    prompt = Time vortex = time vortex
+  Portal
+    prompt = Portal opening = portal opening
+  Telepo
+    prompt = Teleportation effect = teleportation effect
+  Shield
+    prompt = Shield impact = shield impact
+  Energy
+    prompt = Energy shield = energy shield
+  Plasma
+    prompt = Plasma bolt = plasma bolt
+  Photon
+    prompt = Photon torpedo = photon torpedo
+  Laser 
+    prompt = Laser blaster = laser blaster
+  Sword 
+    prompt = Sword clash sparks = sword clash sparks
+  Magic 
+    prompt = Magic missile = magic missile
+  Fireba
+    prompt = Fireball = fireball
+  Ice sh
+    prompt = Ice shard = ice shard
+  Lightn
+    prompt = Lightning bolt = lightning bolt
+  Poison
+    prompt = Poison cloud = poison cloud
+  Healin
+    prompt = Healing glow = healing glow
+  Resurr
+    prompt = Resurrection light = resurrection light
+  Level 
+    prompt = Level up effect = level up effect
+  Loot d
+    prompt = Loot drop sparkle = loot drop sparkle
+  Quest 
+    prompt = Quest marker = quest marker
+  Object
+    prompt = Objective arrow = objective arrow
+  Mini-m
+    prompt = Mini-map overlay = mini-map overlay
+  Damage
+    prompt = Damage numbers = damage numbers
+  Hit po
+    prompt = Hit points bar = hit points bar
+  Mana b
+    prompt = Mana bar = mana bar
+  Stamin
+    prompt = Stamina bar = stamina bar
+  Experi
+    prompt = Experience bar = experience bar
+  Skill 
+    prompt = Skill cooldown = skill cooldown
+  Buff i
+    prompt = Buff icon = buff icon
+  Debuff
+    prompt = Debuff icon = debuff icon
+  Combo 
+    prompt = Combo counter = combo counter
+  Score 
+    prompt = Score multiplier = score multiplier
+  Critic
+    prompt = Critical hit = critical hit
+  Headsh
+    prompt = Headshot indicator = headshot indicator
+  Killca
+    prompt = Killcam effect = killcam effect
+  Victor
+    prompt = Victory screen = victory screen
+  Defeat
+    prompt = Defeat screen = defeat screen
+  Game o
+    prompt = Game over text = game over text
+  Contin
+    prompt = Continue countdown = continue countdown
+  Cel sh
+    prompt = Cel shading = cel shading
+  Toon s
+    prompt = Toon shading = toon shading
+  Crossh
+    prompt = Crosshatch = crosshatch
+  Stippl
+    prompt = Stippling = stippling
+  Scribb
+    prompt = Scribble = scribble
+  Smudge
+    prompt = Smudge tool = smudge tool
+  Dodge 
+    prompt = Dodge and burn = dodge and burn
+  Freque
+    prompt = Frequency separation = frequency separation
+  Liquif
+    prompt = Liquify = liquify
+  Conten
+    prompt = Content-aware fill = content-aware fill
+  Patch 
+    prompt = Patch tool = patch tool
+  Clone 
+    prompt = Clone stamp = clone stamp
+  Healin
+    prompt = Healing brush = healing brush
+  Gradie
+    prompt = Gradient map = gradient map
+  Thresh
+    prompt = Threshold = threshold
+  Poster
+    prompt = Posterize = posterize
+  Solari
+    prompt = Solarize = solarize
+  Equali
+    prompt = Equalize = equalize
+  Invert
+    prompt = Invert = invert
+  Hue sh
+    prompt = Hue shift = hue shift
+  Color 
+    prompt = Color balance = color balance
+  Photo 
+    prompt = Photo filter = photo filter
+  Channe
+    prompt = Channel mixer = channel mixer
+  Select
+    prompt = Selective color = selective color
+  Black 
+    prompt = Black & white adjustment = black & white adjustment
+  Split 
+    prompt = Split toning = split toning
+  HDR to
+    prompt = HDR toning = hdr toning
+  Shadow
+    prompt = Shadows/highlights = shadows/highlights
+  Curves
+    prompt = Curves = curves
+  Levels
+    prompt = Levels = levels
+  Exposu
+    prompt = Exposure = exposure
+  Bright
+    prompt = Brightness/contrast = brightness/contrast
+  Vibran
+    prompt = Vibrance = vibrance
+  Satura
+    prompt = Saturation = saturation
+  Color 
+    prompt = Color lookup  = color lookup lut
+  Camera
+    prompt = Camera Raw filter = camera raw filter
+  Lens c
+    prompt = Lens correction = lens correction
+  Perspe
+    prompt = Perspective warp = perspective warp
+  Puppet
+    prompt = Puppet warp = puppet warp
+  Vanish
+    prompt = Vanishing point = vanishing point
+  Adapti
+    prompt = Adaptive wide angle = adaptive wide angle
+  Oil pa
+    prompt = Oil paint filter = oil paint filter
+  Dry br
+    prompt = Dry brush = dry brush
+  Palett
+    prompt = Palette knife = palette knife
+  Underp
+    prompt = Underpainting = underpainting
+  Glowin
+    prompt = Glowing edges = glowing edges
+  Accent
+    prompt = Accented edges = accented edges
+  Rough 
+    prompt = Rough pastels = rough pastels
+  Smudge
+    prompt = Smudge stick = smudge stick
+  Sponge
+    prompt = Sponge = sponge
+  Graphi
+    prompt = Graphic pen = graphic pen
+  Bas re
+    prompt = Bas relief = bas relief
+  Note p
+    prompt = Note paper = note paper
+  Cutout
+    prompt = Cutout = cutout
+  Staine
+    prompt = Stained glass = stained glass
+  Textur
+    prompt = Texturizer = texturizer
+  Craque
+    prompt = Craquelure = craquelure
+  Patchw
+    prompt = Patchwork = patchwork
+  Mosaic
+    prompt = Mosaic tiles = mosaic tiles
+  Crysta
+    prompt = Crystallize = crystallize
+  Pointi
+    prompt = Pointillize = pointillize
+  Fragme
+    prompt = Fragment = fragment
+  Mezzot
+    prompt = Mezzotint = mezzotint
+  Diffus
+    prompt = Diffuse glow = diffuse glow
+  Lens b
+    prompt = Lens blur = lens blur
+  Radial
+    prompt = Radial blur = radial blur
+  Smart 
+    prompt = Smart blur = smart blur
+  Surfac
+    prompt = Surface blur = surface blur
+  Box bl
+    prompt = Box blur = box blur
+  Gaussi
+    prompt = Gaussian blur = gaussian blur
+  Motion
+    prompt = Motion blur = motion blur
+  Shape 
+    prompt = Shape blur = shape blur
+  Tilt‑s
+    prompt = Tilt‑shift blur = tilt‑shift blur
+  Iris b
+    prompt = Iris blur = iris blur
+  Field 
+    prompt = Field blur = field blur
+  Path b
+    prompt = Path blur = path blur
+  Spin b
+    prompt = Spin blur = spin blur
+  Zoom b
+    prompt = Zoom blur = zoom blur
+  bokeh 
+    prompt = bokeh = , bokeh
+  tilt-s
+    prompt = tilt-shift = , tilt-shift effect
+  soft f
+    prompt = soft focus = , soft focus
+  backgr
+    prompt = background blur = , shallow depth of field
+  chroma
+    prompt = chromatic aberrations = , chromatic aberrations
+  light 
+    prompt = light leaks = , light leaks
+  rear p
+    prompt = rear projection = , rear projection
+  lens f
+    prompt = lens flare = , lens flare
+  long e
+    prompt = long exposure = , long exposure
+  golden
+    prompt = golden hour = , golden hour
+  silhou
+    prompt = silhouette = , silhouette
+  vibran
+    prompt = vibrant = , vibrant color grading
+  warm =
+    prompt = warm = , warm color grading
+  cool =
+    prompt = cool = , cool-toned color grading
+  pastel
+    prompt = pastel = , pastel color grading
+  bright
+    prompt = bright = , bright color grading
+  muted 
+    prompt = muted = , muted color grading
+  neon =
+    prompt = neon = , neon color grading
+  duoton
+    prompt = duotone = , duotone color grading
+  monoch
+    prompt = monochrome = , monochrome
+  steril
+    prompt = sterile = cool-toned sterile colors
+
+//========================================================
+// 26. ShotVariability - VARIABILIDAD DE TOMAS
+//========================================================
+output26
+  ShotVariability is [joinLists(ShotVariabilityList, ShotVariabilityValues)]
+
+ShotVariabilityList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ShotVariabilityValues.selectOne.prompt]
+
+ShotVariabilityValues
+  Default
+    prompt = {|}
+  WideShot
+    prompt = wide angle shot, grand scenic view, entire stage and crowd visible, sweeping composition, wide perspective, full scene captured, 24mm lens equivalent
+  MediumShot
+    prompt = medium shot, singer from waist up, torso and arms visible, balanced composition, both subject and context visible, 50mm lens equivalent
+  CloseUp
+    prompt = close-up shot, singer's face and upper chest, intimate view, emotional expression, detailed facial features, 85mm lens equivalent
+  ExtremeCloseUp
+    prompt = extreme close-up, only part of face visible, eyes or mouth in focus, intimate detail, abstract composition, 135mm lens equivalent
+  LowAngle
+    prompt = dramatic low angle shot, looking up at subject, heroic perspective, powerful imposing presence, wide angle distortion, from below
+  HighAngle
+    prompt = high angle shot, looking down at subject, vulnerable perspective, bird's eye view, subject small in frame, from above
+  ProfileView
+    prompt = profile shot, side view of subject, silhouette visible, dramatic side lighting, elegant outline, 90-degree angle
+  ThreeQuarterView
+    prompt = three-quarter view, diagonal angle, showing both front and side, natural perspective, balanced composition, 45-degree angle
+  OverShoulder
+    prompt = over-the-shoulder shot, subject seen from behind another person, voyeuristic perspective, intimate documentary feel
+  DutchAngle
+    prompt = Dutch angle shot, tilted horizon, dynamic and unsettling mood, dramatic diagonal composition, cinematic tension
+  FromBehind
+    prompt = shot from behind, subject's back visible, mysterious perspective, anticipation of turning, documentary style
+  BirdEye
+    prompt = bird's eye view, directly from above, top-down perspective, abstract geometric composition, drone-like view
+  WormEye
+    prompt = worm's eye view, from ground level looking up, dramatic perspective, extreme low angle, heroic composition
+  StageLeft
+    prompt = shot from stage left, profile from left side, side lighting on subject, documentary concert perspective
+  StageRight
+    prompt = shot from stage right, profile from right side, side lighting on subject, alternative angle
+  CrowdLevel
+    prompt = shot from crowd level, eye-level with crowd, looking up at stage, immersive audience perspective, intimate concert feel
+  PitLevel
+    prompt = shot from photographer's pit, stage level, front row view, security barrier visible, professional concert access
+  BalconyLevel
+    prompt = shot from balcony or mezzanine, elevated audience view, whole stage and crowd visible, architectural perspective
+
+//========================================================
+// 27. FaceFix - CORRECCIÓN DE ROSTROS
+//========================================================
+output27
+  FaceFix is [joinLists(FaceFixList, FaceFixValues)]
+
+FaceFixList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [FaceFixValues.selectOne.prompt]
+
+FaceFixValues
+  Default
+    prompt = {|}        
+  UltraRealistic
+    prompt = detailed face, sharp facial features, realistic skin texture with visible pores, natural imperfections, fine hairs and eyebrows, catchlights in eyes, professional portrait lighting, hyper-detailed, 8k, high definition, sharp focus on eyes, symmetrical face, natural skin tones, beauty photography, fashion quality
+  CinematicFace
+    prompt = cinematic face, dramatic lighting, Rembrandt lighting pattern, deep shadows on one side, soft highlights on the other, filmic skin texture, subtle grain, realistic facial features, expressive eyes, natural smile, professional cinema portrait, 8k, hyper-realistic
+  EditorialFace
+    prompt = editorial face, fashion photography, sharp focus on eyes, perfect bone structure, symmetrical facial features, subtle makeup, natural skin texture, professional beauty lighting, high-fashion aesthetic, magazine quality, 8k, hyper-realistic
+  NaturalFace
+    prompt = natural face, authentic skin texture, visible pores and imperfections, no makeup look, genuine expression, soft natural lighting, realistic facial features, unretouched, documentary style, honest portrait, 8k, photorealistic
+  CloseUpFace
+    prompt = extreme close-up of face, only face visible, shallow depth-of-field, eyes in perfect focus, eyelashes visible, skin pores and texture, natural skin tones, professional portrait photography, 8k, hyper-realistic, intimate portrait
+  FaceOnly
+    prompt = face only, centered composition, symmetrical features, sharp focus on entire face, natural expression, soft studio lighting, perfect skin texture, professional headshot, 8k, hyper-realistic, portrait photography
+
+//========================================================
+// 28. BodyFocus - ENFOQUE EN CUERPO
+//========================================================
+output28
+  BodyFocus is [joinLists(BodyFocusList, BodyFocusValues)]
+
+BodyFocusList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [BodyFocusValues.selectOne.prompt]
+
+BodyFocusValues
+  Default
+    prompt = {|}        
+  FullBody
+    prompt = full body visible from head to toe, complete figure in frame, entire person showing, standing full height, full body shot, whole person visible        
+  ThreeQuarter
+    prompt = three-quarter body shot, visible from head to just below knees, upper body and legs visible        
+  MidShot
+    prompt = mid shot, visible from head to waist, torso and arms visible, upper body focus        
+  WaistUp
+    prompt = waist-up shot, visible from head to hips, torso emphasized, upper body portrait        
+  ActionPose
+    prompt = dynamic action pose, body in motion, energetic stance, powerful body language, full body movement        
+  ElegantPose
+    prompt = elegant sophisticated pose, refined posture, graceful body language, confident stance, formal positioning        
+  CasualPose
+    prompt = casual relaxed pose, natural body language, unposed spontaneous stance, comfortable positioning        
+  DramaticPose
+    prompt = dramatic theatrical pose, exaggerated body language, powerful stance, heroic or emotional positioning        
+  Profile
+    prompt = profile view, side view of entire body, body silhouette visible, side angle        
+  BackView
+    prompt = back view of person, seen from behind, rear angle, back of body visible
+
+//========================================================
+// 29. ShotPlan - PLANOS
+//========================================================
+output29
+  ShotPlan is [joinLists(ShotPlanList, ShotPlanValues)]
+
+ShotPlanList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ShotPlanValues.selectOne.prompt]
+
+ShotPlanValues
+  Default
+    prompt = {|}
+  FullShot
+    prompt = full body shot, entire body from head to toe visible, complete figure in frame
+  AmericanShot
+    prompt = American shot, from knees upward, cowboy shot, action-oriented framing
+  MidShot
+    prompt = mid shot, from waist upward, torso and arms visible, conversational framing
+  MidCloseUp
+    prompt = medium close-up, from chest upward, face and upper body, emotional focus
+  CloseUpShot
+    prompt = close-up, face and shoulders, intimate view, emotional expression
+  ExtremeCloseUp
+    prompt = extreme close-up, only part of face, eye, mouth, or detail in focus
+  DetailShot
+    prompt = detail shot, hands, instrument, accessory, specific element in focus
+  TwoShot
+    prompt = two shot, two people in frame, interaction between them
+  ThreeShot
+    prompt = three shot, three people in frame, group interaction
+  GroupShot
+    prompt = group shot, multiple people in frame, crowd or band shot
+  OverheadShot
+    prompt = overhead shot, from directly above, bird's eye perspective
+  POVShot
+    prompt = point-of-view shot, subjective camera, what the subject sees
+
+//========================================================
+// 30. LensFocalLength - DISTANCIA FOCAL
+//========================================================
+output30
+  LensFocalLength is [joinLists(LensFocalLengthList, LensFocalLengthValues)]
+
+LensFocalLengthList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [LensFocalLengthValues.selectOne.prompt]
+
+LensFocalLengthValues
+  Default    
+    prompt = {|}
+  UltraWide_14mm    
+    prompt = 14mm ultra-wide angle lens, extreme wide perspective, dramatic distortion, entire scene captured, expansive view
+  Wide_24mm    
+    prompt = 24mm wide angle lens, broad perspective, context-rich, environmental storytelling, slight distortion
+  Street_35mm    
+    prompt = 35mm street photography lens, natural perspective, documentary style, balanced wide view, classic focal length
+  Standard_50mm    
+    prompt = 50mm standard lens, natural human eye perspective, versatile focal length, balanced composition, no distortion
+  Portrait_85mm    
+    prompt = 85mm portrait lens, shallow depth of field, beautiful compression, flattering perspective, professional portrait
+  ShortTele_105mm    
+    prompt = 105mm short telephoto lens, compressed perspective, excellent subject isolation, event photography
+  MediumTele_135mm    
+    prompt = 135mm medium telephoto lens, strong compression, dramatic background blur, concert and sports photography
+  Telephoto_200mm
+    prompt = 200mm telephoto lens, extreme compression, flat perspective, distant subject capture, wildlife and sports
+  Anamorphic_50mm
+    prompt = 50mm anamorphic lens, 2.39:1 aspect ratio, horizontal lens flares, cinematic character, widescreen aesthetic
+  Macro_90mm
+    prompt = 90mm macro lens, extreme close-up capability, sharp detail on small subjects, scientific precision
+
+//========================================================
+// 31. SceneUniformity - UNIFORMIDAD DE ESCENA
+//========================================================
+output31
+  SceneUniformity is [joinLists(SceneUniformityList, SceneUniformityValues)]
+
+SceneUniformityList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [SceneUniformityValues.selectOne.prompt]
+
+SceneUniformityValues
+  ult
+    prompt = {|}
+  ertStable
+    prompt = same concert stage, same lighting rig with amber and blue LED panels, same smoke machine haze, same crowd in background, same professional concert atmosphere, same venue, same energetic performance vibe, consistent color palette of warm gold and cool cyan
+  ioStable
+    prompt = same studio environment, same seamless white or gray backdrop, same professional studio lighting with beauty dish and rim lights, same clean minimalist atmosphere, consistent lighting temperature 5500K, same professional photography studio
+  oorStable
+    prompt = same outdoor location, same natural environment, same consistent weather, same time of day, same golden hour lighting, same natural atmospheric conditions, consistent natural color palette
+  nStable
+    prompt = same city street, same urban environment, same buildings and architecture, same street lighting, same atmospheric conditions, consistent city vibe, same urban color palette
+  ageStable
+    prompt = same vintage aesthetic, same retro style, same warm nostalgic color grading, same film grain texture, same analog photography feel, consistent vintage atmosphere
+  maticStable
+    prompt = same cinematic style, same filmic color grading (teal and orange), same shallow depth of field, same anamorphic lens character, same 2.39:1 aspect ratio, consistent cinematic atmosphere
+  icalStable
+    prompt = same tropical outdoor venue, same palm trees in background, same colorful stage decorations, same warm humidity atmosphere, same vibrant saturated colors, consistent festival vibe
+  sicalStable
+    prompt = same grand concert hall, same elegant architecture, same crystal chandeliers, same red velvet curtains, same warm orchestral lighting, consistent classical music atmosphere
+
+//========================================================
+// 32. idea - COMBINACIONES DE PROMPTS
+
+// 33. options - EXPRESIONES FACIALES
+//========================================================
+output33
+  options is [joinLists(optionsList, optionsValues)]
+
+optionsList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [optionsValues.selectOne.prompt]
+
+optionsValues
+  Default
+    prompt = {|}
+  😒 𝗔𝗻𝗻𝗼𝘆𝗲𝗱
+    prompt = pinched brows over flat unimpressed eyes with lips pressed thin and a faint impatient frown,
+  😏 𝗔𝗿𝗼𝘂𝘀𝗲𝗱
+    prompt = heavy-lidded half-closed eyes with flushed cheeks and softly parted lips,
+  😳 𝗔𝘀𝗵𝗮𝗺𝗲𝗱
+    prompt = deeply flushed cheeks with averted downcast eyes and tightly pressed lips,
+  😌 𝗖𝗮𝗹𝗺
+    prompt = soft relaxed eyes with smooth untroubled brows and a faint serene expression,
+  🎯 𝗖𝗼𝗻𝗰𝗲𝗻𝘁𝗿𝗮𝘁𝗲𝗱
+    prompt = narrowed focused eyes with a steady locked gaze and a firm set mouth,
+  😞 𝗗𝗶𝘀𝗮𝗽𝗽𝗼𝗶𝗻𝘁𝗲𝗱
+    prompt = lowered eyelids over a downcast gaze with downturned lips and a faint sad furrow at the brow,
+  🤢 𝗗𝗶𝘀𝗴𝘂𝘀𝘁𝗲𝗱
+    prompt = a wrinkled nose and curled upper lip with narrowed repulsed eyes and a sneer,
+  😅 𝗘𝗺𝗯𝗮𝗿𝗿𝗮𝘀𝘀𝗲𝗱
+    prompt = flushed red cheeks with an awkward forced smile and uncomfortable shifting eyes,
+  😮 𝗘𝗹𝗮𝘁𝗲𝗱
+    prompt = wide shining eyes with parted lips and an overwhelmed look of pure sensation,
+  🤗 𝗘𝘅𝗰𝗶𝘁𝗲𝗱
+    prompt = wide eager bright eyes with a big open anticipatory smile and raised brows,
+  😩 𝗘𝘅𝗵𝗮𝘂𝘀𝘁𝗲𝗱
+    prompt = heavy drooping eyelids with a slack jaw and deeply weary features showing pure fatigue,
+  😨 𝗙𝗲𝗮𝗿𝗳𝘂𝗹
+    prompt = wide round frightened eyes with raised brows and a tense open mouth,
+  😉 𝗙𝗹𝗶𝗿𝘁𝘆
+    prompt = a teasing playful smile with a subtle knowing look and one softly arched brow,
+  😠 𝗙𝗿𝘂𝘀𝘁𝗿𝗮𝘁𝗲𝗱
+    prompt = a clenched jaw with firmly pressed lips and glaring tense eyes,
+  🤬 𝗙𝘂𝗿𝗶𝗼𝘂𝘀
+    prompt = deeply furrowed brows over snarling bared teeth with a face flushed red in rage,
+  🤭 𝗚𝗶𝗴𝗴𝗹𝗶𝗻𝗴
+    prompt = crinkled happy eyes with a barely contained smile and lightly flushed cheeks,
+  😀 𝗛𝗮𝗽𝗽𝘆
+    prompt = bright open cheerful eyes with a broad natural smile and lifted warm cheeks,
+  😵‍💫 𝗛𝗮𝘇𝘆
+    prompt = unfocused foggy eyes with a distant slack expression and a loose goofy smile,
+  🍽️ 𝗛𝘂𝗻𝗴𝗿𝘆
+    prompt = parted lips with a craving eager gaze and an anticipatory look of desire,
+  🫦 𝗜𝗻𝘁𝗲𝗻𝘀𝗲 𝗣𝗹𝗲𝗮𝘀𝘂𝗿𝗲
+    prompt = flushed cheeks with parted lips and eyes half-lidded in deep building sensation,
+  😻 𝗟𝗼𝘃𝗶𝗻𝗴
+    prompt = shimmering adoring eyes with softly parted lips and a warm devoted expression,
+  😈 𝗠𝗶𝘀𝗰𝗵𝗶𝗲𝘃𝗼𝘂𝘀
+    prompt = a sly wicked grin with sparkling knowing eyes and one playfully arched brow,
+  😵 𝗢𝗿𝗴𝗮𝘀𝗺𝗶𝗻𝗴
+    prompt = eyes rolled back with an open slack mouth and deeply flushed cheeks in visible overwhelming release,
+  🌊 𝗣𝗼𝘀𝘁-𝗢𝗿𝗴𝗮𝘀𝗺
+    prompt = completely relaxed soft features with half-closed drowsy eyes and parted lips in blissful afterglow,
+  😜 𝗣𝗹𝗮𝘆𝗳𝘂𝗹
+    prompt = a cheeky grin with bright energetic eyes and a lighthearted silly expression,
+  😌 𝗣𝗿𝗼𝘂𝗱
+    prompt = a lifted confident chin with a steady firm gaze and a satisfied strong smile,
+  🛀 𝗥𝗲𝗹𝗮𝘅𝗲𝗱
+    prompt = soft half-closed eyelids with loosened features and a faint content expression,
+  😢 𝗦𝗮𝗱
+    prompt = watery glistening eyes with trembling downturned lips and lowered sorrowful brows,
+  😱 𝗦𝗰𝗮𝗿𝗲𝗱
+    prompt = wide bulging eyes with raised brows in alarm and an open mouth in silent terror,
+  😐 𝗦𝗲𝗿𝗶𝗼𝘂𝘀
+    prompt = pressed firm lips with straight neutral brows and a direct intense gaze,
+  🙇 𝗦𝗵𝗮𝗺𝗲𝗱
+    prompt = averted downcast eyes with facial tension and a look of quiet unavoidable shame,
+  😱 𝗦𝗵𝗼𝗰𝗸𝗲𝗱
+    prompt = wide open eyes with high raised brows and a gaping open mouth,
+  😊 𝗦𝗵𝘆
+    prompt = blushing warm cheeks with a soft timid smile and a bashful gentle expression,
+  🫣 𝗦𝗵𝘆 𝗦𝗲𝘅𝘆
+    prompt = lowered bashful eyes with softly parted lips and faintly flushed cheeks carrying a timid allure,
+  🤪 𝗦𝗶𝗹𝗹𝘆
+    prompt = wide crazy exaggerated eyes with a goofy foolish grin and a zany playful expression,
+  😁 𝗦𝗺𝗶𝗹𝗶𝗻𝗴
+    prompt = a wide beaming toothy grin with crinkled cheerful eyes and lifted happy cheeks,
+  😏 𝗦𝗺𝗶𝗿𝗸𝗶𝗻𝗴
+    prompt = a crooked sly smile with one raised knowing brow and eyes full of quiet amusement,
+  🕵️ 𝗦𝘂𝘀𝗽𝗶𝗰𝗶𝗼𝘂𝘀
+    prompt = narrowed skeptical eyes with a sideways distrustful look and tightly pressed lips,
+  🥵 𝗧𝗲𝗻𝘀𝗲
+    prompt = furrowed stressed brows with flushed cheeks and tightly pressed narrow lips,
+  💭 𝗧𝗵𝗼𝘂𝗴𝗵𝘁𝗳𝘂𝗹
+    prompt = a soft distant hazy gaze with slightly pursed lips and an inward contemplative look,
+  😟 𝗪𝗼𝗿𝗿𝗶𝗲𝗱
+    prompt = creased tense brows with an uncertain pressed mouth and anxious nervous eyes,
+  😪 𝗬𝗮𝘄𝗻𝗶𝗻𝗴
+    prompt = squinted sleepy eyes with a wide gaping open mouth and a deep drowsy expression,
+  😶‍🌫️ 𝗭𝗼𝗻𝗲𝗱 𝗢𝘂𝘁
+    prompt = a blank Default unfocused stare with dull lifeless eyes and completely vacant features
+
+//========================================================
+// 34. Clima - CLIMA (renombrado desde options duplicado)
+//========================================================
+output34
+  Clima is [joinLists(ClimaList, ClimaValues)]
+
+ClimaList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ClimaValues.selectOne.prompt]
+
+ClimaValues
+  Default
+    prompt = {|}
+  Autumn
+    prompt = It is Autumn. The weather is cool. It is a cool autumn day.
+  Cloudy
+    prompt = It is a very cloudy day.
+  Night
+    prompt = It is night time. It is dark. It is dark outside. It is night.
+  Raining
+    prompt = It is raining. The weather is rainy. It is pouring with rain. The ground is wet.
+  Snow
+    prompt = It is snowing. Snow is all over the ground. The weather is snowy. It is a snowy day.
+  Spring
+    prompt = It is Spring. The weather is warm. It is a warm spring day.
+  Summer
+    prompt = It is Summer. The weather is hot. It is a hot summer's day.
+  Sunny
+    prompt = It is hot and sunny. The sun is shining brightly. It is a sunny day. The weather is sunny.
+  Stormy
+    prompt = It is a very stormy day. 
+  Windy
+    prompt = The weather is very windy. It is a windy day. The wind is blowing strongly. The wind is blowing hard.
+  Winter
+    prompt = It is a cold winter's day. It is Winter. The weather is cold. It is cold outside
+
+//========================================================
+// 35. colors - COLORES
+//========================================================
+output35
+  colors is [joinLists(colorsList, colorsValues)]
+
+colorsList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [colorsValues.selectOne.prompt]
+
+colorsValues
+  Default
+    prompt = {|}
+  Random  
+    prompt = [Colores.selectOne.prompt] 
+  Neon 
+    prompt = Vibrant Neon, iridescentwhite:1.5, metallic, tournasol, hologram,  Colors (#05e82e, #0593e8, #8705e8, #e8e505, #e80536)
+  neons 
+    prompt = neon cyan hot pink
+  holoWhite 
+    prompt = matte silver hologram
+  voidBlack 
+    prompt = black white void
+  orangGrey 
+    prompt = binary orange blue smoke
+  rand34Col 
+    prompt = ((colors are:#9732ea, #9c32ea, #a032ea, #c830ec, #ed30ed))
+  rand12Col 
+    prompt = ((Colors are: #ffe037, #1dcd9f, #088c6f, #23033c))
+  violetDre 
+    prompt = (violet:1.5)
+  iridPaste 
+    prompt = (iridescentwhite:1.5) in ((#5c24d9,#ff0957,#d9b624,#a7c800,#47d924))
+  PinkyCool 
+    prompt = Pinky tones in #e71abc, #ffa5ff, #f633ca, #cc00a3, #c900a1 colors
+  cyanBlues 
+    prompt = cyan and blue with silver details
+  turquBlac 
+    prompt = light turquoise with black glossy     
+  starsIndi 
+    prompt = iridescent colored neon stars over an indigo deep space
+  redinFire 
+    prompt = dark red crystals in fire
+  yellowOra 
+    prompt = intense yellow with neon orange
+  orangeYel 
+    prompt = neon orange with yellow and red
+  snowClear 
+    prompt = white and clear blue
+  magenBlue 
+    prompt = magenta, blue and purple
+  blackGlod 
+    prompt = black and golden
+
+//========================================================
+// 36. BodyTech - TÉCNICA DE CUERPO
+//========================================================
+output36
+  BodyTech is [joinLists(BodyTechList, BodyTechValues)]
+
+BodyTechList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [BodyTechValues.selectOne.prompt]
+
+BodyTechValues
+  Random
+    prompt = [BodyTechR.selectOne]
+  StudioFullBody
+    prompt = Hasselblad H6D-100c, HC 50mm f/3.5, f/5.6, 1/125s, ISO 100, 100MP medium format, full body studio photography, even lighting, complete figure sharp, professional fashion photography, 8K, hyper-realistic.
+  ActionFullBody
+    prompt = Sony A9 III, FE 50mm f/1.2 GM, f/1.4, 1/2000s, ISO 200, action frozen, full body dynamic pose, sharp detail on body, professional sports photography, 8K, hyper-realistic.
+  CinematicFullBody
+    prompt = ARRI Alexa 65, Panavision anamorphic 35mm, T2.8, 2.39:1, wide shot full body, dramatic lighting, person in environment, epic scale, 8K, hyper-realistic, filmic.
+  FashionFullBody
+    prompt = Canon EOS R5, RF 70-200mm f/2.8 at 200mm, f/2.8, 1/250s, ISO 100, fashion editorial, full body from head to toe, sharp clothing details, elegant pose, 8K, hyper-realistic.
+  StreetFullBody
+    prompt = Leica M11, Summicron 35mm f/2, f/4, 1/500s, ISO 400, street photography, full body candid, natural daylight, documentary style, 8K, hyper-realistic.
+  ConcertFullBody
+    prompt = Sony A7S III, FE 24-70mm f/2.8, f/2.8, 1/250s, ISO 800, concert photography, full body performance, singer on stage, dynamic lighting, 8K, hyper-realistic.
+
+//========================================================
+// 37. Dashcam - DASHCAM
+//========================================================
+output37
+  Dashcam is [joinLists(DashcamList, DashcamValues)]
+
+DashcamList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [DashcamValues.selectOne.prompt]
+
+DashcamValues
+  Dashcam
+    prompt = dashcam, vehicle dashboard perspective, road-level view
+  Bodycam
+    prompt = bodycam, chest-mounted POV, immersive first-person movement
+  Snorricam
+    prompt = Snorricam, body-mounted camera, subject-locked movement
+
+//========================================================
+// 38. char1 - PERSONAJE PRINCIPAL
+//========================================================
+output38
+  char1 is [joinLists(char1List, char1Values)]
+
+char1List
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [char1Values.selectOne.prompt]
+
+char1Values
+  Ximena 
+    prompt = An elegant and voluptuous hotwife style woman: mature latina, 45 years old, 1.74m tall, long  black hair {with subtle silver highlights|half silver}, that {reaches her waist|use in a long ponitail} amazing figure, huge soft butt, medium mature boobs, long legs.  {Spectacular back shot, slightly from below, focusing on her shiny, glistening, elegant, exquisite, amazing ass, cellulite-covered backside that completely fills the tiny fabric|Detailed face, sharp facial features, realistic skin texture, natural lighting, professional portrait photography, 8k, hyper-realistic, high detail, sharp focus, beautiful eyes, symmetrical face}
+
+//========================================================
+// 39. pose1 - POSES
+//========================================================
+output39  
+  pose1 is [joinLists(pose1List, pose1Values)]
+
+pose1List
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [pose1Values.selectOne.prompt]
+
+pose1Values
+  sitting calmly 
+    prompt = sitting calmly on a chair, relaxed pose with entire body visible,
+  standing uprigh
+    prompt = standing upright, full body visible,
+  Squatting atop 
+    prompt = Squatting atop a bar counter, legs spread wide, vulva exposed, breasts hanging prominently, butt pressed against counter, confident direct gaze at camera,
+  lying down and 
+    prompt = lying down and spread legs, peacefully, relaxed pose fully within frame,
+  One hand raised
+    prompt = One hand raised near the face, index and middle finger forming a 'V', palm facing outward or inward.
+  Lying on back, 
+    prompt = Lying on back, legs extended straight, ankles crossed one over the other, arms resting behind the head.
+  with hands on h
+    prompt = with hands on hips, confident stance, well-centered composition,
+  with arms cross
+    prompt = with arms crossed, thoughtful expression, framed to avoid cutting edges,
+  Hips pushed bac
+    prompt = Hips pushed back, torso leaning forward at the waist 90 degrees, spine straight, hands resting on thighs or dangling.
+  Walking while l
+    prompt = Walking while looking over shoulder, breasts swinging and ass wobbling, dynamic body movement captured in candid tracking shot.
+  On hands and kn
+    prompt = On hands and knees, one arm reaching far forward along the ground, chest pressed low to the floor, hips remaining high.
+  One hand raised
+    prompt = One hand raised to face, index finger resting between lips, head tilted slightly to the side.
+  leaning against
+    prompt = leaning against a wall casually, complete posture visible,
+  Resting on hand
+    prompt = Resting on hands and knees, back deeply arched, hips lifted high relative to the shoulders, head tilted up.
+  kneeling and sp
+    prompt = kneeling and spread legs, attentive posture, well-framed,
+  stretching arms
+    prompt = stretching arms upwards, relaxed mood, arms fully inside frame,
+  Seated, soles o
+    prompt = Seated, soles of the feet pressed together, knees dropped outward toward the floor, hands holding ankles or feet.
+  sitting on the 
+    prompt = sitting on the ground, casual pose, entire figure in the photo,
+  she is cowgirl 
+    prompt = she is cowgirl style on man, man having veiny penis leaking pre-cum penetrating pussy, and other 2Man on sideways of female with erect veiny penis leaking pre-cum, she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin, cascading down her neck and dripping onto her chest,
+  The scene shows
+    prompt = The scene shows a female subject being penetrated doggystyle by a Man partner his hands gripping hips firmly. Subject is on hands and knees, weight balanced on palms and knees, arms extended forward, fingers splayed, head tilted back, jaw slack, eyes unfocused, tongue visible with saliva strands. sheen subcutaneous strain visible. Composition follows rule of thirds with head at x50% y20% center bottom buttocks at x70% y50% framing extreme close-up foreground showing slack mouth and tongue midground arched ass background partner pelvis and groin gripping hips.
+  she is cowgirl 
+    prompt = she is cowgirl style on man, man having veiny penis leaking pre-cum penetrating pussy, and other 2Man on sideways of female with erect veiny penis leaking pre-cum, she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin, cascading down her neck and dripping onto her chest, drooling loads of thick white cum covered on face
+  Cowgirl 
+    prompt = she is cowgirl style on man, man having one veiny cock leaking pre-cum into her pussy or anal of female.          
+  Deepthroat Keeling (Soft Drool) 
+    prompt = she is kneeling beside a standing Man, profile view locked tight as she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin     
+  Deepthroat Keeling (Heavy Cum Drool) 
+    prompt = she is kneeling beside a standing Man, profile view locked tight as she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin, cascading down her neck, and dripping onto her chest, drooling loads of thick white cum covered on face, body, pussy,
+  Deepthroat Sitting (Soft Drool)
+    prompt = female is sitting in a chair on a stage, her feet are spread apart with a dildo in her vagina. her feet are spread apart. A man is standing in front of her and she is giving him a blowjob, she swallows his thick natural veiny cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin.        
+  Deepthroat Cumshot (Two Men) 
+    prompt = she is kneeling, two men stand around her. she takes one cock deep in mouth while the other two men spraying torrents of cum onto her face, neck, and chest, cum running in ribbons over shoulders and cleavage, sticky saliva blending, drooling loads of thick white cum covered on face, body, pussy,        
+  Doggy with Man 
+    prompt = (((she is on all fours on floor, rear view, back arched naturally, looking back over shoulder and one hand firmly on floor, other hand on ass, full body visible, anatomically correct pose, natural weight distribution))) while the Man having veiny penis goes inside her ass or pussy. (pov of the Man), (vaginal penetration, ass penetration), (her body is covered in of cum)       
+  Doggystyle (Square Landscape) 
+    prompt = (WIP), (1Man, 1female), (Two-fluids genders figure), (Mating Press Sex:1.5), (The female is on all fours), (The Man stands behind the female), Depict a scene of intimacy, where a female with delicate, feminine features is positioned on all fours, her body open to a Man with strong, masculine characteristics. The Man stands behind her, their connection highlighted by the contrast of their forms,        
+  Doggystyle v2 (Square Landscape) 
+    prompt = she is on all fours on a thick plush rug, bent over, with a large Man thrusting into her from behind. Her pussy is spread wide, slick and glistening from excitement. She looks back over her shoulder with a flushed, shocked expression, The lighting is soft and warm, highlighting the curve of her back and the angle of penetration.         
+  Doggy Style (Close-Up) 
+    prompt = The scene shows a female subject being penetrated doggystyle by a Man partner his hands gripping hips firmly. Subject is on hands and knees, weight balanced on palms and knees, arms extended forward, fingers splayed, head tilted back, jaw slack, eyes unfocused, tongue visible with saliva strands. sheen subcutaneous strain visible. Composition follows rule of thirds with head at x50% y20% center bottom buttocks at x70% y50% framing extreme close-up foreground showing slack mouth and tongue midground arched ass background partner pelvis and groin gripping hips. 
+  Gangbang (Soft Cum)
+    prompt = she is cowgirl style on man, man having veiny penis leaking pre-cum penetrating pussy, and other 2Man on sideways of female with erect veiny penis leaking pre-cum, she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin, cascading down her neck and dripping onto her chest    
+  Gangbang (Heavy Cum)
+    prompt = she is cowgirl style on man, man having veiny penis leaking pre-cum penetrating pussy, and other 2Man on sideways of female with erect veiny penis leaking pre-cum, she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin, cascading down her neck and dripping onto her chest, drooling loads of thick white cum covered on face          
+  Gangbang Dildo Orgy
+    prompt = she is ({kneeling|squatting} on ground) dildo penetrating vagina engulfing dildo head and with 2Man on sideways with erect veiny penis, profile view locked tight as she swallows his thick, natural cock to the hilt. Her lips clamp around the base, throat stretched in a visible line around the buried shaft. While she holds him deep, saliva pours from the corners of her mouth in long, messy ropes dribbling over her chin, cascading down her neck, and dripping onto her chest, (body covered cum), (cum pussy)        
+  Gangbang Sandwich (Square+Landscape) 
+    prompt = she is lying chest down on, buttfucked and deepthroating a Man all in one shot. she lays spread out on. ass slams into the crotch area of a Man. her head takes in the full veiny fat cock of another Man. Cum is on her back and drips down her legs. Both men face towards each other standing off both edges with the female in between on,        
+  Lesbian licking pussy 
+    prompt = Jenny, a beautiful slim eighteen year old cute lesbian female in two piece swimsuit top but no bottom, legs spread holding her friend Laura's face in her crotch. Laura is vigorously licking Jenny's twitching pussy with tongue visible. Jenny has eyes closed, smiling in pure ecstasy. Jenny sits on edge of sunken outdoor hot tub on patio, leaning against large ornamental rectangular flower pot. Naked Laura is almost fully in hot tub. Behind them, house window shows parents and friends at dinner table, not noticing, unconcerned view from behind.        
+  Lifted Up (Pussy-Ass) 
+    prompt = she is is held in a lifted full nelson by the Man in a living room, her legs raised and spread wide, his massive cock violently slamming into her {anus|pussy} as he controls her body height and angle. his thick cock penetrating into her {pussy|anus} while stabilizing her hips with his hands. Their bodies form a clear triangular frame around her, Her body is tense and overwhelmed, breathing in broken gasps with synchronized pressure. Camera placed at natural chest height. natural skin detail, cum asshole dripping with thick white cum, grounded human proportions, anatomically believable contact and motion.          
+  Mating Press Pose 
+    prompt = 1 man,1 female, in bed,( the female lies on her back and spreads her legs in an M-shape, while the man has sex in a sitting position and presses the female's buttocks and legs together. In this position, both the female's buttocks and the man's testicles and penis are clearly visible ,Mating Press Pose:1.6)        
+  Missionary (Pussy-Ass) 
+    prompt = she is on her back, legs spread wide, being penetrated by a Man partner. His veiny cock is fully inserted into her {pussy|anus}, glistening with {pre-cum|lube}, her asshole stretched wide around his shaft. Her body is tense, muscles straining, nipples hard, fluids dripping from her mouth, {Low-angle|POV} perspective emphasizing penetration mechanics, cum asshole or pussy dripping with thick white cum,        
+  Missionary (v2) 
+    prompt = she is (((missionary style))) (((NSFW))) grabbing her own nipple. legs open. pussy open, being fucked by a man veiny large dick with pre-cum,        
+  Masturbation 
+    prompt = they are sitting or lying down with legs spread wide alone and solo, hands groping and fondling genitals in masturbation for sexual stimulation holding a firm grip for maximum pleasure, showing their genitals of correct gender openly, fully framed scene,          
+  On All Fours 
+    prompt = Floor-level POV emphasizing a female subject on all fours, back arched, hips raised, legs slightly spread with high heels fully in-frame, showing straps, tips, and shoe shape. She's actively dripping {saliva|lubricant} across her body, hands smearing it down her chest, stomach, and thighs. Hair clings to her shoulders and neck, makeup running and smeared, eyeliner streaked, lips glossy and messy. The reflective floor shows slick puddles of fluids catching light from {flickering neon|harsh fluorescent|soft ambient} sources. Toes curl in her heels, thighs glistening, ass lifted high, emphasizing curves and slick textures along her back and lower body. Subtle shadows, dynamic reflections, and shallow depth of field keep attention on her body and the dripping fluids,
+  Orgams Trainer
+    prompt = she is straddling man's lap, perfect hand wrapped around veiny large cock shaft, handjob, cock covered in cum, very heavy cum shot, face looking down at cock, in background wall a monitor reads in perfect digital text: "Orgasm trainer, Cum 69 times",
+  Random Sex
+    prompt = she is ((({lying style|cowgirl style|missionary style|doggy style}))) (((NSFW))) grabbing her own nipple. legs open. pussy open, being fucked by a man veiny large dick,
+  𝗕𝗿𝗶𝗱𝗴𝗲
+    prompt = Lying supine with feet flat on the floor, hips and torso lifted high in an arch, weight supported on feet and shoulders.
+  𝗖𝗵𝗶𝗻 𝗢𝗻 𝗔𝗿𝗺𝘀
+    prompt = Leaning forward with chin resting upon crossed arms or hands, shoulders hunched slightly forward to frame the face.
+  𝗣𝗲𝗮𝗰𝗲 𝗦𝗶𝗴𝗻
+    prompt = One hand raised near the face, index and middle finger forming a 'V', palm facing outward or inward.
+  𝗙𝗿𝗮𝗺𝗶𝗻𝗴 𝗙𝗮𝗰𝗲
+    prompt = Both hands placed on cheeks or under the chin, fingers framing the face, elbows resting on a surface or tucked in.
+  𝗣𝗹𝗮𝗻𝗸
+    prompt = Face down, body held in a straight line supported by toes and forearms or hands, core engaged.
+  𝗣𝗿𝗼𝗻𝗲
+    prompt = Lying flat on the stomach, legs extended, elbows bent to prop up the upper chest, chin resting in hands.
+  𝗦𝘁𝗿𝗮𝗱𝗱𝗹𝗶𝗻𝗴
+    prompt = Kneeling with knees set wide apart, thighs abducted, torso upright, hands resting on thighs.
+  v𝗲𝗻𝘂𝘀 𝗣𝘂𝗱𝗶𝗰𝗮
+    prompt = Standing, one hand covering the breast, the other hand covering the groin area, slightly twisted away from the viewer.
+    
+eyewear 
+
+//========================================================
+// 40. Blindfold - VENDAS Y GAFAS
+//========================================================
+output40
+  Blindfold is [joinLists(BlindfoldList, BlindfoldValues)]
+
+BlindfoldList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [BlindfoldValues.selectOne.prompt]
+
+BlindfoldValues
+  Blindfold
+    prompt = She is blindfolded
+  Glasses 
+    prompt = She is wearing glasses.
+  Glasses (Aviator) 
+    prompt = She is wearing aviator style glasses
+  Glasses (Big) 
+    prompt = She is wearing big white framed glasses
+  Glasses (Cat-eye)
+    prompt = She is wearing cat eye shaped glasses. It is very important that her glasses are oval shaped. She is wearing cat glasses. Her glasses frames are cat eye shape. Her glasses shape is thin oval. Her glasses have an upsweep at the outer edges where the arms join the frame front. 
+  Glasses (Clubmaster) 
+    prompt = She is wearing clubmaster style glasses
+  Glasses (Granny)
+    prompt = She is wearing oversized, oval-framed granny glasses with a nostalgic, gentle charm and intellectual vibe.
+  Glasses (Half-rim)
+    prompt = She is wearing sleek half-rim glasses with minimalist metal frames, blending intellect and modern sophistication.
+  Glasses (Heart-Shaped)
+    prompt = She is wearing whimsical heart-shaped glasses in playful colors, evoking carefree fun and youthfulness.
+  Glasses (Horn-rimmed)
+    prompt = She is wearing bold horn-rimmed glasses with thick, dark frames, channeling vintage academia and artistic spirit.
+  Glasses (Invisible frame)
+    prompt = She is wearing rimless glasses with barely-there bridges and arms for an ultra-light, minimalist effect.
+  Glasses (Nerd)
+    prompt = She is wearing big rectangular glasses with thick black frames.
+  Glasses (Oversize) 
+    prompt = She is wearing oversize round framed glasses
+  Glasses (Round) 
+    prompt = She is wearing small round wire framed glasses. 
+  Glasses (Square) 
+    prompt = She is wearing square framed glasses
+  Glasses (Thick) 
+    prompt = She is wearing thick framed glasses
+  Glasses (Thin) 
+    prompt = She is wearing thin framed glasses
+  Glasses (Wayfarers)
+    prompt = She is weating iconic wayfarer glasses with trapezoidal frames, bridging timeless design and modern attitude.
+  Glasses (Wire) 
+    prompt = She is wearing wire framed glasses
+  Goggles (Diving)
+    prompt = She is wearing diving goggles
+  Sunglasses 
+    prompt = She is wearing sunglasses.
+  Sunglasses (Aviator) 
+    prompt = She is wearing aviator style sunglasses
+  Sunglasses (Big) 
+    prompt = She is wearing big white framed sunglasses
+  Sunglasses (black acetate bug-eyes sunglasses) 
+    prompt = She is wearing black acetate bug-eyes sunglasses
+  Sunglasses (black acetate eye-cat sunglasses)    
+    prompt = She is wearing black acetate eye-cat sunglasses
+  Sunglasses (Cat-eye)
+    prompt = She is wearing cat eye shaped sunglasses. It is very important that her sunglasses are oval shaped. She is wearing cat sunglasses. Her sunglasses frames are cat eye shape. Her sunglasses shape is thin oval. Her sunglasses have an upsweep at the outer edges where the arms join the frame front. 
+  Sunglasses (Clubmaster) 
+    prompt = She is wearing clubmaster style sunglasses
+  Sunglasses (Oversize) 
+    prompt = She is wearing dramatic oversized sunglasses with dark lenses and thick frames, perfect for an air of mystery.
+  Sunglasses (Round) 
+    prompt = She is wearing small round wire framed sunglasses. Her sunglasses have purple lenses
+  Sunglasses (Square) 
+    prompt = She is wearing square framed sunglasses
+  Sunglasses (Thick) 
+    prompt = She is wearing thick framed sunglasses
+  Sunglasses (Thin) 
+    prompt = She is wearing thin framed sunglasses
+  Sunglasses (Wayfarers)
+    prompt = She is weating iconic wayfarer sunglasses with trapezoidal frames, bridging timeless design and modern attitude.
+  Sunglasses (Wire) 
+    prompt = She is wearing wire framed sunglasses
+  Sunglasses (Yellow) 
+    prompt = She is wearing yellow tinted sunglasses
+
+//========================================================
+// 41. faceport - RETRATOS DE ROSTRO
+//========================================================
+output41
+  faceport is [joinLists(faceportList, faceportValues)]
+
+faceportList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [faceportValues.selectOne.prompt]
+
+faceportValues
+  FacePortrait_Studio
+    prompt = Phase One IQ4 150MP, Schneider Kreuznach 110mm f/2.8, medium format 151MP sensor, f/4, 1/125s, ISO 100, studio lighting with beauty dish and fill reflectors, extreme micro-detail rendering, perfect skin texture with visible pores and fine hairs, razor-sharp focus on eyes, professional beauty photography, 16-bit color depth, exceptional dynamic range.
+  FacePortrait_Natural
+    prompt = Canon EOS R5, RF 85mm f/1.2L USM, 45MP full-frame CMOS, f/1.4, 1/160s, ISO 100, soft diffused natural window light, shallow depth-of-field isolating face, natural skin tones with subtle imperfections, catchlights in eyes, realistic bokeh, professional portrait photography, hyper-detailed facial features.
+  FacePortrait_Cinematic
+    prompt = ARRI Alexa 65, Panavision T-series 75mm anamorphic, T2.8, 6.5K open gate, dramatic side lighting with Rembrandt pattern, shallow focus on eyes, cinematic skin texture with natural grain, filmic highlight rolloff, 2.39:1 aspect ratio, professional cinema portrait.
+  FacePortrait_35mmFilm
+    prompt = Nikon F5, Nikkor 85mm f/1.4, Kodak Portra 400 film stock, f/2.8, 1/250s, authentic film grain, warm skin tones, organic halation, subtle soft focus, vintage portrait aesthetic, analog character, 8K drum scan.
+  FacePortrait_Hasselblad
+    prompt = Hasselblad H6D-100c, HC 100mm f/2.2, 100MP medium format sensor, f/2.8, 1/125s, ISO 100, exceptional facial detail with medium format compression, natural bokeh, perfect skin texture reproduction, professional beauty photography, 16-bit color depth.
+  FacePortrait_SonyLowLight
+    prompt = Sony A7S III, FE 85mm f/1.4 GM, 12.1MP full-frame, f/1.4, 1/250s, ISO 800, exceptional low-light performance for moody portraits, natural noise pattern, shallow depth-of-field, warm skin tones, professional event and concert portrait photography.
+  FacePortrait_Leica
+    prompt = Leica M11, Noctilux-M 50mm f/0.95 ASPH, full-frame 60.3MP, f/0.95, 1/125s, ISO 200, razor-thin depth-of-field, creamy bokeh, exceptional facial isolation, warm German color rendition, subtle chromatic aberration adding character, artistic portrait photography.
+  FacePortrait_MediumFormat
+    prompt = FUJIFILM GFX 100S, GF 110mm f/2 R LM WR, 102MP medium format, f/2.8, 1/125s, ISO 100, exceptional facial detail, natural skin tones with filmic color science, medium format compression, professional studio portrait, hyper-realistic texture.
+  FacePortrait_BlackAndWhite
+    prompt = Leica M Monochrom, Summicron-M 50mm f/2, 40MP monochrome sensor, f/2.8, 1/250s, ISO 400, pure black and white portrait, dramatic chiaroscuro lighting, exceptional tonal range, deep rich blacks, beautiful skin texture without color artifacts, timeless fine art photography.
+  FacePortrait_Editorial
+    prompt = RED Monstro 8K VV, Panavision Sphero 65 85mm, 8K full-frame, T2.8, ISO 800, fashion editorial lighting, dramatic shadows and highlights, perfect skin texture, professional retouching aesthetic, magazine cover quality, hyper-detailed facial features.
+
+//========================================================
+// 42. Standing - POSES DE PIE
+//========================================================
+output42
+  Standing is [joinLists(StandingList, StandingValues)]
+
+StandingList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [StandingValues.selectOne.prompt]
+
+StandingValues
+  Standing_Default
+    prompt = Standing straight, weight evenly distributed on both feet, arms relaxed at sides, natural posture
+  Sta_Contrapposto
+    prompt = Standing with weight shifted onto one leg, hips slightly tilted, relaxed and natural stance, confident and casual
+  Sta_Power
+    prompt = Standing with feet shoulder-width apart, hands on hips, chest puffed out, confident commanding posture
+  Sta_Casual
+    prompt = Leaning against a wall or object, one foot crossed over the other, arms crossed or in pockets, relaxed attitude
+  Sta_HandsPockets
+    prompt = Standing with both hands in pockets, relaxed shoulders, casual and cool attitude
+  Sta_OneHandPocket
+    prompt = Standing with one hand in pocket, other hand relaxed or gesturing, casual confident stance
+  Sta_ArmsCrossed
+    prompt = Standing with arms crossed over chest, legs slightly apart, defensive or confident posture
+  Sta_HandsBehindBack
+    prompt = Standing with hands clasped behind the back, chest forward, formal or contemplative posture
+  Sta_HandsOnHips
+    prompt = Standing with hands on hips, elbows out, assertive and commanding posture, powerful stage presence
+  Sta_FingersInHair
+    prompt = Standing with one hand raised, fingers gently touching or running through hair, sensual and elegant
+  Sta_TiltedHead
+    prompt = Standing with head tilted slightly to one side, curious or playful expression
+  Sta_LookingBack
+    prompt = Standing facing forward but looking back over the shoulder, dynamic and mysterious, concert energy
+  Sta_FeetApart
+    prompt = Standing with feet wide apart, strong stable base, ready for action, powerful stance
+  Sta_OnTiptoes
+    prompt = Standing on tiptoes, reaching upward, elegant or playful posture
+  Sta_SwayingHips
+    prompt = Standing with hips swayed to one side, exaggerated feminine stance, sensual and dynamic
+
+//========================================================
+// 43. Walking - POSES DE CAMINAR
+//========================================================
+output43
+  Walking is [joinLists(WalkingList, WalkingValues)]
+
+WalkingList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [WalkingValues.selectOne.prompt]
+
+WalkingValues
+  A_Walking
+    prompt = Walking with confident stride, arms swinging naturally, weight shifted forward, dynamic movement
+  Actunning
+    prompt = Running dynamic pose, arms pumping, legs stretched, motion blur implied, high energy
+  Actumping
+    prompt = Jumping in mid-air, arms and legs spread, energetic and joyful, concert celebration
+  Actwisting
+    prompt = Twisting upper body while lower body stays still, looking back over shoulder, dynamic and dramatic
+  Acttretching
+    prompt = Stretching one arm upward and reaching, body elongated and graceful
+  Actitting
+    prompt = Throwing a punch or swing, dynamic and forceful, muscles engaged
+  Actancing
+    prompt = Dancing pose, one arm raised, hips swayed, happy and rhythmic movement
+  Acticking
+    prompt = Kicking dynamic pose, leg extended, arms in balance position, powerful movement
+  Acteaching
+    prompt = Reaching upward toward something, fingers extended, hopeful or desperate
+  Actpinning
+    prompt = Spinning around, hair and clothes in motion, dynamic and energetic, stage performance
+
+//========================================================
+// 44. Sitting - POSES SENTADAS
+//========================================================
+output44
+  Sitting is [joinLists(SittingList, SittingValues)]
+
+SittingList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [SittingValues.selectOne.prompt]
+
+SittingValues
+  Sitting_Straight
+    prompt = Sitting on chair with back straight, feet flat on floor, formal elegant posture, classical pianist
+  SitCasual
+    prompt = Sitting relaxed, leaning back, one leg crossed over other, arms resting on armrests, comfortable
+  SitCrossedLegs
+    prompt = Sitting with legs crossed at knee, hands resting on knee or lap, elegant and refined
+  SitIndianStyle
+    prompt = Sitting on floor with legs crossed, relaxed and grounded posture, intimate acoustic session
+  SitLeaningForward
+    prompt = Sitting and leaning forward with elbows on knees, engaged or intense expression, intimate conversation
+  SitLeaningBack
+    prompt = Sitting and leaning back, arms spread, confident and open posture
+  SitSideSaddle
+    prompt = Sitting sideways on chair, legs together, elegant and demure, classic portrait
+  SitKneesToChest
+    prompt = Sitting with knees pulled up to chest, arms wrapped around legs, vulnerable or playful
+  SitOnFloor
+    prompt = Sitting on floor, legs extended, hands resting on ground behind, relaxed and casual
+  SitOnStool
+    prompt = Sitting on high stool, one foot on floor, other foot on stool rung, casual and comfortable
+  SitThrone
+    prompt = Sitting in large chair, legs apart, arms on armrests, authoritative and regal, powerful presence
+  SitSlouched
+    prompt = Sitting with slouched posture, relaxed and casual, hands in lap, laid-back attitude
+  SitPerched
+    prompt = Sitting on edge of surface, leaning forward, ready to get up, dynamic and alert
+  SitAtPiano
+    prompt = Sitting at piano bench, hands on keys, elegant posture, focused on music, classical pianist pose
+
+//========================================================
+// 45. Expressive - POSES EXPRESIVAS
+//========================================================
+output45
+  Expressive is [joinLists(ExpressiveList, ExpressiveValues)]
+
+ExpressiveList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ExpressiveValues.selectOne.prompt]
+
+ExpressiveValues
+  Expressive_DramaticHeadTilt
+    prompt = Head tilted dramatically to one side, intense or questioning expression
+  Expve_HandOverFace
+    prompt = One hand partially covering face, mysterious, shy or dramatic
+  Expve_LookingDown
+    prompt = Looking down, eyes lowered, contemplative or submissive expression
+  Expve_LookingUp
+    prompt = Looking up, eyes raised, hopeful or defiant expression
+  Expve_HandOnForehead
+    prompt = Hand resting on forehead, thinking, tired or worried expression
+  Expve_HandOnNeck
+    prompt = Hand gently touching neck, sensual or vulnerable pose
+  Expve_ShoulderCheck
+    prompt = Looking back over shoulder, hands on hips, powerful and dynamic
+  Expve_FingersInMouth
+    prompt = One finger in mouth, playful, thoughtful or seductive gesture
+  Expve_HandOnArm
+    prompt = One hand holding other arm, guarded or cold expression
+  Expve_StretchingNeck
+    prompt = Head tilted back, neck exposed, relaxed or vulnerable posture
+  Expve_EyesClosed
+    prompt = Eyes closed, peaceful expression, feeling the music, emotional moment
+  Expve_Smiling
+    prompt = Wide genuine smile, joyful and happy expression, warm and inviting
+  Expve_Serious
+    prompt = Serious intense expression, focused and determined, powerful presence
+
+//========================================================
+// 46. Lying - POSES ACOSTADAS
+//========================================================
+output46
+  Lying is [joinLists(LyingList, LyingValues)]
+
+LyingList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [LyingValues.selectOne.prompt]
+
+LyingValues
+  LFlatOnBack
+    prompt = Lying flat on back, arms at sides, legs straight, relaxed and vulnerable
+  LyiStomach
+    prompt = Lying on stomach, face turned to side, arms crossed under head, playful or tired
+  LyiSide
+    prompt = Lying on side with knees slightly bent, hands resting on hip or head, elegant and relaxed
+  LyirledUp
+    prompt = Lying curled up in fetal position, knees pulled to chest, feeling vulnerable or cold
+  Lyiclining
+    prompt = Lying back on surface, propped up on elbows, relaxed and content, intimate
+  LyiamaticRecline
+    prompt = Lying on chaise or couch, arms draped elegantly, exaggerated theatrical posture
+  Lyirawled
+    prompt = Lying sprawled out, arms and legs spread, relaxed and carefree
+  LyiSideWithHand
+    prompt = Lying on side, one hand supporting head, other resting on hip, sensual elegant pose
+
+//========================================================
+// 47. Other - OTRAS POSES
+//========================================================
+output47
+  Other is [joinLists(OtherList, OtherValues)]
+
+OtherList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [OtherValues.selectOne.prompt]
+
+OtherValues
+  Fn_Walk
+    prompt = Walking with exaggerated steps, one hand on hip, looking over shoulder, high fashion attitude
+  FasEditorialStance
+    prompt = Standing with one foot forward, hands in pockets, looking over shoulder, editorial style
+  FasClassicModel
+    prompt = Standing with hand on waist, legs slightly apart, classic model pose
+  FasHighFashion
+    prompt = Standing with asymmetrical hand positioning, chin elevated, high fashion editorial
+  FasArtisticDramatic
+    prompt = Dramatic pose with flowing dress or fabric, one hand raised, expressive movement
+  FasMagazineCover
+    prompt = Standing with hand on hip, looking slightly upward, confident and camera-ready
+  FasProfileElegant
+    prompt = Profile view, elegant posture, chin slightly elevated, sophisticated and refined
+  FasDramaticShadow
+    prompt = Dramatic pose with strong shadows, one hand on face, moody and artistic
+
+//========================================================
+// 48. Holding - POSES CON OBJETOS
+//========================================================
+output48
+  Holding is [joinLists(HoldingList, HoldingValues)]
+
+HoldingList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [HoldingValues.selectOne.prompt]
+
+HoldingValues
+  O_Holding
+    prompt = Holding an object in front, arms extended or cradled, focus on object
+  Objesting
+    prompt = Leaning or resting on an object (table, wall, car), casual and relaxed
+  Objlaying
+    prompt = Holding and playing a musical instrument, fingers on keys or strings, focused
+  ObjoldingWeapon
+    prompt = Holding a weapon (sword, gun, bow), ready position, tense and focused
+  ObjoldingBook
+    prompt = Holding a book in front, reading or studying, intellectual and calm
+  ObjoldingPhone
+    prompt = Holding a phone to ear or in front, distracted or conversing
+  ObjoldingGuitar
+    prompt = Holding acoustic guitar, fingers on strings, relaxed playing position
+  ObjoldingRose
+    prompt = Holding a rose, smelling it, romantic and elegant
+  ObjoldingGlass
+    prompt = Holding a glass of wine or water, toasting or drinking, casual and sophisticated
+  ObjearingGlasses
+    prompt = Wearing sunglasses or glasses, adjusting them, cool and stylish
+  ObjoldingHat
+    prompt = Holding or adjusting a hat, casual and playful
+  ObjoldingKeys
+    prompt = Holding keys, ready to leave, casual and everyday
+
+//========================================================
+// 49. TwoTwo - POSES DE DOS PERSONAS
+//========================================================
+output49
+  TwoTwo is [joinLists(TwoTwoList, TwoTwoValues)]
+
+TwoTwoList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [TwoTwoValues.selectOne.prompt]
+
+TwoTwoValues
+  Two_FacingEachOther
+    prompt = Two people facing each other, looking into each other's eyes, intimate and connected
+  Two_BackToBack
+    prompt = Two people standing back to back, arms crossed or relaxed, independent yet together
+  Two_Hugging
+    prompt = Two people in a tight embrace, arms wrapped around each other, loving and warm
+  Two_HandInHand
+    prompt = Two people holding hands, walking or standing, connected and affectionate
+  Two_ForeheadTouch
+    prompt = Two people touching foreheads, eyes closed, intimate and peaceful moment
+  Two_ArmInArm
+    prompt = Two people walking with linked arms, close and comfortable
+  Two_OneLookingAway
+    prompt = One person looking at other, other looking away, dramatic emotional tension
+  Two_DancingTogether
+    prompt = Two people dancing, hands touching, romantic and graceful movement
+  Two_ConcertDuet
+    prompt = Two singers on stage, sharing microphone, harmonizing, powerful duet moment
+
+//========================================================
+// 50. Singer - POSES DE CANTANTE
+//========================================================
+output50
+  Singer is [joinLists(SingerList, SingerValues)]
+
+SingerList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [SingerValues.selectOne.prompt]
+
+SingerValues
+  Singer_MicGrip
+    prompt = Gripping microphone stand with both hands, leaning forward, intense passionate expression, concert energy
+  Singer_MicInHand
+    prompt = Holding microphone in one hand, arm extended toward crowd, powerful stage presence, dynamic performance
+  Singer_Screaming
+    prompt = Head thrown back, mouth open in powerful scream, microphone near lips, intense emotional moment, sweat and energy
+  Singer_Reaching
+    prompt = One arm reaching out to crowd, microphone in other hand, engaged with audience, passionate connection
+  Singer_Kneeling
+    prompt = Kneeling at edge of stage, leaning toward crowd, microphone extended, intimate concert moment
+  Singer_Jumping
+    prompt = Jumping in mid-air on stage, arms spread wide, joyful energetic performance, concert freedom
+  Singer_Profile
+    prompt = Profile view, singing with passion, eyes closed, microphone near lips, dramatic lighting on face
+  Singer_HandOnChest
+    prompt = One hand on chest, microphone in other, emotional powerful ballad moment, sincere expression
+  Singer_LookingUp
+    prompt = Looking upward, eyes closed, microphone held high, dramatic concert moment, spiritual or emotional
+  Singer_BackToCrowd
+    prompt = Facing away from crowd, looking back over shoulder, microphone behind, dramatic mysterious stage presence
+  Singer_ArmsWide
+    prompt = Arms spread wide open, microphone in one hand, embracing the crowd, powerful connection moment
+  Singer_LeaningBack
+    prompt = Leaning backward, body arched, microphone extended, dramatic powerful vocal moment
+  Singer_FistPump
+    prompt = Fist raised in air, microphone in other hand, celebratory energetic moment, crowd interaction
+  Singer_Crouching
+    prompt = Crouching low on stage, microphone near mouth, intense focused expression, intimate performance moment
+  Singer_Walking
+    prompt = Walking across stage, microphone in hand, engaging with different sides of audience, dynamic performance
+  Singer_Dancing
+    prompt = Dancing on stage, rhythmic body movement, microphone in hand, energetic happy performance
+
+//========================================================
+// 51. Hands - POSES DE MANOS
+//========================================================
+output51
+  Hands is [joinLists(HandsList, HandsValues)]
+
+HandsList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [HandsValues.selectOne.prompt]
+
+HandsValues
+  Hands_OnChin
+    prompt = Hand resting on chin, thoughtful or assessing expression, contemplative
+  Hands_FingerToLips
+    prompt = One finger gently touching lips, mysterious or 'shh' gesture, intimate
+  Hands_Pointing
+    prompt = One arm extended, pointing at something, directing attention, commanding
+  Hands_OnHeart
+    prompt = Hand placed over heart, sincere or patriotic gesture, emotional
+  Hands_OnHip
+    prompt = One hand on hip, other relaxed, casual and assertive, confident
+  Hands_ArmsUp
+    prompt = Both arms raised upward, joyful, celebratory or surrendering pose
+  Hands_ArmsWideOpen
+    prompt = Arms stretched out to sides, welcoming or expressive stance, embracing
+  Hands_FingerGun
+    prompt = Making a finger gun gesture, playful or aggressive expression
+  Hands_Waving
+    prompt = Hand raised in waving gesture, friendly and welcoming, crowd interaction
+  Hands_FingersIntertwined
+    prompt = Hands clasped together in front, peaceful or praying gesture, serene
+  Hands_HoldingMic
+    prompt = Holding microphone close to mouth, both hands gripping, intense performance
+  Hands_MicStand
+    prompt = Both hands gripping microphone stand, leaning in, powerful stage presence
+
+//========================================================
+// 52. StyleComp - ESTILOS DE COMPOSICIÓN
+//========================================================
+output52
+  StyleComp is [joinLists(StyleCompList, StyleCompValues)]
+
+StyleCompList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [StyleCompValues.selectOne.prompt]
+
+StyleCompValues
+  Grok Imagine Realistic
+    prompt = ultra-realistic portrait, high fidelity detail, natural skin texture, professional DSLR photography, Canon EOS R5, 50mm lens, f/1.8, balanced highlights, lifelike grounded mood, macro lens precision, ultra-sharp focus
+  Grok Casual Photo
+    prompt = candid documentary style, real-life capture, authentic imperfections, minimal retouch, 35mm lens snapshot, unposed composition, soft ambient lighting, relatable everyday slice-of-life mood
+  Grok Professional Photo
+    prompt = high-end editorial portrait, refined intricate detail, 85mm lens, f/1.4, Rembrandt lighting, controlled shadows, polished confident mood, shallow depth of field, elite subject isolation
+  Grok Cinematic Realism
+    prompt = cinematic film still, anamorphic lens look, 35mm film grain, dramatic lighting, storytelling tone, narrative-driven tense emotional mood, atmospheric separations
+  Grok Imagine Animated
+    prompt = universal anime artstyle, 2D illustration, clean linework, detailed hair flow, expressive features, dynamic silhouette, balanced composition, emotion-driven scene
+  LEGO Movie
+    prompt = LEGO mini figure style character, modern cinematic LEGO movie aesthetic, stylized animated toy figure, smooth rounded ABS plastic material, glossy plastic surface with realistic reflections, expressive LEGO-inspired cartoon eyes, simplified facial design, high detail 3D animated movie render style, subtle micro-scratches on plastic, human skin tone color
+  Genshin Impact
+    prompt = Genshin Impact style, masterpiece 3D anime render, cell-shaded aesthetic, flat shading, thick clean outlines, colorful anime palette, smooth skin texture, detailed anime eyes, vibrant magical atmosphere, soft global illumination, high-fidelity 3D CGI, fantasy character design, official art style
+  Ghibli Studio
+    prompt = Studio Ghibli inspired, painterly backgrounds, warm natural palette, gentle hand-painted look, whimsical atmosphere, soft organic depth, calm cinematic mood
+  Grand Theft Auto
+    prompt = Grand Theft Auto stylized realism, high-contrast game render, vibrant grounded colors, urban aesthetic, sharp character edges, modern open-world vibe, bold outlines
+  Pixar 3D
+    prompt = Disney 3D render style, expressive features, soft stylized skin, warm rim highlights, subsurface scattering, colorful and inviting palette, clean 3D silhouette
+  Unreal Engine 5
+    prompt = Unreal Engine 5 AAA game character model render, ultra realistic plastic life like skin stylized game aesthetic, high-fidelity 3D CGI, photorealistic game graphics, next-gen visuals, ray-traced lighting, Lumen global illumination, advanced subsurface scattering, dynamic volumetric shadows, screen-space reflections, ultra-detailed PBR textures, intricate surface details, cinematic game engine look, sharp focus, maximum visual fidelity
+  Cyberpunk Aesthetic
+    prompt = futuristic intricate details, neon lighting accents, glowing highlights, layered composition, dynamic perspective, high contrast, reflective surfaces
+  Western Comics
+    prompt = classic comic book illustration, bold inked outlines, Ben-Day dots, cinematic dynamic poses, high-contrast shadows, graphic storytelling, vibrant primary colors
+  Cartoon Network
+    prompt = modern 2D flat animation style, thick clean outlines, exaggerated expressions, solid vibrant colors, playful composition, minimalist background
+  Classic Looney Tunes
+    prompt = vintage 1950s animation style, rubber hose limbs, expressive caricature, warm technicolor palette, hand-drawn cel animation texture
+  Concept Art
+    prompt = professional digital illustration, detailed environment design, dynamic composition, atmospheric perspective, rich color story, mood-driven rendering
+  Sketch & Pencil
+    prompt = hand-drawn pencil sketch, fine linework, cross-hatching texture, soft monochrome tones, expressive character outlines, natural graphite feel
+  Ink & Line Art
+    prompt = clean inked line art, bold contours, smooth strokes, high contrast black and white, crisp silhouettes, clear visual hierarchy
+  Watercolor
+    prompt = soft watercolor brush strokes, gentle gradient washes, muted palette, painterly texture, organic blending, dreamy soft focus
+  Clean line art
+    prompt = clean line art, precise vector strokes, crisp edges
+  Simple and stylized
+    prompt = simple and stylized, iconic shapes, graphic simplification
+  Complex filigree
+    prompt = complex filigree, ornate scrollwork, intricate decorative patterns
+  Ornate and decorative
+    prompt = ornate and decorative, elaborate ornamentation, rich embellishment
+  Unfinished sketchy
+    prompt = unfinished, sketchy, raw drafts, exploratory lines
+  Abstract simplicity
+    prompt = abstract simplicity, geometric reduction, pure essence
+  Engraving-level precision
+    prompt = engraving-level precision, copperplate intaglio quality, fine etched lines
+  Low polygon count
+    prompt = low polygon count, geometric faceted, low-poly 3D style
+  Medium polygon count
+    prompt = medium polygon count, balanced polygonal model, game-ready asset
+  High polygon count
+    prompt = high polygon count, ultra-detailed mesh, sculpted 3D model
+  Subdivision surface smooth
+    prompt = subdivision surface smooth, organically curved 3D topology
+  NURBS surface smooth
+    prompt = NURBS surface smooth, mathematically perfect curves, industrial design finish
+  Voxel blocky
+    prompt = voxel blocky, volumetric pixel art, cube-based 3D style
+  Pixel art blocky
+    prompt = pixel art blocky, retro pixel grid, 8-bit aesthetic
+  Retro game sprite
+    prompt = retro game sprite, classic 2D game character, pixelated nostalgia
+  Modern game asset
+    prompt = modern game asset, current-gen game quality, optimized PBR workflow
+  Film quality CGI
+    prompt = film quality CGI, blockbuster VFX rendering, cinematic 3D integration
+  Matte painting detail
+    prompt = matte painting detail, photobashed environment, cinematic backdrop quality
+  Concept art rough
+    prompt = concept art rough, iterative design sketches, development stage artwork
+  Storyboard sketch
+    prompt = storyboard sketch, sequential composition planning, frame-by-frame narrative
+  Thumbnail sketch
+    prompt = thumbnail sketch, micro-composition, rapid idea visualization
+  Rough sketch loose
+    prompt = rough sketch loose, expressive hand-drawn, freeform gesture
+  High fashion editorial
+    prompt = high fashion editorial, Vogue-grade styling, runway elegance
+  Street fashion snapshot
+    prompt = street fashion snapshot, urban style capture, candid trend documentation
+  Candid photo detail
+    prompt = candid photo detail, authentic unposed moment, natural expression capture
+
+//========================================================
+// 53. BodyPortrait - RETRATOS DE CUERPO
+//========================================================
+output53
+  BodyPortrait is [joinLists(BodyPortraitList, BodyPortraitValues)]
+
+BodyPortraitList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [BodyPortraitValues.selectOne.prompt]
+
+BodyPortraitValues
+  BodyPortrait_Full
+    prompt = Full body fashion photography, Canon EOS R5, RF 70-200mm f/2.8L at 135mm, f/2.8, 1/250s, ISO 100, dramatic studio lighting with beauty dish and rim lights, sharp focus on body and clothing, entire figure in frame, professional fashion editorial, 8K, hyper-realistic, detailed fabric textures, elegant pose, magazine quality.
+  BodyPortrait_Dynamic
+    prompt = Dynamic action pose photography, Sony A9 III, FE 50mm f/1.2 GM, f/1.4, 1/1000s, ISO 200, dramatic side lighting, motion blur in hair and fabric, energetic posture, professional dance photography, 8K, hyper-realistic, athletic body, powerful movement.
+  BodyPortrait_Studio
+    prompt = Studio body photography, Phase One IQ4 150MP, Schneider 110mm f/2.8, f/5.6, 1/125s, ISO 100, seamless white background, even studio lighting, complete body visible, professional nude or fashion study, 8K, hyper-realistic, perfect body proportions.
+  BodyPortrait_Cinematic
+    prompt = Cinematic wide shot of person, ARRI Alexa 65, Panavision anamorphic 50mm, T2.8, 2.39:1, dramatic lighting with deep shadows, full body in frame, epic composition, person small in grand setting, 8K, hyper-realistic, movie still quality.
+  BodyPortrait_Street
+    prompt = Street photography full body, Leica M11, Summicron 35mm f/2, f/4, 1/500s, ISO 400, natural daylight, person walking, candid moment, city background, entire figure visible, documentary style, 8K, hyper-realistic, authentic urban atmosphere.
+  BodyPortrait_Concert
+    prompt = Concert photography full body, Sony A7S III, FE 24-70mm f/2.8, f/2.8, 1/250s, ISO 800, singer on stage, dramatic concert lighting, full figure from head to toe, microphone in hand, energetic performance, crowd in background, 8K, hyper-realistic.
+  BodyPortrait_Fashion
+    prompt = High fashion runway photography, Nikon Z9, NIKKOR 70-200mm f/2.8 at 200mm, f/2.8, 1/500s, ISO 400, dramatic runway lighting, entire outfit visible, model walking, elegant pose, fashion week style, 8K, hyper-realistic, clothing details sharp.
+  BodyPortrait_Silhouette
+    prompt = Full body silhouette photography, dramatic backlight, person in dark silhouette against bright background, strong rim light, complete body shape visible, minimalist composition, 8K, hyper-realistic, artistic and moody.
+  BodyPortrait_Dancer
+    prompt = Dance photography full body, Canon R3, RF 85mm f/1.2, f/1.4, 1/800s, ISO 400, dramatic stage lighting, ballerina or dancer in elegant pose, entire body from head to toe, graceful movement, professional dance studio, 8K, hyper-realistic.
+  BodyPortrait_Casual
+    prompt = Casual lifestyle photography, FUJIFILM X-T5, XF 56mm f/1.2, f/2, 1/250s, ISO 200, natural daylight, relaxed standing pose, complete body visible, unposed candid moment, 8K, hyper-realistic, authentic everyday person.
+
+//========================================================
+// 54. ConcertFromStage - CONCIERTOS DESDE EL ESCENARIO
+//========================================================
+output54
+  ConcertFromStage is [joinLists(ConcertFromStageList, ConcertFromStageValues)]
+
+ConcertFromStageList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [ConcertFromStageValues.selectOne.prompt]
+
+ConcertFromStageValues
+  ConcertFromStage
+    prompt = Point-of-view shot from stage looking at massive crowd, singer's perspective, thousands of faces and hands reaching up, sea of cell phone lights, overwhelming energy, wide-angle lens capturing full audience, 8K, hyper-realistic, immersive concert experience.
+  ConcertFromCrowd
+    prompt = Crowd-level concert photography, looking up at singer, dramatic low angle, arms reaching up in foreground, singer in dramatic spotlight, epic towering presence, 8K, hyper-realistic, intimate fan perspective.
+  ConcertPit
+    prompt = Photographer in front of stage security pit, intimate access shot, singer leaning over edge engaging crowd, sweat flying, dramatic moment, wide-angle lens close to stage, 8K, hyper-realistic, concert documentary photography.
+  ConcertOverhead
+    prompt = Overhead bird's-eye view of concert, drone or top balcony shot, stage visible with light effects, audience pattern, massive crowd spread out, 8K, hyper-realistic, architectural concert photography.
+  ConcertGoldenHourOutdoor
+    prompt = Outdoor concert during golden hour, dramatic sunset sky blending with stage lights, singer and crowd silhouetted, magical atmospheric moment, warm amber and blue tones, 8K, hyper-realistic, breathtaking concert photography.
+  ConcertRainOpenAir
+    prompt = Open-air concert in pouring rain, dramatic wet stage, singer soaked but performing passionately, water droplets catching light, crowd with umbrellas and rain ponchos, epic emotional atmosphere, 8K, hyper-realistic, cinematic concert photography.
+  ConcertIntimateClub
+    prompt = Small intimate club concert, minimal lighting, singer in close contact with audience, emotional raw performance, tiny stage, very tight venue, authentic underground music scene, 8K, hyper-realistic, documentary concert photography.
+  ConcertFestivalAerial
+    prompt = Aerial drone shot of massive music festival, multiple stages, thousands of people across large field, colorful tents, sunset lighting, sweeping landscape view, 8K, hyper-realistic, spectacular festival photography.
+  ConcertBehindStage
+    prompt = Behind-stage viewpoint, looking at singer's back and side as they face crowd, dramatic stage lighting from front, crew members visible in background, authentic documentary perspective, 8K, hyper-realistic, candid backstage concert photography.
+  ConcertReflection
+    prompt = Concert photography with creative reflection, singer reflected in piano surface or water puddle on stage, poetic duality, dramatic lighting, artistic composition, 8K, hyper-realistic, innovative concert photography.
+
+//========================================================
+// 55. CameraTechValues - EQUIPO DE CÁMARA
+//========================================================
+output55
+  CameraTech is [joinLists(CameraTechList, CameraTechValues)]
+
+CameraTechList
+  Default 
+    prompt = {|}
+  🎲 Random
+    prompt = [CameraTechValuesValues.selectOne.prompt]
+
+CameraTechValues
+  ARRI_Alexa_Anamorphic
+    prompt = ARRI Alexa 65, Panavision anamorphic 2x lenses, T2.8, 2.39:1 cinematic aspect ratio, 6.5K open gate, ARRIRAW codec, 23.976fps, 180-degree shutter angle, deep focus with shallow depth-of-field on subject, tungsten 3200K color temperature, filmic highlight rolloff, organic grain structure, photorealistic cinema-grade imagery.        
+  Hasselblad_Medium_Format
+    prompt = Hasselblad H6D-100c, HC 50mm f/3.5 II lens, 100MP medium format sensor, 53.4 x 40.0mm digital back, 16-bit color depth, ISO 100, f/5.6, 1/250s, leaf shutter, ultra-sharp with exceptional micro-contrast, natural bokeh, realistic skin texture rendition, stunning dynamic range, architectural and portrait precision.        
+  RED_VVistaVision
+    prompt = RED Monstro 8K VV, Panavision Sphero 65 lenses, 8K full-frame 40.96mm x 21.60mm sensor, REDCODE RAW 5:1 compression, 36.7MP, ISO 800, 180-degree shutter, 24fps, wide dynamic range with extended highlight retention, cinematic color grading in post, hyper-realistic digital cinema aesthetic.        
+  Leica_Noctilux_35mm
+    prompt = Leica M11, Noctilux-M 50mm f/0.95 ASPH, full-frame 60.3MP CMOS sensor, shot wide-open at f/0.95, 1/125s, ISO 200, manual focus, razor-thin depth-of-field with exceptional subject isolation, creamy bokeh, subtle chromatic aberration on high-contrast edges, warm color rendition, authentic German optical character.        
+  Canon_EF_Photoreal
+    prompt = Canon EOS R5, EF 85mm f/1.2L II USM, 45MP full-frame CMOS, f/1.4, 1/160s, ISO 100, Dual Pixel CMOS AF II, shallow depth-of-field, outstanding sharpness with smooth background compression, neutral color profile, subtle vignetting, exceptional low-light performance, professional studio-grade realism.        
+  Sony_Alpha_LowLight
+    prompt = Sony A7S III, FE 24-70mm f/2.8 GM II, 12.1MP full-frame back-illuminated Exmor R CMOS, f/2.8, 1/250s, ISO 3200, dual native ISO, outstanding low-light performance, excellent dynamic range, realistic noise pattern at high ISO, fast hybrid autofocus, professional event and documentary photography.        
+  Nikon_Z_Cinematic
+    prompt = Nikon Z9, NIKKOR Z 50mm f/1.2 S, 45.7MP stacked CMOS sensor, f/1.4, 1/500s, ISO 400, exceptional sharpness with minimal distortion, advanced multi-focusing system, natural color science, robust dynamic range, professional action and portrait photography, hyper-detailed realism.
+  FUJIFILM_GFX_Studio
+    prompt = FUJIFILM GFX 100S, GF 110mm f/2 R LM WR, 102MP medium format BSI CMOS, f/2.8, 1/125s, ISO 100, 14-stop dynamic range, 16-bit RAW, exceptional micro-detail rendering, natural skin tones with subtle filmic color science, medium format compression, professional studio and fine art photography.        
+  PhaseOne_Technical
+    prompt = Phase One IQ4 150MP, Schneider Kreuznach 80mm f/2.8 LS, 151MP medium format CCD sensor, f/5.6, 1/250s, ISO 100, 16-bit color depth, infinite dynamic range, exceptional resolution for large prints, technical and architectural precision, clinical sharpness with realistic texture reproduction.        
+  Kodak_Portra_Film
+    prompt = Nikon F6 35mm film body, Nikkor 50mm f/1.4 AIS, Kodak Portra 400 film stock, pushed +1 stop, f/2.8, 1/250s, authentic film grain pattern, warm color palette with soft highlights, organic halation, subtle light leaks, vintage analog character, 8K drum scan, filmic realism with nostalgic aesthetic.
+  GearCanon
+    prompt = Captured on Canon EOS R3 with RF 70-200mm f/2.8L IS USM, shot at f/2.8, 1/500s, ISO 400, professional concert photography, 8K, hyper-realistic.
+  GearSony
+    prompt = Captured on Sony A7S III with FE 24-70mm f/2.8 GM II, exceptional low-light performance, shot at f/2.8, 1/250s, ISO 1600, concert photography, 8K, hyper-realistic.
+  GearNikon
+    prompt = Captured on Nikon Z9 with NIKKOR Z 50mm f/1.2 S, extraordinary sharpness, shot at f/1.2, 1/500s, ISO 400, professional concert photography, 8K, hyper-realistic.
+  GearLeica
+    prompt = Captured on Leica SL2 with Summicron-SL 50mm f/2 ASPH, incredible contrast, shot at f/2, 1/250s, ISO 800, cinematic concert photography, 8K, hyper-realistic.
+  GearFuji
+    prompt = Captured on FUJIFILM GFX 100S with GF 80mm f/1.7 R WR, medium format exceptional detail, shot at f/1.7, 1/125s, ISO 400, professional concert photography, 8K, hyper-realistic.
+  GearArri
+    prompt = Captured on ARRI Alexa 65 with Panavision anamorphic lenses, cinematic 2.39:1 aspect ratio, filmic color science, shot at T2.8, professional cinema camera, 8K, hyper-realistic, movie-quality concert photography.
+  GearRed
+    prompt = Captured on RED Komodo 6K with Canon EF 50mm f/1.2L, cinematic high dynamic range, shot at f/1.2, 1/500s, ISO 400, professional cinema camera, 8K, hyper-realistic, filmic concert photography.
+  GearHasselblad
+    prompt = Captured on Hasselblad H6D-100c with HC 50mm f/3.5 II, medium format exceptional detail, shot at f/4, 1/250s, ISO 100, professional concert photography, 8K, hyper-realistic.
+  Gear35mmFilm
+    prompt = Captured on classic 35mm film camera, Kodak Portra 800 pushed one stop, authentic film grain, nostalgic concert photography, analog aesthetic, 8K scan, hyper-realistic with film character.
+
+// SALIDA ÚNICA - COMBINA TODAS LAS VARIABLES
+//========================================================
+$output = [[ShotVariabilityList, ShotPlanList, LensFocalLengthList, ENCUADREList, ANGULOList, ORIENTACIONList, COMPOSICIONList, ILUMINACIONList, ESTILOS_ESPECIALESList, ESTILOARTISTICOList, ARTISTICCOMPList, StyleCompList, TexturasLocasList, TEXTURAS_METALICASList, TEXTURAS_MADERAList, TEXTURAS_PIEDRAList, TEXTURAS_AGUA_HIELOList, TEXTURAS_SUPERFICIEList, TEXTURAS_PAPELList, TEXTURAS_DANIOList, TEXTURAS_VEGETALESList, TEXTURAS_LUMINICASList, SingerList, SittingList, StandingList, WalkingList, LyingList, ExpressiveList, HandsList, TwoTwoList, HoldingList, OtherList, BodyPortraitList, BodyFocusList, BodyTechList, pose1List, char1List, locaList, glassesaList, BlindfoldList, FaceFixList, faceportList, FacList, colorsList, ColoresList, specialEffectxList, SceneUniformityList, ConcertFromStageList, AMBIENTALESList, LENTESList, ClimaList].map(l => l.selectOne.prompt + "").join("")]
