@@ -1,0 +1,1148 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/index.min.css">
+<style>
+  * { font-family: 'Poppins', sans-serif; }
+  body {
+    background: radial-gradient(ellipse at top left, #2d1b69 0%, #1a0b2e 40%, #0f0520 100%);
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(255,0,200,0.15), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(0,220,255,0.12), transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glass {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+  .glass-strong {
+    background: rgba(30,10,60,0.55);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .neon-text {
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ffea00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .neon-text-2 {
+    background: linear-gradient(90deg, #ffea00, #ff00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .neon-text-3 {
+    background: linear-gradient(90deg, #00ffff, #00ff88);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .chip {
+    transition: all 0.25s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .chip:hover { transform: translateY(-2px); }
+  .chip.active {
+    background: linear-gradient(135deg, #ff00ff, #7b2cff);
+    border-color: #ff00ff;
+    box-shadow: 0 0 20px rgba(255,0,255,0.5);
+    color: #fff;
+  }
+  .btn-generate {
+    background: linear-gradient(135deg, #ff00ff 0%, #7b2cff 50%, #00ffff 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    box-shadow: 0 0 30px rgba(255,0,255,0.5), inset 0 1px 0 rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+  }
+  .btn-generate:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 50px rgba(255,0,255,0.8), inset 0 1px 0 rgba(255,255,255,0.4);
+  }
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .quick-btn {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .quick-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(255,0,255,0.4);
+    border-color: #ff00ff;
+  }
+  .quick-btn img {
+    transition: transform 0.5s ease;
+  }
+  .quick-btn:hover img {
+    transform: scale(1.1);
+  }
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border-radius: 999px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffea00;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffea00, 0 0 20px rgba(255,234,0,0.6);
+    border: 2px solid #fff;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffea00;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffea00;
+    border: 2px solid #fff;
+  }
+  textarea, input[type="text"], input[type="number"] {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  textarea:focus, input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px rgba(255,0,255,0.4);
+    background: rgba(0,0,0,0.5);
+  }
+  .img-card {
+    transition: all 0.4s ease;
+    animation: fadeInUp 0.6s ease;
+  }
+  .img-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255,0,255,0.3);
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .icon-btn {
+    transition: all 0.2s ease;
+  }
+  .icon-btn:hover {
+    transform: scale(1.15);
+  }
+  .icon-btn.download:hover { background: rgba(0,255,136,0.25); color: #00ff88; }
+  .icon-btn.save:hover { background: rgba(0,220,255,0.25); color: #00dcff; }
+  .icon-btn.delete:hover { background: rgba(255,0,100,0.25); color: #ff0064; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff00ff, #7b2cff);
+    border-radius: 10px;
+  }
+  .toast {
+    animation: slideIn 0.4s ease, fadeOut 0.4s ease 2.6s forwards;
+  }
+  @keyframes slideIn {
+    from { transform: translateX(120%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes fadeOut {
+    to { opacity: 0; transform: translateY(-20px); }
+  }
+  .loading-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .section-title {
+    position: relative;
+    padding-left: 14px;
+  }
+  .section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(180deg, #ff00ff, #00ffff);
+    border-radius: 2px;
+  }
+  .modal-overlay {
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
+  }
+
+
+
+  /* --- TUS ESTILOS MORADOS (COPIADOS DE TU CSS) --- */
+  :root {
+    --b1-color-0: #3e0346; --b1-color-1: rgba(255, 255, 255, 0.08);
+    --b1-color-2: #a850f5; --b1-color-6: #f4b2e5;
+    --bg-color: #1d032b; --border-n1: 1px solid rgba(177, 1, 230, 0.082);
+    --shadow-n1: inset 5px 5px 4px rgba(0, 0, 14, 0.51), inset -5px -5px 4px rgba(70, 44, 84, 0.3);
+    --gradie-n1: linear-gradient(265deg, #34034f,#1d032b);
+  }
+
+  body { background: var(--bg-color); font-family: sans-serif; color: #fff; }
+
+  /* --- ESTILOS ADEV GRID --- */
+  .adev-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .adev-card {
+    background: var(--b1-color-1);
+    backdrop-filter: blur(10px);
+    border: var(--border-n1);
+    box-shadow: var(--shadow-n1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 1/1; /* Cuadrado por defecto */
+    transition: transform 0.2s;
+  }
+
+  .adev-card:hover { transform: translateY(-5px); border-color: #a850f5; }
+
+  .adev-image-wrapper {
+    width: 100%; height: 100%;
+    background: #000;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+
+  .adev-image-wrapper img {
+    width: 100%; height: 100%; object-fit: cover;
+    cursor: pointer;
+  }
+
+  .adev-loader {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: var(--b1-color-6);
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+  }
+
+  .spinner {
+    width: 30px; height: 30px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: var(--b1-color-2);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .adev-data-panel {
+    padding: 10px;
+    background: rgba(0,0,0,0.6);
+    border-top: 1px solid var(--border-n1);
+    font-size: 0.8rem;
+    color: #ccc;
+  }
+
+  .adev-prompt {
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    margin-bottom: 5px; color: #fff;
+  }
+
+  .adev-actions { display: flex; gap: 5px; margin-top: 5px; }
+  
+  .adev-btn-small {
+    flex: 1; padding: 4px; font-size: 0.7rem;
+    background: rgba(255,255,255,0.1); border: none;
+    color: #fff; border-radius: 4px; cursor: pointer;
+  }
+  .adev-btn-small:hover { background: var(--b1-color-2); }
+
+  /* Controles Globales */
+  .adev-global-controls {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background: var(--b1-color-1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: var(--border-n1);
+    text-align: center;
+  }
+
+  .adev-btn-main {
+    padding: 12px 24px; font-size: 1rem;
+    background: linear-gradient(135deg, #a850f5, #87289d);
+    color: white; border: none; border-radius: 6px;
+    cursor: pointer; font-weight: bold;
+    box-shadow: 0 4px 15px rgba(168, 80, 245, 0.4);
+  }
+  .adev-btn-main:hover { filter: brightness(1.1); transform: translateY(-2px); }
+  .adev-btn-main:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+  /* Panel de Control Manual */
+  .control-panel {
+    max-width: 600px; margin: 20px auto; padding: 20px;
+    background: var(--b1-color-1); backdrop-filter: blur(10px);
+    border-radius: 13px; border: var(--border-n1);
+  }
+  textarea {
+    width: 100%; height: 80px; box-sizing: border-box;
+    background: var(--gradie-n1); color: #fff;
+    border: var(--border-n1); border-radius: 8px;
+    padding: 10px; font-family: monospace;
+  }
+</style>
+</style>
+</head>
+<body class="p-4 md:p-6 lg:p-8">
+
+<div class="relative z-10 max-w-[1600px] mx-auto">
+  
+  <!-- Header -->
+  <header class="glass rounded-3xl p-6 mb-6 flex items-center justify-between flex-wrap gap-4">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-fuchsia-500 via-purple-600 to-cyan-400 flex items-center justify-center text-2xl shadow-lg shadow-fuchsia-500/50">
+        ✨
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-black neon-text tracking-tight">NeuralCanvas</h1>
+        <p class="text-sm text-fuchsia-200/70">Generador de imágenes con IA · v2.6</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <div class="glass rounded-full px-4 py-2 text-xs">
+        <span class="text-yellow-300">and go!</span>  <span class="text-cyan-200 font-semibold">  <button onclick="runTest()" >✨ GENERAR LOTE (4 imgs)</button> </span>
+      </div>
+      <button onclick="clearAll()" class="glass rounded-full px-4 py-2 text-xs text-pink-300 hover:text-pink-100 hover:bg-pink-500/20 transition">
+        🗑️ Limpiar todo
+      </button>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+    
+    <!-- FORMULARIO -->
+    <aside class="lg:col-span-5 xl:col-span-4 space-y-5">
+      
+      <!-- Prompt -->
+      <div class="glass rounded-3xl p-6">
+
+<!-- Panel de Control Manual para Pruebas -->
+<div class="control-panel">
+  <h2 style="color: var(--b1-color-6); text-align: center; margin-top:0;">🎨 ADEV Generator</h2>
+  <textarea id="test-prompt" placeholder="Escribe tu prompt aquí...">cyberpunk city with neon lights, detailed, 8k, purple theme</textarea>
+  <div style="text-align: center; margin-top: 15px;">
+    <button onclick="runTest()" class="adev-btn-main">✨ GENERAR LOTE (4 imgs)</button>
+
+  </div>
+</div>
+        <!-- Negative Prompt -->
+        <div class="mt-4">
+          <label class="text-xs text-cyan-200 font-semibold mb-2 block">✖ Prompt negativo (opcional)</label>
+          <textarea id="negPrompt" rows="2" class="w-full rounded-2xl p-3 text-xs resize-none" placeholder="blur, low quality, distorted..."></textarea>
+          <br><br>
+            <!-- Prompt Resultante -->
+    <div class="mb-6">
+      <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Prompt Construido</label>
+      <textarea id="finalPrompt" rows="3" class="w-full bg-slate-900 border border-slate-600 rounded-lg p-3 text-white focus:border-purple-500 outline-none" placeholder="Las selecciones aparecerán aquí..."></textarea>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <!-- NIVEL 1: CATEGORÍA PRINCIPAL -->
+      <div>
+        <label class="block text-xs font-bold text-blue-300 uppercase mb-1">1. ¿Qué quieres agregar?</label>
+        <select id="selectCategoria" onchange="cargarSubopcion()" class="w-full bg-slate-900 border border-slate-600 rounded-lg p-3 text-white focus:border-blue-500 outline-none cursor-pointer">
+          <option value="">-- Selecciona Categoría --</option>
+          <option value="personaje">👤 Personaje / Sujeto</option>
+          <option value="escenario">🌍 Escenario / Fondo</option>
+          <option value="estilo">🎨 Estilo Artístico</option>
+          <option value="iluminacion">💡 Iluminación</option>
+        </select>
+      </div>
+
+      <!-- NIVEL 2: SUB-OPCIÓN (Se llena dinámicamente) -->
+      <div>
+        <label class="block text-xs font-bold text-pink-300 uppercase mb-1">2. Elige la opción específica</label>
+        <select id="selectDetalle" disabled class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3 text-gray-400 focus:border-pink-500 outline-none cursor-not-allowed transition-colors">
+          <option value="">-- Primero elige categoría --</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="mt-6 flex justify-end">
+      <button onclick="limpiarTodo()" class="text-sm text-red-400 hover:text-red-300 underline">Reiniciar Formulario</button>
+    </div>
+        </div>
+      </div>
+
+      
+      <!-- Quick Create -->
+      <div class="glass rounded-3xl p-6">     [select]
+        <h2 class="section-title text-xl font-bold text-fuchsia-300 mb-4"> Creación Rápida</h2>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="quick-btn glass rounded-2xl overflow-hidden" onclick="quickCreate('Ciudad cyberpunk neón bajo la lluvia, rascacielos holográficos, coches voladores, ambiente futurista')">
+            <img src="https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/142d685ea-88ed-432b-96c1-fa15c0d17991.png" class="w-full h-20 object-cover">
+            <div class="p-2 text-[10px] text-center text-cyan-200 font-semibold"> Cyberpunk</div>
+          </div>
+          <div class="quick-btn glass rounded-2xl overflow-hidden" onclick="quickCreate('Dragón dorado épico escupiendo fuego sobre montañas nevadas, cielo dramático')">
+            <img src="https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/1c64e1f3b-7a88-46ad-864c-86861ed0354c.png" class="w-full h-20 object-cover">
+            <div class="p-2 text-[10px] text-center text-yellow-300 font-semibold">🐉 Dragón</div>
+          </div>
+          <div class="quick-btn glass rounded-2xl overflow-hidden" onclick="quickCreate('Nebulosa galáctica en el espacio profundo, colores vibrantes púrpura y azul, estrellas brillantes')">
+            <img src="https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/16ef0b781-b0c4-4899-b7d9-a87ef1c0f720.png" class="w-full h-20 object-cover">
+            <div class="p-2 text-[10px] text-center text-fuchsia-200 font-semibold">🌌 Galaxia</div>
+          </div>
+          <div class="quick-btn glass rounded-2xl overflow-hidden" onclick="quickCreate('Retrato anime de chica con flores de cerezo, kimono rosa, estilo ilustración japonesa detallada')">
+            <img src="https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/1a6965e93-149c-4b28-8003-cea145628124.png" class="w-full h-20 object-cover">
+            <div class="p-2 text-[10px] text-center text-pink-300 font-semibold">🌸 Anime</div>
+          </div>
+          <div class="quick-btn glass rounded-2xl overflow-hidden" onclick="quickCreate('Arte abstracto fluido con colores magenta, cyan y dorado, patrones ondulantes modernos')">
+            <img src="https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/1d33c4875-5e9c-4bf7-a954-1e00f7173739.png" class="w-full h-20 object-cover">
+            <div class="p-2 text-[10px] text-center text-cyan-200 font-semibold">🎨 Abstracto</div>
+          </div>
+          <div class="quick-btn glass rounded-2xl overflow-hidden" onclick="quickCreate('Retrato fotorealista de mujer misteriosa con iluminación dramática, fondo oscuro')">
+            <img src="https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/10bac1a18-4e7d-4121-bf65-e7d59fc76f14.png" class="w-full h-20 object-cover">
+            <div class="p-2 text-[10px] text-center text-yellow-300 font-semibold"> Retrato</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sliders -->
+      <div class="glass rounded-3xl p-6 space-y-5">
+        <h2 class="section-title text-xl font-bold text-cyan-300 mb-4">🎚️ Parámetros</h2>
+        
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-xs text-fuchsia-200 font-semibold">🖼️ Cantidad de imágenes</label>
+            <span id="countVal" class="text-xs text-yellow-300 font-bold bg-black/30 px-2 py-1 rounded-lg">4</span>
+          </div>
+          <input type="range" id="count" min="1" max="9" value="4" oninput="updateSlider('count','countVal')">
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-xs text-fuchsia-200 font-semibold">🎯 Pasos de generación</label>
+            <span id="stepsVal" class="text-xs text-yellow-300 font-bold bg-black/30 px-2 py-1 rounded-lg">30</span>
+          </div>
+          <input type="range" id="steps" min="10" max="80" value="30" oninput="updateSlider('steps','stepsVal')">
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-xs text-fuchsia-200 font-semibold">⚖️ CFG Scale (fidelidad)</label>
+            <span id="cfgVal" class="text-xs text-yellow-300 font-bold bg-black/30 px-2 py-1 rounded-lg">7.5</span>
+          </div>
+          <input type="range" id="cfg" min="1" max="20" step="0.5" value="7.5" oninput="updateSlider('cfg','cfgVal')">
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-xs text-fuchsia-200 font-semibold">🎨 Calidad</label>
+            <span id="qualityVal" class="text-xs text-yellow-300 font-bold bg-black/30 px-2 py-1 rounded-lg">Alta</span>
+          </div>
+          <input type="range" id="quality" min="1" max="3" value="3" oninput="updateQuality()">
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-xs text-fuchsia-200 font-semibold"> Seed (-1 = aleatorio)</label>
+            <span id="seedVal" class="text-xs text-yellow-300 font-bold bg-black/30 px-2 py-1 rounded-lg">-1</span>
+          </div>
+          <input type="range" id="seed" min="-1" max="999999" value="-1" step="1" oninput="updateSeed()">
+        </div>
+      </div>
+
+      <!-- Multi-select -->
+      <div class="glass rounded-3xl p-6 space-y-5">
+        <h2 class="section-title text-xl font-bold text-green-300 mb-4">🎭 Estilo Artístico</h2>
+        <div id="styleChips" class="flex flex-wrap gap-2">
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-cyan-200" data-value="fotorrealista">📷 Fotorrealista</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-fuchsia-200" data-value="anime">🌸 Anime</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-yellow-300" data-value="óleo">🎨 Óleo</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-pink-300" data-value="3d render">💎 3D Render</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-cyan-200" data-value="pixel art"> Pixel Art</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-green-300" data-value="acuarela">💧 Acuarela</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-yellow-300" data-value="cyberpunk">🌆 Cyberpunk</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-fuchsia-200" data-value="fantasía">🐉 Fantasía</div>
+        </div>
+
+        <h2 class="section-title text-xl font-bold text-pink-300 mb-4 mt-6">📐 Relación de Aspecto</h2>
+        <div id="aspectChips" class="flex flex-wrap gap-2">
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-cyan-200" data-value="1:1">⬜ 1:1</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-fuchsia-200 active" data-value="16:9">️ 16:9</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-yellow-300" data-value="9:16">📱 9:16</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-pink-300" data-value="4:3">🖼️ 4:3</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-green-300" data-value="3:2">📸 3:2</div>
+        </div>
+
+        <h2 class="section-title text-xl font-bold text-yellow-300 mb-4 mt-6">💡 Iluminación</h2>
+        <div id="lightChips" class="flex flex-wrap gap-2">
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-cyan-200" data-value="luz natural">️ Natural</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-fuchsia-200" data-value="luz neón">💜 Neón</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-yellow-300 active" data-value="iluminación dramática">⚡ Dramática</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-pink-300" data-value="luz suave">🌙 Suave</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-green-300" data-value="contraluz">🌅 Contraluz</div>
+          <div class="chip glass rounded-full px-4 py-2 text-xs text-cyan-200" data-value="estudio">📽️ Estudio</div>
+        </div>
+      </div>
+
+      <!-- Generate Button -->
+      <button onclick="generateImages()" class="btn-generate w-full rounded-2xl py-5 text-xl font-black text-white tracking-wider flex items-center justify-center gap-3">
+        <span class="text-2xl">🚀</span> GENERAR IMÁGENES
+      </button>
+
+    </aside>
+
+    <!-- GRID DE IMÁGENES -->
+    <main class="lg:col-span-7 xl:col-span-8">
+      <div class="glass rounded-3xl p-6 min-h-[600px]">
+        <div class="flex items-center justify-between mb-6 flex-wrap gap-3">
+          <h2 class="section-title text-2xl font-bold neon-text-2">🖼️ Galería de Imágenes</h2>
+          <div class="flex items-center gap-2 text-xs">
+
+            
+            <span class="text-cyan-200">Total:</span>
+            <span id="totalImages" class="text-yellow-300 font-bold bg-black/30 px-3 py-1 rounded-lg">0</span>
+            <span class="text-fuchsia-200 ml-3">Guardadas:</span>
+            <span id="savedCount" class="text-green-300 font-bold bg-black/30 px-3 py-1 rounded-lg">0</span>
+          </div>
+        </div>
+<div id="adev-app-root">
+  <!-- El contenido se genera aquí -->
+</div>
+
+        <div id="imageGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Empty State -->
+          <div id="emptyState" class="col-span-full flex flex-col items-center justify-center py-20 text-center">
+            <div class="text-7xl mb-4 loading-pulse">🎨</div>
+            <h3 class="text-xl font-bold neon-text-3 mb-2">Tu lienzo está vacío</h3>
+            <p class="text-sm text-fuchsia-200/70 max-w-md">Escribe un prompt o usa la creación rápida para comenzar a generar imágenes increíbles</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-6 text-center text-xs text-fuchsia-200/50">
+    NeuralCanvas © 2026 · Hecho con 💜 · Las imágenes se guardan en tu navegador
+  </footer>
+</div>
+
+<!-- Toast Container -->
+<div id="toastContainer" class="fixed top-6 right-6 z-50 space-y-2"></div>
+
+<!-- Modal Preview -->
+<div id="modal" class="fixed inset-0 modal-overlay z-40 hidden items-center justify-center p-4" onclick="closeModal(event)">
+  <div class="glass-strong rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col" onclick="event.stopPropagation()">
+    <div class="flex items-center justify-between p-4 border-b border-white/10">
+      <h3 class="font-bold neon-text-3">Vista Previa</h3>
+      <button onclick="closeModal()" class="text-fuchsia-200 hover:text-white text-2xl">✕</button>
+    </div>
+    <img id="modalImg" class="w-full object-contain max-h-[75vh]">
+    <div class="p-4 flex gap-3 justify-end">
+      <button id="modalDownload" class="glass rounded-full px-5 py-2 text-sm text-green-300 hover:bg-green-500/20 transition">⬇️ Descargar</button>
+      <button onclick="closeModal()" class="glass rounded-full px-5 py-2 text-sm text-fuchsia-200 hover:bg-fuchsia-500/20 transition">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script>/*
+// Imágenes de ejemplo precargadas (las 6 generadas)
+const exampleImages = [
+  { url: 'https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/142d685ea-88ed-432b-96c1-fa15c0d17991.png', prompt: 'Ciudad cyberpunk neón bajo la lluvia' },
+  { url: 'https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/1c64e1f3b-7a88-46ad-864c-86861ed0354c.png', prompt: 'Dragón dorado épico en montañas' },
+  { url: 'https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/16ef0b781-b0c4-4899-b7d9-a87ef1c0f720.png', prompt: 'Nebulosa galáctica vibrante' },
+  { url: 'https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/1a6965e93-149c-4b28-8003-cea145628124.png', prompt: 'Retrato anime con flores de cerezo' },
+  { url: 'https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/1d33c4875-5e9c-4bf7-a954-1e00f7173739.png', prompt: 'Arte abstracto fluido magenta y cyan' },
+  { url: 'https://image.qwenlm.ai/public_source/b9d31a31-2c6a-47fa-b72a-42c06dcc770d/10bac1a18-4e7d-4121-bf65-e7d59fc76f14.png', prompt: 'Retrato fotorealista dramático' }
+];
+
+let images = [];
+const STORAGE_KEY = 'neuralcanvas_images_v1';
+
+// Cargar imágenes guardadas
+function loadSaved() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      images = JSON.parse(saved);
+      renderGrid();
+    }
+  } catch(e) { console.error(e); }
+}
+
+function saveToStorage() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(images));
+  } catch(e) {
+    showToast('️ Almacenamiento lleno', 'error');
+  }
+}*/
+
+// Sliders
+function updateSlider(id, valId) {
+  const v = document.getElementById(id).value;
+  document.getElementById(valId).textContent = v;
+}
+
+function updateQuality() {
+  const v = parseInt(document.getElementById('quality').value);
+  const labels = ['Baja', 'Media', 'Alta'];
+  document.getElementById('qualityVal').textContent = labels[v-1];
+}
+
+function updateSeed() {
+  const v = document.getElementById('seed').value;
+  document.getElementById('seedVal').textContent = v;
+}
+
+// Multi-select chips
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    chip.classList.toggle('active');
+  });
+});
+
+function getSelected(group) {
+  const chips = document.querySelectorAll(`#${group} .chip.active`);
+  return Array.from(chips).map(c => c.dataset.value);
+}
+
+// Quick create
+function quickCreate(prompt) {
+  document.getElementById('prompt').value = prompt;
+  showToast(' Prompt cargado. ¡Ajusta y genera!', 'success');
+  document.getElementById('prompt').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Generate images (simulado con las imágenes de ejemplo)
+function generateImages() {
+  const prompt = document.getElementById('prompt').value.trim();
+  if (!prompt) {
+    showToast('️ Escribe un prompt primero', 'error');
+    return;
+  }
+
+  const count = parseInt(document.getElementById('count').value);
+  const styles = getSelected('styleChips');
+  const aspects = getSelected('aspectChips');
+  const lights = getSelected('lightChips');
+
+  const fullPrompt = [
+    prompt,
+    ...styles,
+    ...lights,
+    aspects.length ? `aspect ${aspects[0]}` : ''
+  ].filter(Boolean).join(', ');
+
+  showToast(`🚀 Generando ${count} imagen(es)...`, 'info');
+
+  // Simular generación usando las imágenes de ejemplo rotadas
+  const newImages = [];
+  for (let i = 0; i < count; i++) {
+    const example = exampleImages[(Math.floor(Math.random() * exampleImages.length))];
+    newImages.push({
+      id: Date.now() + '_' + i,
+      url: example.url,
+      prompt: fullPrompt,
+      timestamp: new Date().toISOString(),
+      saved: false
+    });
+  }
+
+  // Añadir al inicio
+  images = [...newImages, ...images];
+  saveToStorage();
+  renderGrid();
+  showToast(`✅ ${count} imagen(es) generada(s)`, 'success');
+}
+
+// Render grid
+function renderGrid() {
+  const grid = document.getElementById('imageGrid');
+  const empty = document.getElementById('emptyState');
+  const totalEl = document.getElementById('totalImages');
+  const savedEl = document.getElementById('savedCount');
+
+  totalEl.textContent = images.length;
+  savedEl.textContent = images.filter(i => i.saved).length;
+
+  if (images.length === 0) {
+    grid.innerHTML = '';
+    grid.appendChild(empty);
+    empty.style.display = 'flex';
+    return;
+  }
+
+  grid.innerHTML = '';
+  images.forEach((img, idx) => {
+    const card = document.createElement('div');
+    card.className = 'img-card glass rounded-2xl overflow-hidden relative group';
+    card.innerHTML = `
+      <img src="${img.url}" class="w-full h-40 object-cover cursor-pointer" onclick="openModal('${img.url}', '${img.prompt.replace(/'/g, "\\'")}')">
+      <div class="absolute top-2 left-2 bg-black/60 backdrop-blur rounded-full px-2 py-1 text-[10px] text-cyan-200">
+        #${images.length - idx}
+      </div>
+      ${img.saved ? '<div class="absolute top-2 right-2 bg-green-500/80 backdrop-blur rounded-full px-2 py-1 text-[10px] text-white font-bold">💾</div>' : ''}
+      <div class="p-3">
+        <p class="text-[10px] text-fuchsia-200 line-clamp-2 h-6 mb-2" title="${img.prompt}">${img.prompt}</p>
+        <div class="flex gap-2 justify-end">
+          <button onclick="downloadImage('${img.url}', '${img.id}')" class="icon-btn download glass rounded-full w-8 h-8 flex items-center justify-center text-xs" title="Descargar">⬇️</button>
+          <button onclick="toggleSave('${img.id}')" class="icon-btn save glass rounded-full w-8 h-8 flex items-center justify-center text-xs" title="${img.saved ? 'Quitar guardado' : 'Guardar'}">${img.saved ? '💾' : '📌'}</button>
+          <button onclick="deleteImage('${img.id}')" class="icon-btn delete glass rounded-full w-8 h-8 flex items-center justify-center text-xs" title="Eliminar">🗑️</button>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+// Download
+async function downloadImage(url, id) {
+  try {
+    showToast('⬇️ Descargando...', 'info');
+    const res = await fetch(url);
+    const blob = await res.blob();
+    const blobUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = blobUrl;
+    a.download = `neuralcanvas_${id}.png`;
+    a.click();
+    URL.revokeObjectURL(blobUrl);
+    showToast('✅ Imagen descargada', 'success');
+  } catch(e) {
+    // Fallback: abrir en nueva pestaña
+    window.open(url, '_blank');
+    showToast(' Abierta en nueva pestaña', 'info');
+  }
+}
+
+// Toggle save
+function toggleSave(id) {
+  const img = images.find(i => i.id === id);
+  if (img) {
+    img.saved = !img.saved;
+    saveToStorage();
+    renderGrid();
+    showToast(img.saved ? '💾 Imagen guardada' : '📌 Guardado quitado', 'success');
+  }
+}
+
+// Delete
+function deleteImage(id) {
+  if (!confirm('¿Eliminar esta imagen?')) return;
+  images = images.filter(i => i.id !== id);
+  saveToStorage();
+  renderGrid();
+  showToast('🗑️ Imagen eliminada', 'info');
+}
+
+// Clear all
+function clearAll() {
+  if (!confirm('¿Eliminar TODAS las imágenes? Esta acción no se puede deshacer.')) return;
+  images = [];
+  saveToStorage();
+  renderGrid();
+  showToast('🗑️ Galería limpiada', 'info');
+}
+
+// Modal
+function openModal(url, prompt) {
+  document.getElementById('modalImg').src = url;
+  document.getElementById('modalDownload').onclick = () => {
+    downloadImage(url, 'preview');
+  };
+  document.getElementById('modal').classList.remove('hidden');
+  document.getElementById('modal').classList.add('flex');
+}
+
+function closeModal(e) {
+  if (e && e.target !== e.currentTarget) return;
+  document.getElementById('modal').classList.add('hidden');
+  document.getElementById('modal').classList.remove('flex');
+}
+
+// Toast
+function showToast(msg, type = 'info') {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  const colors = {
+    success: 'from-green-500/90 to-emerald-700/90 border-green-400',
+    error: 'from-red-500/90 to-rose-700/90 border-red-400',
+    info: 'from-cyan-500/90 to-blue-700/90 border-cyan-400'
+  };
+  toast.className = `toast glass-strong rounded-2xl px-5 py-3 text-sm font-semibold bg-gradient-to-r ${colors[type]} border text-white shadow-2xl`;
+  toast.textContent = msg;
+  container.appendChild(toast);
+  setTimeout(() => toast.remove(), 3000);
+}
+
+// Init
+loadSaved();
+
+// Cargar algunas imágenes de ejemplo si está vacío
+if (images.length === 0) {
+  images = exampleImages.map((ex, i) => ({
+    id: 'example_' + i,
+    url: ex.url,
+    prompt: ex.prompt,
+    timestamp: new Date().toISOString(),
+    saved: false
+  }));
+  saveToStorage();
+  renderGrid();
+}
+</script>
+
+<script>
+/**
+ * ADEV-LITE CORE (Usando generateImage nativo de Perchance)
+ */
+const ADEV_CONFIG = {
+  defaultResolution: "512x512",
+  defaultGuidance: 7
+};
+
+let adevGeneratedItems = []; 
+
+async function adevGenerate(inputData) {
+  const root = document.getElementById('adev-app-root');
+  root.innerHTML = ''; 
+
+  let config = {};
+  if (typeof inputData === 'string') {
+    config = { prompt: inputData, numImages: 4 };
+  } else if (typeof inputData === 'object' && inputData !== null) {
+    config = inputData;
+  } else {
+    root.innerHTML = `<div class="adev-loader" style="color:red; grid-column:1/-1">Error: Formato no válido.</div>`;
+    return;
+  }
+
+  if (!config.prompt || config.prompt.trim() === "") {
+    root.innerHTML = `<div class="adev-loader" style="color:red; grid-column:1/-1">Error: El prompt está vacío.</div>`;
+    return;
+  }
+  
+  const numImages = Math.min(Math.max(config.numImages || 4, 1), 20); // Límite seguro 20
+  renderLayout(numImages);
+
+  const generationPromises = [];
+  
+  for (let i = 0; i < numImages; i++) {
+    const id = `adev-img-${Date.now()}-${i}`;
+    const seed = config.seed === -1 || config.seed === undefined ? Math.floor(Math.random() * 999999) : (config.seed + i);
+    
+    createImageCard(id, config.prompt, seed);
+    
+    // USAMOS LA FUNCIÓN NATIVA generateImage()
+    const promise = (async () => {
+      try {
+        const options = { 
+          resolution: config.resolution || ADEV_CONFIG.defaultResolution,
+          seed: seed,
+          guidanceScale: config.guidanceScale || ADEV_CONFIG.defaultGuidance
+        };
+        
+        // ¡Aquí ocurre la magia! generateImage maneja auth y colas.
+        const dataUrl = await generateImage(config.prompt, options);
+        
+        updateImageCard(id, dataUrl, `Seed: ${seed} | OK`);
+        adevGeneratedItems.push({
+          id: id,
+          dataUrl: dataUrl,
+          prompt: config.prompt,
+          params: `Seed: ${seed}`,
+          filename: `img_${seed}.png`
+        });
+        return dataUrl;
+      } catch (err) {
+        console.error(err);
+        updateImageCardError(id, "Falló");
+        throw err;
+      }
+    })();
+    
+    generationPromises.push(promise);
+  }
+
+  Promise.all(generationPromises).then(() => enableZipButton());
+}
+
+// Funciones de UI (Renderizado)
+function renderLayout(total) {
+  const root = document.getElementById('adev-app-root');
+  root.innerHTML = `
+    <div class="adev-global-controls">
+      <h3 style="margin-top:0; color: var(--b1-color-6)">Generando ${total} imágenes...</h3>
+      <button id="adev-zip-btn" class="adev-btn-main" disabled onclick="adevDownloadZip()">⬇️ Descargar ZIP Completo</button>
+      <p style="font-size:0.8rem; color:#aaa; margin:10px 0 0 0;">Incluye imágenes + metadata.json</p>
+    </div>
+    <div class="adev-container" id="adev-grid"></div>
+  `;
+  adevGeneratedItems = [];
+}
+
+function createImageCard(id, prompt, seed) {
+  const grid = document.getElementById('adev-grid');
+  const card = document.createElement('div');
+  card.className = 'adev-card';
+  card.id = id;
+  card.innerHTML = `
+    <div class="adev-image-wrapper">
+      <div class="adev-loader">
+        <div class="spinner"></div>
+        <div style="margin-top:10px; font-size:0.8rem">Procesando...</div>
+      </div>
+    </div>
+    <div class="adev-data-panel">
+      <div class="adev-prompt" title="${prompt}">${prompt}</div>
+      <div class="adev-params" style="font-size:0.7rem; color:#888">Seed: ${seed}</div>
+      <div class="adev-actions">
+        <button class="adev-btn-small" onclick="adevSaveLocal('${id}')">💾 Guardar</button>
+      </div>
+    </div>
+  `;
+  grid.appendChild(card);
+}
+
+function updateImageCard(id, dataUrl, paramsText) {
+  const card = document.getElementById(id);
+  if (!card) return;
+  const loader = card.querySelector('.adev-loader');
+  if(loader) loader.remove();
+  
+  const imgWrapper = card.querySelector('.adev-image-wrapper');
+  const img = document.createElement('img');
+  img.src = dataUrl;
+  img.onclick = () => window.open(dataUrl, '_blank'); // Click para abrir en grande
+  imgWrapper.appendChild(img);
+  
+  const paramsDiv = card.querySelector('.adev-params');
+  if(paramsDiv) paramsDiv.textContent = paramsText;
+}
+
+function updateImageCardError(id, msg) {
+  const card = document.getElementById(id);
+  if (!card) return;
+  const loader = card.querySelector('.adev-loader');
+  if(loader) {
+    loader.innerHTML = `<span style="color:red; font-weight:bold">${msg}</span>`;
+    loader.style.background = "rgba(50,0,0,0.8)";
+  }
+}
+
+function enableZipButton() {
+  const btn = document.getElementById('adev-zip-btn');
+  if (btn) {
+    btn.disabled = false;
+    btn.textContent = `⬇️ Descargar ZIP (${adevGeneratedItems.length} imgs)`;
+    btn.style.background = "linear-gradient(135deg, #00b894, #00cec9)";
+  }
+}
+
+// Funciones de Descarga (ZIP y Local)
+async function adevDownloadZip() {
+  if (adevGeneratedItems.length === 0) return;
+  const btn = document.getElementById('adev-zip-btn');
+  const originalText = btn.textContent;
+  btn.textContent = "🔄 Empaquetando...";
+  btn.disabled = true;
+
+  try {
+    if (typeof JSZip === 'undefined') {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js";
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+
+    const zip = new JSZip();
+    const imgFolder = zip.folder("imagenes_adev");
+    const metadata = adevGeneratedItems.map(item => ({
+      filename: item.filename,
+      prompt: item.prompt,
+      params: item.params
+    }));
+    zip.file("metadata.json", JSON.stringify(metadata, null, 2));
+
+    adevGeneratedItems.forEach(item => {
+      const base64Data = item.dataUrl.split(',')[1];
+      imgFolder.file(item.filename, base64Data, {base64: true});
+    });
+
+    const content = await zip.generateAsync({type: "blob"});
+    const url = URL.createObjectURL(content);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `adev-lote-${Date.now()}.zip`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    btn.textContent = "✅ ¡Listo!";
+    setTimeout(() => { btn.textContent = originalText; btn.disabled = false; }, 3000);
+
+  } catch (e) {
+    alert("Error ZIP: " + e.message);
+    btn.disabled = false;
+  }
+}
+
+window.adevSaveLocal = function(id) {
+  const item = adevGeneratedItems.find(i => i.id === id);
+  if (!item) return;
+  const a = document.createElement('a');
+  a.href = item.dataUrl;
+  a.download = item.filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+};
+
+window.adevGenerate = adevGenerate;
+
+function runTest() {
+  const prompt = document.getElementById('test-prompt').value;
+  window.adevGenerate({
+    prompt: prompt,
+    numImages: 4,
+    resolution: "512x512",
+    guidanceScale: 7,
+    seed: -1
+  });
+}
+</script>
+
+  <script>
+    // --- BASE DE DATOS DE OPCIONES (Aquí pondrás tus variables de Perchance) ---
+    const baseDeDatos = {
+      personaje: [
+        { val: "cyberpunk hacker with neon goggles", label: "Hacker Cyberpunk" },
+        { val: "astronaut floating in space suit", label: "Astronauta Perdido" },
+        { val: "warrior princess with glowing sword", label: "Princesa Guerrera" },
+        { val: "giant mechanical robot, rusted metal", label: "Robot Gigante" }
+      ],
+      escenario: [
+        { val: "futuristic city with flying cars, night time", label: "Ciudad Futurista Nocturna" },
+        { val: "alien jungle with bioluminescent plants", label: "Selva Alienígena" },
+        { val: "abandoned space station corridor", label: "Estación Espacial Abandonada" },
+        { val: "underwater city with glass domes", label: "Ciudad Submarina" }
+      ],
+      estilo: [
+        { val: "oil painting, thick brushstrokes, dramatic", label: "Pintura al Óleo" },
+        { val: "anime style, studio ghibli, vibrant", label: "Anime Ghibli" },
+        { val: "synthwave, retro 80s, grid lines", label: "Synthwave 80s" },
+        { val: "black and white photography, high contrast", label: "Foto B&N Dramática" }
+      ],
+      iluminacion: [
+        { val: "cinematic lighting, volumetric fog, god rays", label: "Cinematográfica con Niebla" },
+        { val: "neon pink and blue lights, dark shadows", label: "Neon Rosa/Azul" },
+        { val: "golden hour, warm sunlight, lens flare", label: "Hora Dorada (Atardecer)" },
+        { val: "dark moody, low key, mystery", label: "Oscura y Misteriosa" }
+      ]
+    };
+
+    const selectCategoria = document.getElementById('selectCategoria');
+    const selectDetalle = document.getElementById('selectDetalle');
+    const finalPrompt = document.getElementById('finalPrompt');
+
+    // Función que carga el segundo select según la categoría
+    function cargarSubopcion() {
+      const categoria = selectCategoria.value;
+      
+      // Resetear el segundo select
+      selectDetalle.innerHTML = '<option value="">-- Selecciona Opción --</option>';
+      
+      if (!categoria) {
+        selectDetalle.disabled = true;
+        selectDetalle.classList.add('cursor-not-allowed', 'bg-slate-800', 'text-gray-400');
+        selectDetalle.classList.remove('bg-slate-900', 'text-white', 'cursor-pointer');
+        return;
+      }
+
+      // Activar el segundo select
+      selectDetalle.disabled = false;
+      selectDetalle.classList.remove('cursor-not-allowed', 'bg-slate-800', 'text-gray-400');
+      selectDetalle.classList.add('bg-slate-900', 'text-white', 'cursor-pointer');
+
+      // Llenar con las opciones de la base de datos
+      const opciones = baseDeDatos[categoria];
+      opciones.forEach((opt, index) => {
+        const optionEl = document.createElement('option');
+        optionEl.value = opt.val;
+        optionEl.textContent = opt.label;
+        // Pequeño delay para la animación CSS
+        optionEl.style.animationDelay = `${index * 0.05}s`; 
+        optionEl.classList.add('cascade-option');
+        selectDetalle.appendChild(optionEl);
+      });
+      
+      // Enfocar el segundo select para mejor UX
+      selectDetalle.focus();
+    }
+
+    // Cuando eligen la sub-opción, la agregamos al prompt y reseteamos
+    selectDetalle.addEventListener('change', function() {
+      const valor = this.value;
+      if (!valor) return;
+
+      // Agregar al textarea
+      if (finalPrompt.value.trim() === "") {
+        finalPrompt.value = valor;
+      } else {
+        finalPrompt.value += ", " + valor;
+      }
+
+      // Efecto visual de éxito
+      finalPrompt.classList.add('ring-2', 'ring-green-500');
+      setTimeout(() => finalPrompt.classList.remove('ring-2', 'ring-green-500'), 300);
+
+      // Resetear ambos selects para permitir agregar otra cosa
+      selectCategoria.value = "";
+      cargarSubopcion(); // Esto deshabilita el segundo de nuevo
+    });
+
+    function limpiarTodo() {
+      finalPrompt.value = "";
+      selectCategoria.value = "";
+      cargarSubopcion();
+    }
+  </script>
