@@ -1,3 +1,4 @@
+// extract functions
 // overall, this version (v2) moves toward the approach of constructing prompts within the artStyle list, such that you can e.g. place user inputs within a prompt multiple times, and have prompt construction completely depend on the art style
 
 // NOTE: the notes below are old/outdated. lots of other changes that aren't listed here. 
