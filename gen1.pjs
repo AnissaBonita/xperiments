@@ -1,0 +1,15 @@
+ai = {import:ai-text-plugin}
+literal = {import:literal-plugin}
+speak = {import:text-to-speech-plugin}   
+favicon = {import:favicon-plugin} 
+image = {import:text-to-image-plugin}
+select = {import:input-anidev}
+gradient = {import:gradient-text-plugin}
+generateText = {import:ai-text-plugin}
+generateImage = {import:text-to-image-plugin}
+$meta
+  title = 💜adevgen
+  description =  💜adevgen
+  header 
+    background = [bgrds] 
+    
